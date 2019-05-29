@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "babel-preset-react-app": "^7.0.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-fullpage": "^0.1.19",
     "react-scripts": "3.0.0",
+    "react-slick": "^0.24.0",
     "styled-jsx": "^3.2.1"
   },
   "scripts": {

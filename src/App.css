@@ -31,3 +31,36 @@
     transform: rotate(360deg);
   }
 }
+
+* {
+  box-sizing: border-box
+}
+
+.slick-thumb {
+  bottom: -7vw;
+}
+.slick-thumb li {
+  width: 12vw;
+  height: 45px;
+  cursor: pointer;
+}
+.slick-thumb li img {
+  filter: grayscale(100%) brightness(50%);
+  width: 100%;
+  transition-duration: .3s;
+  border: 2px solid white;
+  box-sizing: border-box;
+}
+.slick-thumb li img:hover {
+  filter: grayscale(0%) brightness(100%);
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px 5px #0000006e;
+  transition-duration: .3s;
+}
+.slick-thumb li.slick-active img {
+  filter: grayscale(0);
+  border: 2px solid orange;
+  box-shadow: 0 5px 10px 5px #0000006e;
+  transition-duration: .3s;
+}
+.slick-active { z-index: 999; }
