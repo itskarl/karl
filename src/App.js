@@ -6,7 +6,7 @@ import './App.css';
 const Karl = () => {
   let options = {
     sectionClassName: 'section',
-    anchors: ['sectionOne', 'sectionTwo', 'sectionThree', 'sectionFour'],
+    anchors: ['home', 'my-work', 'resume', 'sectionFour'],
     scrollBar: false,
     navigation: true,
     verticalAlign: false,
@@ -23,8 +23,8 @@ const Karl = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     dotsClass: "slick-dots slick-thumb",
- 
-    customPaging: function(i) {
+
+    customPaging: function (i) {
       return (
         <a>
           <img src={`images/proj${i + 1}.png`} />
@@ -38,296 +38,301 @@ const Karl = () => {
 
   return (
     <>
-     <Header>
-   <div className="main-header">
-      <div className="links">
-         <a href="#sectionOne" className="about"><button  >ABOUT</button></a>
-         <a href="#sectionTwo" className="work" ><button >WORK</button></a>
-         <a href="#sectionThree" className="resume" ><button >RESUME</button></a>
-         <a href="#sectionFour" className="contact"><button  >CONTACT</button></a>
-         <div className="underline-bar"></div>
-      </div>
-   </div>
-</Header>
-<SectionsContainer {...options} >
-   <Section>
-      <div className="name-holder">
-         <div className="name">Karl Rodulfo</div>
-         <div className="square s_1"></div>
-         <div className="square s_2"></div>
-         <div className="square s_3"></div>
-         <div className="square s_4"></div>
-      </div>
-      <div className="cover-lower">
-         <div className="subtitle">
-            Front End Developer with a passion for design, function, and technology. 
+      <Header>
+        <div className="main-header">
+          <div className="links">
+            <a href="#home" className="about"><button  >ABOUT</button></a>
+            <a href="#my-work" className="work" ><button >WORK</button></a>
+            <a href="#resume" className="resume" ><button >RESUME</button></a>
+            <a href="#sectionFour" className="contact"><button  >CONTACT</button></a>
+            <div className="underline-bar"></div>
+          </div>
+        </div>
+      </Header>
+      <SectionsContainer {...options} >
+        <Section>
+          <div className="name-holder">
+            <div className="name">Karl Rodulfo</div>
+            <div className="square s_1"></div>
+            <div className="square s_2"></div>
+            <div className="square s_3"></div>
+            <div className="square s_4"></div>
+          </div>
+          <div className="cover-lower">
+            <div className="subtitle">
+              Front End Developer with a passion for design, function, and technology.
          </div>
-         <div className="menu-container">
-            <div className="icon-container">
-               <img className="icon" src="1_me.svg" />
-               <p>ABOUT ME</p>
+            <div className="menu-container">
+              <div className="icon-container">
+                <img className="icon" src="1_me.svg" />
+                <p>ABOUT ME</p>
+              </div>
+              <div className="icon-container">
+                <img className="icon" src="2_work.svg" />
+                <p>MY WORK</p>
+              </div>
+              <div className="icon-container">
+                <img className="icon" src="3_resume.svg" />
+                <p>RESUME</p>
+              </div>
+              <div className="icon-container">
+                <img className="icon" src="4_contact.svg" />
+                <p>CONTACT ME</p>
+              </div>
             </div>
-            <div className="icon-container">
-               <img className="icon" src="2_work.svg" />
-               <p>MY WORK</p>
-            </div>
-            <div className="icon-container">
-               <img className="icon" src="3_resume.svg" />
-               <p>RESUME</p>
-            </div>
-            <div className="icon-container">
-               <img className="icon" src="4_contact.svg" />
-               <p>CONTACT ME</p>
-            </div>
-         </div>
-      </div>
-   </Section>
-   <Section className="section-two">
-      <div className="section-two-square"></div>
-      <div className="work-title name">Work</div>
-      <div className="slider-container">
-         <Slider {...navsettings}>
-            <div>
-               <div className="project-square">
+          </div>
+        </Section>
+        <Section className="section-two">
+          <div className="section-two-square"></div>
+          <div className="work-title name">Work</div>
+          <div className="slider-container">
+            <Slider {...navsettings}>
+              <div>
+                <div className="project-square">
                   <div className="project-content" ><img src="/images/musings.png" /></div>
                   <div className="project-content">
-                     <a href="https://musings1.herokuapp.com/" target="_blank">
-                        <h4>MUSINGS: A SOCIAL MEDIA SITE</h4>
-                        VISIT SITE
+                    <a href="https://musings1.herokuapp.com/" target="_blank">
+                      <h4>MUSINGS: A SOCIAL MEDIA SITE</h4>
+                      VISIT SITE
                      </a>
-                     <p>A photo & microblogging site where users can create accounts, make posts, and edit their accounts.
+                    <p>A photo & microblogging site where users can create accounts, make posts, and edit their accounts.
                      </p>
-                     <p>Built on Ruby on Sinatra</p>
-                     <hr />
-                     <p>FEATURES: <br/>
-                     <ul>
+                    <p>Built on Ruby on Sinatra</p>
+                    <hr />
+                    <p>FEATURES: <br />
+                      <ul>
                         <li>Simple, lightweight, easy-to-use interface </li>
                         <li>Website is fully responsive for desktop, tablet, and mobile! Please enjoy on different platforms!</li>
                         <li>Utilizes a speech bubble motif for a fun, dynamic, but cohesive style</li>
                         <li>Utilizes SQLite, ActiveRecord</li>
-                     </ul>
-                     </p>
-                     <a href="https://github.com/itskarl/MUSINGS-social-media-site" target="_blank"><i className="fab fa-github"></i>&nbsp; GITHUB</a>
+                      </ul>
+                    </p>
+                    <a href="https://github.com/itskarl/MUSINGS-social-media-site" target="_blank"><i className="fab fa-github"></i>&nbsp; GITHUB</a>
                   </div>
-               </div>
-            </div>
-            <div>
-               <div className="project-square">
+                </div>
+              </div>
+              <div>
+                <div className="project-square">
                   <div className="project-content"><img src="/images/pokedex.png" /></div>
                   <div className="project-content">
-                     <a href="https://itskarl.github.io/pokemon-pokedex/" target="_blank">
-                        <h4>KARL'S POKEMON POKEDEX</h4>
-                        VISIT SITE
+                    <a href="https://itskarl.github.io/pokemon-pokedex/" target="_blank">
+                      <h4>KARL'S POKEMON POKEDEX</h4>
+                      VISIT SITE
                      </a>
-                     <p>A pokedex that displays pokemon data with vanilla JS and AJAX. 
+                    <p>A pokedex that displays pokemon data with vanilla JS and AJAX.
                      </p>
-                     <p>Built with Vanilla Javascript</p>
-                     <hr />
-                     <p>FEATURES: <br/>
-                     <ul>
+                    <p>Built with Vanilla Javascript</p>
+                    <hr />
+                    <p>FEATURES: <br />
+                      <ul>
                         <li>Simple, lightweight, easy-to-use single-page-application interface. </li>
                         <li>Stats, such as percentage bars are dynamically generated via AJAX.</li>
                         <li>Website is fully responsive for desktop, tablet, and mobile!</li>
                         <li>Built fully on vanilla Javascript, HTML, and CSS</li>
-                     </ul>
-                     </p>
-                     <a href="https://github.com/itskarl/pokemon-pokedex" target="_blank"><i className="fab fa-github"></i>&nbsp; GITHUB</a>
+                      </ul>
+                    </p>
+                    <a href="https://github.com/itskarl/pokemon-pokedex" target="_blank"><i className="fab fa-github"></i>&nbsp; GITHUB</a>
                   </div>
-               </div>
-            </div>
-            <div>
-               <div className="project-square">
+                </div>
+              </div>
+              <div>
+                <div className="project-square">
                   <div className="project-content"><img src="/images/afriendinknead.png" /></div>
                   <div className="project-content">
-                     <a href="https://afriendinknead.herokuapp.com/" target="_blank">
-                        <h4>A FRIEND IN KNEAD</h4>
-                        VISIT SITE
+                    <a href="https://afriendinknead.herokuapp.com/" target="_blank">
+                      <h4>A FRIEND IN KNEAD</h4>
+                      VISIT SITE
                      </a>
-                     <p>A full-stack website for fictional bakery A FRIEND IN KNEAD using APIs. <br/> 
-                     </p>
-                     <p>Built with Ruby on Sinatra</p>
-                     <hr/>
-                     <p>FEATURES: <br />
-                     <ul>
+                    <p>A full-stack website for fictional bakery A FRIEND IN KNEAD using APIs. <br />
+                    </p>
+                    <p>Built with Ruby on Sinatra</p>
+                    <hr />
+                    <p>FEATURES: <br />
+                      <ul>
                         <li>Utilizes Eventbrite API to dynamically generate local events </li>
                         <li>Features a festive aesthetic with bakery motifs to highlight the bakery and its products</li>
                         <li>Website is fully responsive for desktop and mobile! Please enjoy on different platforms!</li>
-                     </ul>
-                     </p>
-                     <a href="https://github.com/itskarl/Bakery-website-fullstack" target="_blank"><i className="fab fa-github"></i>&nbsp; GITHUB</a>
+                      </ul>
+                    </p>
+                    <a href="https://github.com/itskarl/Bakery-website-fullstack" target="_blank"><i className="fab fa-github"></i>&nbsp; GITHUB</a>
                   </div>
-               </div>
-            </div>
-            <div>
-               <div className="project-square">
+                </div>
+              </div>
+              <div>
+                <div className="project-square">
                   <div className="project-content"><img src="/images/proj4.png" /></div>
                   <div className="project-content">
-                     <a href="https://afacademy.herokuapp.com/" target="_blank">
-                        <h4>AF ACADEMY ADMIN PANEL</h4>
-                        VISIT SITE
+                    <a href="https://afacademy.herokuapp.com/" target="_blank">
+                      <h4>AF ACADEMY ADMIN PANEL</h4>
+                      VISIT SITE
                      </a>
-                     <p> A fully functional adminstrative panel for fictional school, Animal Farm Academy. Users can manage students, teachers, classes and cohorts.
+                    <p> A fully functional adminstrative panel for fictional school, Animal Farm Academy. Users can manage students, teachers, classes and cohorts.
                      </p>
-                     <p>Built on Ruby on Rails</p>
-                     <hr/>
-                     <p>FEATURES: <br/>
-                     <ul>
+                    <p>Built on Ruby on Rails</p>
+                    <hr />
+                    <p>FEATURES: <br />
+                      <ul>
                         <li>Showcases dynamic animation on landing page as a point of interest. Animation built on vanilla Javascript and CSS </li>
                         <li>Designed with very user-friendly interface and visually appealing graphics</li>
-                     </ul>
-                     </p>
-                     <a href="https://github.com/itskarl/academy-panel" target="_blank"><i className="fab fa-github"></i>&nbsp; GITHUB</a>
+                      </ul>
+                    </p>
+                    <a href="https://github.com/itskarl/academy-panel" target="_blank"><i className="fab fa-github"></i>&nbsp; GITHUB</a>
                   </div>
-               </div>
-            </div>
-            <div>
-               <div className="project-square">
+                </div>
+              </div>
+              <div>
+                <div className="project-square">
                   <div className="project-content"><img src="/images/proj5.png" /></div>
                   <div className="project-content">
-                     <a href="https://conciergely.herokuapp.com/" target="_blank">
-                        <h4>PLAN MY NIGHT</h4>
-                        VISIT SITE
+                    <a href="https://conciergely.herokuapp.com/" target="_blank">
+                      <h4>PLAN MY NIGHT</h4>
+                      VISIT SITE
                      </a>
-                     <p> Create an evening plan in just one click. Or use the meetup to tool to find the perfect meeting spot for you and a friend. 
+                    <p> Create an evening plan in just one click. Or use the meetup to tool to find the perfect meeting spot for you and a friend.
                      </p>
-                     <p>Built on Ruby on Rails</p>
-                     <hr/>
-                     <p>FEATURES: <br/>
-                     <ul>
+                    <p>Built on Ruby on Rails</p>
+                    <hr />
+                    <p>FEATURES: <br />
+                      <ul>
                         <li>Utilizes Weather API, Google Maps, Eventbrite, Geocoder, Stripe, and Yelp APIs.</li>
                         <li>Designed with very user-friendly interface and visually appealing graphics</li>
                         <li>Site allows users to save plans easily to quickly share and keep track of plans</li>
-                     </ul>
-                     </p>
-                     <a href="https://github.com/itskarl/happymedium" target="_blank"><i className="fab fa-github"></i>&nbsp; GITHUB</a>
+                      </ul>
+                    </p>
+                    <a href="https://github.com/itskarl/happymedium" target="_blank"><i className="fab fa-github"></i>&nbsp; GITHUB</a>
                   </div>
-               </div>
-            </div>
-            <div>
-               <div className="project-square">
+                </div>
+              </div>
+              <div>
+                <div className="project-square">
                   <div className="project-content"><img src="/images/proj6.png" /></div>
                   <div className="project-content">
-                     <a href="https://buyinformed.herokuapp.com/" target="_blank">
-                        <h4>CONCON: THE CONSCIENTIOUS CONSUMER TOOL</h4>
-                        VISIT SITE
+                    <a href="https://buyinformed.herokuapp.com/" target="_blank">
+                      <h4>CONCON: THE CONSCIENTIOUS CONSUMER TOOL</h4>
+                      VISIT SITE
                      </a>
-                     <p>Use your mobile device as to read the barcode of a product, and get it's consumer ethical rating. 
+                    <p>Use your mobile device as to read the barcode of a product, and get it's consumer ethical rating.
                      </p>
-                     <p>Built on Ruby on Rails</p>
-                     <hr/>
-                     <p>FEATURES: <br/>
-                     <ul>
+                    <p>Built on Ruby on Rails</p>
+                    <hr />
+                    <p>FEATURES: <br />
+                      <ul>
                         <li>Created and sourced data to create my own API and RESTful interface for company ratings</li>
                         <li>Utilizes quagga js barcode reader for quick light-weight front-end information processing</li>
                         <li>Features News API to provide additional information on companies</li>
-                     </ul>
-                     </p>
-                     <a href="https://github.com/itskarl/buyethically" target="_blank"><i className="fab fa-github"></i>&nbsp; GITHUB</a>
+                      </ul>
+                    </p>
+                    <a href="https://github.com/itskarl/buyethically" target="_blank"><i className="fab fa-github"></i>&nbsp; GITHUB</a>
                   </div>
-               </div>
+                </div>
+              </div>
+            </Slider>
+          </div>
+        </Section>
+        <Section className="section-three">
+          <div className="section-three-content">
+            <div className=" skills-section">
+              <div className="section-title languages">Programming</div>
+              <ul>
+                <li style={{ width: '90%' }}>
+                  <i className="devicon-html5-plain"></i>HTML</li>
+                <li style={{ width: '90%' }}><i className="devicon-css3-plain"></i>CSS</li>
+                <li style={{ width: '70%' }}><i className="devicon-javascript-plain"></i>Javascript</li>
+                <li style={{ width: '60%' }}><i className="devicon-ruby-plain"></i>Ruby</li>
+
+                <li style={{ width: '70%' }}><i className="devicon-react-original"></i>React</li>
+                <li style={{ width: '50%' }}><i className="devicon-angularjs-plain"></i>Angular JS</li>
+                <li style={{ width: '60%' }}><i className="devicon-rails-plain"></i>Rails</li>
+
+              </ul>
+
+              <div className="section-title other">Other Skills</div>
+              <ul>
+                <li style={{ width: '90%' }}><i className="far fa-calendar-check"></i>Project Management</li>
+                <li style={{ width: '70%' }}><i className="fas fa-search-plus"></i>SEO Implementation</li>
+                <li style={{ width: '75%' }}><i className="fas fa-marker"></i>Copywriting</li>
+                <li style={{ width: '80%' }}><i className="devicon-photoshop-plain"></i>Adobe Photoshop</li>
+                <li style={{ width: '60%' }}><i className="devicon-illustrator-plain"></i>Adobe Illustrator</li>
+                <li style={{ width: '90%' }}><i className="fas fa-sticky-note"></i>Simpsons Trivia</li>
+              </ul>
             </div>
-         </Slider>
-      </div>
-   </Section>
-<Section className="section-three">
-  <div className="section-three-content">
-    <div className=" skills-section">
-      <div className="section-title languages">Programming</div>
-      <ul>
-        <li style={{width: '90%'}}>
-          <i className="devicon-html5-plain"></i>HTML</li>
-        <li style={{width: '90%'}}><i className="devicon-css3-plain"></i>CSS</li>
-        <li style={{width: '70%'}}><i className="devicon-javascript-plain"></i>Javascript</li>
-        <li style={{width: '60%'}}><i className="devicon-ruby-plain"></i>Ruby</li>
 
-        <li style={{width: '70%'}}><i className="devicon-react-original"></i>React</li>
-        <li style={{width: '50%'}}><i className="devicon-angularjs-plain"></i>Angular JS</li>
-        <li style={{width: '60%'}}><i className="devicon-rails-plain"></i>Rails</li>
+            <div className="other-section">
+              <div className="recent-exp">
+                <div className="time-bar unpakt"></div>
+                <div className="time-bar discovery"></div>
+                <div className="time-bar nbcnews"></div>
+                <div className="time-bar nbcu"></div>
+                <div className="time-bar sju"></div>
+                <div className="time-bar nycda"></div>
 
-      </ul>
 
-      <div className="section-title other">Other Skills</div>
-      <ul>
-        <li style={{width: '90%'}}><i className="far fa-calendar-check"></i>Project Management</li>
-        <li style={{width: '70%'}}><i className="fas fa-search-plus"></i>SEO Implementation</li>
-        <li style={{width: '75%'}}><i className="fas fa-marker"></i>Copywriting</li>
-        <li style={{width: '80%'}}><i className="devicon-photoshop-plain"></i>Adobe Photoshop</li>
-        <li style={{width: '60%'}}><i className="devicon-illustrator-plain"></i>Adobe Illustrator</li>
-        <li style={{width: '90%'}}><i className="fas fa-sticky-note"></i>Simpsons Trivia</li>
-      </ul>
-    </div>
+                <div className="job one">
+                  <div className="job-logo unpakt">
 
-    <div className="other-section">
-      <div className="recent-exp">
-        <div className="cal-top"></div>
-        <div className="job one">
-          <div className="job-logo">
+                  </div>
+                  <div>
+                    <p className="job-title">FRONT END DEVELOPER</p>
+                    <p>Unpakt</p>
+                  </div>
+                </div>
+                <div className="job two">
+                  <div className="job-logo discovery">
+
+                  </div>
+                  <div>
+                    <p className="job-title">TELEVISION PRODUCER</p>
+                    <p>Discovery Channel</p>
+                  </div>
+                </div>
+                <div className="job three">
+                  <div className="job-logo news">
+
+                  </div>
+                  <div>
+                    <p className="job-title">NEWS RESEARCHER</p>
+                    <p>NBC News</p>
+                  </div>
+                </div>
+                <div className="job four">
+                  <div className="job-logo nbc">
+
+                  </div>
+                  <div>
+                    <p className="job-title">NBC PAGE</p>
+                    <p>NBC Studios</p>
+                  </div>
+                </div>
+              </div>
+              <div className="education">
+                <div className="edu one">
+                  <div className="edu-logo nycda">
+                  </div>
+                  <div>
+                    <p className="school">NY CODE & DESIGN</p>
+                    <p>Software Enigneering Intensive 2018</p>
+                  </div>
+                </div>
+
+                <div className="edu two">
+                  <div className="edu-logo sju">
+                  </div>
+                  <div>
+                    <p className="school">ST JOHN'S UNIVERSITY</p>
+                    <p>B.S. Communications</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
 
           </div>
-          <div>
-            <p className="job-title">FRONT END DEVELOPER</p>
-            <p>Unpakt</p>
-          </div>
-        </div>
-        <div className="job two">
-          <div className="job-logo">
+        </Section>
 
-          </div>
-          <div>
-            <p className="job-title">TELEVISION PRODUCER</p>
-            <p>Discovery Channel</p>
-          </div>
-        </div>
-        <div className="job three">
-          <div className="job-logo">
-
-          </div>
-          <div>
-            <p className="job-title">NEWS RESEARCHER</p>
-            <p>NBC News</p>
-          </div>
-        </div>
-        <div className="job four">
-          <div className="job-logo">
-
-          </div>
-          <div>
-            <p className="job-title">NBC PAGE</p>
-            <p>NBC Studios</p>
-          </div>
-        </div>
-      </div>
-      <div className="education">
-        <div className="cal-bot"></div>
-
-        <div className="edu one">
-          <div className="edu-logo">
-          </div>
-          <div>
-            <p className="school">ST JOHN'S UNIVERSITY</p>
-            <p>Unpakt</p>
-          </div>
-        </div>
-
-        <div className="edu two">
-          <div className="edu-logo">
-          </div>
-          <div>
-            <p className="school">NY CODE & DESIGN</p>
-            <p>Unpakt</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-</Section>
-
-   <Section className="section-four"> blarp</Section>
-</SectionsContainer>
-<style>
-   {`
+        <Section className="section-four"> blarp</Section>
+      </SectionsContainer>
+      <style>
+        {`
    *:focus {
    outline: none
    }
@@ -396,7 +401,7 @@ const Karl = () => {
    align-items: center;
    justify-content: flex-end;
    padding: 1rem;
-   height: 4.5rem;
+   height: 3rem;
    }
    .links button {
    width: 6rem;
@@ -420,7 +425,6 @@ const Karl = () => {
    position: absolute;
    width: 18rem;
    height: 12rem;
-   background: pink;
    transform: rotate(45deg)
    }
    .s_1 {
@@ -531,61 +535,106 @@ const Karl = () => {
     padding: 1rem;
   }
   .skills-section {
-    background: #01579B;
+    background: linear-gradient(.25turn, #566f84, #355976);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .section-right {
     height: 100%
   }
   .other-section {
     display: grid;
-    grid-template-rows: 75% 25%;
+    grid-template-rows: 65% 35%;
   }
   .recent-exp {
-    background: teal;
+    background: linear-gradient(.25turn, #e7e3d5, #c1d7eb);
     position: relative;
+    overflow: visible;
+    z-index: 1;
   }
   .education {
     background: steelblue;
     position: relative;
   }
-  .cal-top {
-    width: .75rem;
-    height: calc(100% - 3rem);
-    background: pink;
+
+  .time-bar {
     position: absolute;
-    bottom: 0;
-    left: .5rem;
-    border-radius: .75rem .75rem 0 0
+    width: .5rem;
+    height: 11.3%;
+    border-radius: .25rem;
   }
-  .cal-bot {
-    width: .75rem;
-    height: calc(100% - 3rem);
+  .time-bar.unpakt {
+    top: 3rem;
+    background: #4eb4e6;;
+  }
+  .time-bar.nbcnews {
+    background: #f6be3e;
+    top: calc(3rem + 101.7%);
+  }
+  .time-bar.discovery {
+    background: #3f8a71;
+    top: calc(3rem + 11.3%);
+    height: 90.4%;
+  }
+  .time-bar.nbcu {
+    background: blue;
+    top: calc(3rem + 113%);
+    height: 11.3%;
+
+  }
+  .time-bar.sju{
     background: pink;
-    position: absolute;
-    top: 0;
-    left: .5rem;
-    border-radius:  0 0 .75rem .75rem
+    top: calc(3rem + 124.3%);
+    height: 11.3%;
   }
-  .job {
+
+
+
+  .job, .edu {
     width: 20rem;
-    height: 20%;
     position: absolute;
     background: rgb(53, 72, 112);
     transform: translateY(-50%);
     left: 5rem;
     border-radius: 3px;
-    padding: 1rem;
     display: flex;
-    min-height: 5rem;
     min-width: 10rem;
     align-items: center;
-    color: #4FC3F7
+    color: #4FC3F7;
+    box-shadow: 0 5px 15px 10px #00000038;
   }
+  // .job:before ,.edu:before {
+  //   content: '';
+  //   border-top: 3px solid black;
+  //   position: absolute;
+  //   width: 4rem;
+  //   height: 0;
+  //   left: -4rem;
+  //   color: black;
+  // }
   .job-logo {
     width: 4rem;
     height: 4rem;
     margin-right: 1rem;
     background: #26C6DA
+  }
+  .job-logo.unpakt {
+    background: url(/images/res-unpakt.png) no-repeat center center/cover;
+  }
+  .job-logo.discovery {
+    background: url(/images/res-discovery.jpg) no-repeat center center/cover;
+  }
+  .job-logo.news{
+    background: url(/images/res-nbcnews.png) no-repeat center center/cover;
+  }
+  .job.three:before {
+    border-color: #f6be3e;
+    width: 3.5rem;
+    left: -3.5rem;
+  }
+  .job-logo.nbc{
+    background: url(/images/res-nbcu.png) no-repeat center center/cover;
   }
   .job.one {
     top: 20%
@@ -605,64 +654,46 @@ const Karl = () => {
   .job-title, .school {
     color: white;
   }
-  
-  .edu {
-    width: 38%;
-    position: absolute;
-    background: rgb(53, 72, 112);
-    left: 5rem;
-    border-radius: 3px;
-    padding: 1rem;
-    display: flex;
-    min-height: 5rem;
-    min-width: 10rem;
-    align-items: center;
-    color: #4FC3F7;
-  }
   .edu-logo {
     width: 4rem;
     height: 4rem;
     margin-right: 1rem;
     background: #26C6DA
   }
+  .edu-logo.sju {
+    background: url(/images/res-sju.png) no-repeat center center/cover;
+  }
+  .edu-logo.nycda {
+    background: url(/images/res-code.png) no-repeat center center/cover;
+  }
   .edu.one {
-    top: 10%
+    top: 20%;
   }
   .edu.two {
-    top: 10%;
-    left: calc(42% + 5rem)
-     
+    top: 60%;
+    
   }
   
   .skills-section ul {
     list-style-type: none; 
   }
   .skills-section li {
-    background: linear-gradient(.15turn, #7491c1 90%, transparent 91%);
-    margin-bottom: .75rem;
+    background: linear-gradient(.15turn, #87c2f7  90%, transparent 91%);
+    margin-bottom: .2rem;
     padding: .25rem .5rem;
     width: 70%;
-    color: white;
+    color: #252a35;
+    border-radius: 1rem  0 0 1rem;
+    margin-left: -1rem;
   
   }
   .skills-section li:nth-child(odd)  {
-    background: linear-gradient(.15turn, #4fa39a 90%, transparent 91%);
+    background: linear-gradient(.15turn, #b1e6e1 90%, transparent 91%);
   }
   .skills-section li i {
-    background: #3F51B5;
-    padding: .5rem;
-    border-radius: 50%;
-    margin-left: -1.5rem;
     margin-right: .5rem;
-    color: #fff;
-    border: 2px solid #7491c1;
-    box-shadow: 2px 2px 3px 2px rgba(0,0,0,.1);
+    color:  #283041;
     display: inline !important
-  }
-  
-  .skills-section li:nth-child(odd) i {
-  
-    border: 2px solid #4fa39a;
   }
   .section-title {
     font-family: Megrim;
@@ -671,13 +702,12 @@ const Karl = () => {
     background: none;
     margin-left: -1rem;
     padding-left: 2.5rem;
-  
-    border-top: 2px solid white;
+    font-weight: bold;
   }
 
   
    `}
-</style>
+      </style>
     </>
   );
 }
