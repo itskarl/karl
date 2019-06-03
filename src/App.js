@@ -258,13 +258,20 @@ const Karl = () => {
             </div>
 
             <div className="other-section">
-              <div className="recent-exp">
+                <div className="recent-exp">
+                <div className="timeline"></div>
                 <div className="time-bar unpakt"></div>
+                  <div className="connector-bar unpakt"></div>
                 <div className="time-bar discovery"></div>
+                  <div className="connector-bar discovery"></div>
                 <div className="time-bar nbcnews"></div>
+                  <div className="connector-bar nbcnews"></div>
                 <div className="time-bar nbcu"></div>
+                  <div className="connector-bar nbcu"></div>
                 <div className="time-bar sju"></div>
+                  <div className="connector-bar sju"></div>
                 <div className="time-bar nycda"></div>
+                <div className="connector-bar nycda"></div>
 
 
                 <div className="job one">
@@ -560,33 +567,91 @@ const Karl = () => {
 
   .time-bar {
     position: absolute;
-    width: .5rem;
+    width: 1.5rem;
     height: 11.3%;
-    border-radius: .25rem;
+  }
+  .connector-bar {
+    left: 1.33rem;
+    width: 5rem;
+    border-style: dashed;
+    border-width: 0 0 3px 3px;
+    position: absolute;
+    border-radius: .5rem 0 0 .5rem;
+  }
+  .timeline {
+    top: 3rem;
+    background: #c2c2c2;
+    position: absolute;
+    width: 1.5rem;
+    height: 135%;
+    box-shadow: 0 8px 15px 10px #00000029;
   }
   .time-bar.unpakt {
     top: 3rem;
     background: #4eb4e6;;
   }
-  .time-bar.nbcnews {
-    background: #f6be3e;
-    top: calc(3rem + 101.7%);
+  .connector-bar.unpakt {
+    top: 4.5rem;
+    height: calc(20% - 4.5rem);
+    border-color: #4eb4e6;
   }
   .time-bar.discovery {
     background: #3f8a71;
-    top: calc(3rem + 11.3%);
-    height: 90.4%;
+    top: calc(3rem + 22.6%);
+    height: 79.1%;
+  }
+  .connector-bar.discovery {
+    border-color: #3f8a71;
+    top: 42%;
+    height: calc(42% - 4.5rem);
+    border-width: 3px 0 0px 3px;
+  }
+  .time-bar.nbcnews {
+    background: #b1ecff;
+    top: calc(3rem + 101.7%);
+ 
+  }
+  .connector-bar.nbcnews {
+    border-color: #b1ecff;
+    top: 64%;
+    height: 59%;
+    border-width: 3px 0 0 3px;
+    left: 1.66rem
   }
   .time-bar.nbcu {
-    background: blue;
+    background: #402995;
     top: calc(3rem + 113%);
     height: 11.3%;
-
+  }
+  .connector-bar.nbcu {
+    border-color: #402995;
+    top: 86%;
+    border-width: 3px 0 0 3px;
+    height: 46%;
+    left: 2rem;
   }
   .time-bar.sju{
-    background: pink;
+    background: #d2392b;
     top: calc(3rem + 124.3%);
     height: 11.3%;
+  }
+  .connector-bar.sju {
+    border-color: #d2392b;
+    top: 132%;
+    border-width: 3px 0 0 3px;
+    height: 10%;
+    width: 4rem;
+  }
+  .time-bar.nycda {
+    height: 7.1%;
+    background: yellow;
+    top: calc(3rem + 11.3%);
+  }
+  .connector-bar.nycda {
+    height: 85.3%;
+    border-color: yellow;
+    top: 26%;
+    width: 4rem;
   }
 
 
@@ -629,7 +694,7 @@ const Karl = () => {
     background: url(/images/res-nbcnews.png) no-repeat center center/cover;
   }
   .job.three:before {
-    border-color: #f6be3e;
+    border-color: #b1ecff;
     width: 3.5rem;
     left: -3.5rem;
   }
