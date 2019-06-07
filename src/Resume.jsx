@@ -59,6 +59,9 @@ const Resume = () => {
 
       <div className="other-section">
         <div className="recent-exp">
+          <div className="workexp banner">
+            <h2>Work Experience</h2>
+          </div>
           <div className="timeline"></div>
           <div className="time-bar unpakt"></div>
           <div className="connector-bar unpakt"></div>
@@ -206,6 +209,9 @@ const Resume = () => {
 
 
         <div className="education">
+          <div className="schools banner">
+            <h2>Education</h2>
+          </div>
           <div className="edu one">
             <div className="edu-logo nycda">
             </div>
@@ -230,7 +236,7 @@ const Resume = () => {
       <style> {`
          .section-three {
             background: #2f2b4a;
-            font-family: Quicksand
+          
           }
           .section-three-content {
             display:  inline-grid;
@@ -256,6 +262,37 @@ const Resume = () => {
             display: grid;
             grid-template-rows: 65% 35%;
           }
+
+          .workexp.banner {
+            border-left: .2rem solid white;
+            position: relative;
+            height: 80%;
+            margin-left: calc(50% + 11rem);
+            margin-top: 10%;
+          }
+          .workexp.banner h2 {
+            transform: rotate(90deg) translate(0, 70px);
+            top: 20%;
+            position: absolute;
+            white-space: nowrap;
+          }
+
+          
+          .schools.banner {
+            border-left: .2rem solid white;
+            position: relative;
+            height: 60%;
+            margin-left: calc(50% + 11rem);
+            margin-top: 5%;
+          }
+          .schools.banner h2 {
+            transform: rotate(90deg) translate(0, 32px);
+            top: 20%;
+            position: absolute;
+            white-space: nowrap;
+          }
+
+
           .recent-exp {
             position: relative;
             overflow: visible;
@@ -299,7 +336,7 @@ const Resume = () => {
             }
           .timeline {
             top: 3rem;
-            background: #44647d;
+            background: #28253f;
             position: absolute;
             width: .75rem;
             height: 135%;

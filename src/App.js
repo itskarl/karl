@@ -267,9 +267,8 @@ const Karl = () => {
    }
    .subtitle {
    text-align: center; 
-   font-family: 'Quicksand', sans-serif;
+   font-family: 'Exo', sans-serif;
    color: ${fontMain};
-   font-weight: 800;
    padding: 1rem;
    font-size: 1.4rem;
    }
@@ -325,7 +324,7 @@ const Karl = () => {
    padding: .2rem .6rem;
    margin: .4rem .4rem;
    transition-duration: .2s;
-   border-color: #a4dcb9;
+   border-color: rgba(255,255,255,.7);
    }
    .square {
    position: absolute;
