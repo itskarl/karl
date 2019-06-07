@@ -44,7 +44,7 @@ const Karl = () => {
           <div className="links">
             <a href="#home" className="about"><button  >ABOUT</button></a>
             <a href="#my-work" className="work" ><button >WORK</button></a>
-            <a href="#resume" className="resume" ><button >RESUME</button></a>
+            <a href="#resume" className="resume" ><button >RÉSUMÉ</button></a>
             <a href="#sectionFour" className="contact"><button  >CONTACT</button></a>
             <div className="underline-bar"></div>
           </div>
@@ -324,7 +324,7 @@ const Karl = () => {
    padding: .2rem .6rem;
    margin: .4rem .4rem;
    transition-duration: .2s;
-   border-color: rgba(255,255,255,.7);
+   border-color: rgba(255,255,255,.8);
    }
    .square {
    position: absolute;

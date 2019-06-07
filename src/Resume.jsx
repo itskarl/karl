@@ -7,6 +7,8 @@ const Resume = () => {
   const [openSecond, setOpenSecond] = useState(false);
   const [openThird, setOpenThird] = useState(false);
   const [openFourth, setOpenFourth] = useState(false);
+  const [openFifth, setOpenFifth] = useState(false);
+  const [openSixth, setOpenSixth] = useState(false);
 
   const customModal = {
     closeButton: {
@@ -36,11 +38,15 @@ const Resume = () => {
         <ul>
           <li style={{ width: '90%' }}>
             <i className="devicon-html5-plain"></i>HTML</li>
+            <p>HTML5, ARIA-Acessibility, SEO</p>
           <li style={{ width: '90%' }}><i className="devicon-css3-plain"></i>CSS</li>
+          <p>CSS3, SASS, Bootstrap, Materialize</p>
           <li style={{ width: '70%' }}><i className="devicon-javascript-plain"></i>Javascript</li>
+          <p>ES6, Coffeescript, Node</p>
+          <li style={{ width: '70%' }}><i className="devicon-react-original"></i>React</li>
+          <p>Redux, Hooks</p>
           <li style={{ width: '60%' }}><i className="devicon-ruby-plain"></i>Ruby</li>
 
-          <li style={{ width: '70%' }}><i className="devicon-react-original"></i>React</li>
           <li style={{ width: '50%' }}><i className="devicon-angularjs-plain"></i>Angular JS</li>
           <li style={{ width: '60%' }}><i className="devicon-rails-plain"></i>Rails</li>
 
@@ -212,23 +218,76 @@ const Resume = () => {
           <div className="schools banner">
             <h2>Education</h2>
           </div>
-          <div className="edu one">
-            <div className="edu-logo nycda">
+          <div className="edu one" onClick={() => setOpenFifth(true)}>
+
+            <div className="job-info">
+              <div className="edu-logo nycda">
+              </div>
+              <div>
+                <p className="job-title">NY CODE & DESIGN</p>
+                <p>Software Enigneering</p>
+              </div>
             </div>
             <div>
-              <p className="school">NY CODE & DESIGN</p>
-              <p>Software Enigneering Intensive 2018</p>
+              <button className="more-info" ><i class="fas fa-plus-circle"></i></button>
             </div>
           </div>
 
-          <div className="edu two">
-            <div className="edu-logo sju">
+          <Modal open={openFifth} onClose={() => setOpenFifth(false)} styles={customModal} center >
+            <div className="modal-content">
+              <div className="modal-top">
+                <h2>New York Code & Design</h2>
+                <p>Software Engineering Instensive (2018)</p>
+              </div>
+              <div className="modal-body">
+
+                <ul>
+                  <li><b>Guest Relations:</b> Conducted NBC studio tours; facilitated tickets and audience coordination for live tapings of Late Night with Conan O’Brien, Late Night With Jimmy Fallon, and Saturday Night Live</li>
+
+                  <li><b> NBC News Media Relations Assistant:</b> Acted as a primary liaison between the NBC News publicity team (Dateline, Meet the Press, Nightly News & TODAY Show) and other media outlets during the 2008 presidential election. Facilitated press requests including creating copy, screen grabs, news clips, and tape dubs</li>
+
+                  <li><b> SYFY Marketing Assistant:</b> Conceived, prepared and compiled PowerPoint decks for SYFY clients and the marketing team. Maintained, updated, and managed the SYFY mobile website and its assets. Researched marketing and technology news and wrote copy for the bi-weekly SYFY Signal newsletter</li>
+
+                </ul>
+              </div>
             </div>
-            <div>
+          </Modal>
+
+          <div className="edu two" onClick={() => setOpenSixth(true)}>
+           
+          <div className="job-info">
+              <div className="edu-logo sju">
+              </div>
+              <div>
               <p className="school">ST JOHN'S UNIVERSITY</p>
               <p>B.S. Communications</p>
+              </div>
+            </div>
+            <div>
+              <button className="more-info" ><i class="fas fa-plus-circle"></i></button>
             </div>
           </div>
+
+
+          <Modal open={openSixth} onClose={() => setOpenSixth(false)} styles={customModal} center >
+            <div className="modal-content">
+              <div className="modal-top">
+                <h2>NBC Page</h2>
+                <p>NBC Universal</p>
+              </div>
+              <div className="modal-body">
+
+                <ul>
+                  <li><b>Guest Relations:</b> Conducted NBC studio tours; facilitated tickets and audience coordination for live tapings of Late Night with Conan O’Brien, Late Night With Jimmy Fallon, and Saturday Night Live</li>
+
+                  <li><b> NBC News Media Relations Assistant:</b> Acted as a primary liaison between the NBC News publicity team (Dateline, Meet the Press, Nightly News & TODAY Show) and other media outlets during the 2008 presidential election. Facilitated press requests including creating copy, screen grabs, news clips, and tape dubs</li>
+
+                  <li><b> SYFY Marketing Assistant:</b> Conceived, prepared and compiled PowerPoint decks for SYFY clients and the marketing team. Maintained, updated, and managed the SYFY mobile website and its assets. Researched marketing and technology news and wrote copy for the bi-weekly SYFY Signal newsletter</li>
+
+                </ul>
+              </div>
+            </div>
+          </Modal>
 
         </div>
       </div>
@@ -268,12 +327,12 @@ const Resume = () => {
             position: relative;
             height: 80%;
             margin-left: calc(50% + 11rem);
-            margin-top: 10%;
+            margin-top: 12%;
           }
           .workexp.banner h2 {
-            transform: rotate(90deg) translate(0, 70px);
-            top: 20%;
-            position: absolute;
+            transform: rotate(90deg);
+            top: 10%;
+            transform-origin: bottom left;
             white-space: nowrap;
           }
 
@@ -286,9 +345,8 @@ const Resume = () => {
             margin-top: 5%;
           }
           .schools.banner h2 {
-            transform: rotate(90deg) translate(0, 32px);
-            top: 20%;
-            position: absolute;
+            transform: rotate(90deg);
+            transform-origin: bottom left;
             white-space: nowrap;
           }
 
