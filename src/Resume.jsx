@@ -36,17 +36,16 @@ const Resume = () => {
       <div className=" skills-section">
         <div className="section-title languages">Programming</div>
         <ul>
-          <li style={{ width: '90%' }}>
+          <li style={{ width: '100%' }}>
             <i className="devicon-html5-plain"></i>HTML</li>
             <p>HTML5, ARIA-Acessibility, SEO</p>
-          <li style={{ width: '90%' }}><i className="devicon-css3-plain"></i>CSS</li>
+          <li style={{ width: '100%' }}><i className="devicon-css3-plain"></i>CSS</li>
           <p>CSS3, SASS, Bootstrap, Materialize</p>
           <li style={{ width: '70%' }}><i className="devicon-javascript-plain"></i>Javascript</li>
           <p>ES6, Coffeescript, Node</p>
           <li style={{ width: '70%' }}><i className="devicon-react-original"></i>React</li>
           <p>Redux, Hooks</p>
           <li style={{ width: '60%' }}><i className="devicon-ruby-plain"></i>Ruby</li>
-
           <li style={{ width: '50%' }}><i className="devicon-angularjs-plain"></i>Angular JS</li>
           <li style={{ width: '60%' }}><i className="devicon-rails-plain"></i>Rails</li>
 
@@ -54,12 +53,12 @@ const Resume = () => {
 
         <div className="section-title other">Other Skills</div>
         <ul>
-          <li style={{ width: '90%' }}><i className="far fa-calendar-check"></i>Project Management</li>
+          <li style={{ width: '100%' }}><i className="far fa-calendar-check"></i>Project Management</li>
           <li style={{ width: '70%' }}><i className="fas fa-search-plus"></i>SEO Implementation</li>
           <li style={{ width: '75%' }}><i className="fas fa-marker"></i>Copywriting</li>
           <li style={{ width: '80%' }}><i className="devicon-photoshop-plain"></i>Adobe Photoshop</li>
           <li style={{ width: '60%' }}><i className="devicon-illustrator-plain"></i>Adobe Illustrator</li>
-          <li style={{ width: '90%' }}><i className="fas fa-sticky-note"></i>Simpsons Trivia</li>
+          <li style={{ width: '100%' }}><i className="fas fa-sticky-note"></i>Simpsons Trivia</li>
         </ul>
       </div>
 
@@ -313,6 +312,10 @@ const Resume = () => {
             display: flex;
             flex-direction: column;
             justify-content: center;
+          }
+          .skills-section p {
+            margin: 0;
+            font-size: .9rem
           }
           .section-right {
             height: 100%

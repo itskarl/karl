@@ -53,7 +53,7 @@ const Karl = () => {
       <SectionsContainer {...options} >
         <Section>
           <div className="name-holder">
-            <div className="name">Karl Rodulfo</div>
+            <div className="name slide-in-bottom">Karl Rodulfo</div>
             <div className="square s_1"></div>
             <div className="square s_2"></div>
             <div className="square s_3"></div>
@@ -259,7 +259,8 @@ const Karl = () => {
    align-items: flex-end;
    position: relative;
    background: #023e4d;
-   background-size: contain
+   background-size: contain;
+   overflow: hidden
    }
    .cover-lower {
    height: 50%;
