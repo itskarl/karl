@@ -111,10 +111,12 @@ const Resume = () => {
                 <p>Unpakt · Nov 2018 - Present</p>
               </div>
               <div className="modal-body">
-                <p>I fleep florps.</p>
                 <ul>
-                  <li>Do lots of things</li>
-                  <li>Do lots of things</li>
+                  <li>Facilitated migration of high traffic e-commerce web application from old frameworks (Ruby on Rails, Angular) framework to React JS</li>
+                  <li>Oversees front-end development and creation of multiple apps and features across the growing Unpakt product line.</li>
+                  <li>Manages product interfaces and makes sure all web apps are optimized for SEO, acessibility, and UI/UX. </li>
+                  <li> Maintained product quality through regular QA tests and managing bug reports and fixes.</li>
+                
                 </ul>
               </div>
             </div>
