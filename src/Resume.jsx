@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Modal from 'react-responsive-modal';
+import Donut from './Donut'
 
 const Resume = () => {
 
@@ -41,21 +42,36 @@ const Resume = () => {
     <div className="section-three-content">
       <div className=" skills-section">
         <div className="section-title languages">Programming</div>
-        <ul>
-          <li style={{ width: '100%' }}>
-            <i className="devicon-html5-plain"></i>HTML</li>
-          <p>HTML5, ARIA-Acessibility, SEO</p>
-          <li style={{ width: '100%' }}><i className="devicon-css3-plain"></i>CSS</li>
-          <p>CSS3, SASS, Bootstrap, Materialize</p>
-          <li style={{ width: '70%' }}><i className="devicon-javascript-plain"></i>Javascript</li>
-          <p>ES6, Coffeescript, Node</p>
-          <li style={{ width: '70%' }}><i className="devicon-react-original"></i>React</li>
-          <p>Redux, Hooks</p>
-          <li style={{ width: '60%' }}><i className="devicon-ruby-plain"></i>Ruby</li>
-          <li style={{ width: '50%' }}><i className="devicon-angularjs-plain"></i>Angular JS</li>
-          <li style={{ width: '60%' }}><i className="devicon-rails-plain"></i>Rails</li>
+        <div className="donuts-list">
+          <Donut stroke='#87c2f7' ratios='85 15' 
+          skill={
+           <> <i className="devicon-html5-plain"></i><br />HTML</>
+          }>
+            <p>HTML5, ARIA-Accessibility, SEO</p>
+          </Donut>
 
-        </ul>
+          <Donut stroke='#4effee' ratios='85 15' 
+          skill={
+           <> <i className="devicon-css3-plain"></i><br />CSS</>
+          }>
+          <p>CSS3, SASS, Bootstrap, Materialize</p>
+          </Donut>
+
+          <Donut stroke='#87c2f7' ratios='75 25' 
+          skill={
+           <> <i className="devicon-javascript-plain"></i><br />Javascript </>
+          }>
+           <p>ES6, Coffeescript, Node</p>
+          </Donut>
+
+          <Donut stroke='#4effee' ratios='55 45' 
+          skill={
+           <> <i className="devicon-ruby-plain"></i><br />Ruby</>
+          }>
+            <p>Ruby on Rails</p>
+          </Donut>
+        </div>
+          
 
         <div className="section-title other">Other Skills</div>
         <ul>
@@ -97,7 +113,7 @@ const Resume = () => {
 
               <div>
                 <p className="job-title">FRONT END DEVELOPER</p>
-                <p>Unpakt</p>
+                <p>Unpakt / '18 - Present</p>
               </div>
             </div>
             <div>
@@ -114,7 +130,7 @@ const Resume = () => {
                 <ul>
                   <li>Facilitated migration of high traffic e-commerce web application from old frameworks (Ruby on Rails, Angular) framework to React JS</li>
                   <li>Oversees front-end development and creation of multiple apps and features across the growing Unpakt product line.</li>
-                  <li>Manages product interfaces and makes sure all web apps are optimized for SEO, acessibility, and UI/UX. </li>
+                  <li>Manages product interfaces and makes sure all web apps are optimized for SEO, accessibility, and UI/UX. </li>
                   <li> Maintained product quality through regular QA tests and managing bug reports and fixes.</li>
                 
                 </ul>
@@ -128,7 +144,7 @@ const Resume = () => {
 
               <div>
                 <p className="job-title">TELEVISION PRODUCER</p>
-                <p>Discovery Channel</p>
+                <p>Discovery Channel / '10-'18</p>
               </div>
             </div>
 
@@ -165,7 +181,7 @@ const Resume = () => {
 
               <div>
                 <p className="job-title">NEWS RESEARCHER</p>
-                <p>NBC News</p>
+                <p>NBC News / '09-'10</p>
               </div>
             </div>
             <div>
@@ -196,7 +212,7 @@ const Resume = () => {
               </div>
               <div>
                 <p className="job-title">NBC PAGE</p>
-                <p>NBC Studios</p>
+                <p>NBC Studios / '08-'09</p>
               </div>
             </div>
             <div>
@@ -280,7 +296,7 @@ const Resume = () => {
             <div className="modal-content">
               <div className="modal-top">
                 <h2>St. John's University</h2>
-                <p>BS Comminications | Minor in Business</p>
+                <p>BS Comminications / Minor in Business</p>
               </div>
               <div className="modal-body">
 
@@ -304,7 +320,7 @@ const Resume = () => {
           }
           .section-three-content {
             display:  inline-grid;
-            grid-template-columns: 1fr 1.2fr;
+            grid-template-columns: 1fr 1fr;
             width: 100%;
             height: calc(100% - 3rem);
             margin-top: 3rem;
@@ -334,8 +350,8 @@ const Resume = () => {
           .workexp.banner {
             border-left: .2rem solid white;
             position: relative;
-            height: 80%;
-            margin-left: calc(50% + 11rem);
+            height: 70%;
+            margin-left: calc(50% + 12rem);
             margin-top: 12%;
           }
           .workexp.banner h2 {
@@ -343,20 +359,22 @@ const Resume = () => {
             top: 10%;
             transform-origin: bottom left;
             white-space: nowrap;
+            font-size: 1.2rem
           }
 
           
           .schools.banner {
             border-left: .2rem solid white;
             position: relative;
-            height: 60%;
-            margin-left: calc(50% + 11rem);
+            height: 55%;
+            margin-left: calc(50% + 12rem);
             margin-top: 5%;
           }
           .schools.banner h2 {
             transform: rotate(90deg);
             transform-origin: bottom left;
             white-space: nowrap;
+            font-size: 1.2rem
           }
 
 
@@ -503,7 +521,7 @@ const Resume = () => {
         
         
           .job, .edu {
-            width: 20rem;
+            width: 22rem;
             position: absolute;
             background: rgb(53, 72, 112);
             transform: translate(-50%, -50%);
@@ -609,13 +627,22 @@ const Resume = () => {
             display: inline !important
           }
           .section-title {
-            font-family: Megrim;
+            font-family: Telex;
             color: white;
-            font-size: 2rem;
+            font-size: 1.7rem;
             background: none;
             margin-left: -1rem;
             padding-left: 2.5rem;
             font-weight: bold;
+          }
+          .donuts-list {
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+          }
+          .donuts-list p {
+            color: #dddaef;
+            padding: 0 1rem;
+            text-align: center;
           }
           .more-info {
             padding: 1rem; 
