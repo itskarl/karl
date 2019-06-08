@@ -265,6 +265,7 @@ const Karl = () => {
    .cover-lower {
    height: 50%;
    position: relative;
+   overflow: hidden;
    }
    .subtitle {
    text-align: center; 

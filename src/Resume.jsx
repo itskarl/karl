@@ -9,7 +9,12 @@ const Resume = () => {
   const [openFourth, setOpenFourth] = useState(false);
   const [openFifth, setOpenFifth] = useState(false);
   const [openSixth, setOpenSixth] = useState(false);
-
+  const customanimation = {
+      overlay: 'background-none',
+      transitionEnter: 'animated bounceInUp',
+      transitionExit: 'animated fadeOutUpBig',
+    }
+  
   const customModal = {
     closeButton: {
       background: 'red',
@@ -27,6 +32,7 @@ const Resume = () => {
     modal: {
       borderRadius: '.5rem',
       padding: '0',
+      boxShadow: '0 10px 40px 30px #00000085'
     }
 
   }
@@ -38,7 +44,7 @@ const Resume = () => {
         <ul>
           <li style={{ width: '100%' }}>
             <i className="devicon-html5-plain"></i>HTML</li>
-            <p>HTML5, ARIA-Acessibility, SEO</p>
+          <p>HTML5, ARIA-Acessibility, SEO</p>
           <li style={{ width: '100%' }}><i className="devicon-css3-plain"></i>CSS</li>
           <p>CSS3, SASS, Bootstrap, Materialize</p>
           <li style={{ width: '70%' }}><i className="devicon-javascript-plain"></i>Javascript</li>
@@ -67,6 +73,9 @@ const Resume = () => {
           <div className="workexp banner">
             <h2>Work Experience</h2>
           </div>
+
+          <div class="year" style={{position: 'absolute',top: '1.5rem', left: '.25rem'}}> 2019</div>
+          <div class="year" style={{position: 'absolute',top: 'calc(135% + 3.5rem)', left: '.25rem'}}> 2007</div>
           <div className="timeline"></div>
           <div className="time-bar unpakt"></div>
           <div className="connector-bar unpakt"></div>
@@ -95,11 +104,11 @@ const Resume = () => {
               <button className="more-info" ><i class="fas fa-plus-circle"></i></button>
             </div>
           </div>
-          <Modal open={openFirst} onClose={() => setOpenFirst(false)} styles={customModal} center >
+          <Modal open={openFirst} onClose={() => setOpenFirst(false)} styles={customModal} center classNames={customanimation}animationDuration={1500}>
             <div className="modal-content">
               <div className="modal-top">
                 <h2>Front End Developer</h2>
-                <p>Unpakt</p>
+                <p>Unpakt · Nov 2018 - Present</p>
               </div>
               <div className="modal-body">
                 <p>I fleep florps.</p>
@@ -126,14 +135,15 @@ const Resume = () => {
 
             </div>
           </div>
-          <Modal open={openSecond} onClose={() => setOpenSecond(false)} styles={customModal} center >
+          <Modal open={openSecond} onClose={() => setOpenSecond(false)} styles={customModal} center  classNames={customanimation}animationDuration={1500}
+          >
             <div className="modal-content">
               <div className="modal-top">
                 <h2>Television Producer</h2>
-                <p>Discovery Communications</p>
+                <p>Discovery Communications · 2010-2018</p>
               </div>
               <div className="modal-body">
-                <p>Development producer with several years experience helping develop and produce original series and specials for Discovery Channel and sister networks (Science, Animal Planet, TLC, Destination America).</p>
+                <span>Development producer with several years experience helping develop and produce original series and specials for Discovery Channel and sister networks (Science, Animal Planet, TLC, Destination America).</span>
                 <ul>
                   <li>Worked closely with vendors and production companies to keep deliverables on time, on budget, and meeting all editorial requirements. </li>
                   <li>Co-produced and project managed seven highly rated specials and nonfiction series across multiple cable networks. </li>
@@ -161,11 +171,11 @@ const Resume = () => {
 
             </div>
           </div>
-          <Modal open={openThird} onClose={() => setOpenThird(false)} styles={customModal} center >
+          <Modal open={openThird} onClose={() => setOpenThird(false)} styles={customModal} center classNames={customanimation}animationDuration={1500}>
             <div className="modal-content">
               <div className="modal-top">
                 <h2>News Researcher</h2>
-                <p>NBC News</p>
+                <p>NBC News · 2009-2010</p>
               </div>
               <div className="modal-body">
 
@@ -192,11 +202,11 @@ const Resume = () => {
             </div>
           </div>
         </div>
-        <Modal open={openFourth} onClose={() => setOpenFourth(false)} styles={customModal} center >
+        <Modal open={openFourth} onClose={() => setOpenFourth(false)} styles={customModal} center classNames={customanimation}animationDuration={1500}>
           <div className="modal-content">
             <div className="modal-top">
               <h2>NBC Page</h2>
-              <p>NBC Universal</p>
+              <p>NBC Universal · 2008-2009</p>
             </div>
             <div className="modal-body">
 
@@ -232,34 +242,30 @@ const Resume = () => {
             </div>
           </div>
 
-          <Modal open={openFifth} onClose={() => setOpenFifth(false)} styles={customModal} center >
+          <Modal open={openFifth} onClose={() => setOpenFifth(false)} styles={customModal} center classNames={customanimation}animationDuration={1500}>
             <div className="modal-content">
               <div className="modal-top">
                 <h2>New York Code & Design</h2>
-                <p>Software Engineering Instensive (2018)</p>
+                <p>Software Engineering Instensive · 2018</p>
               </div>
               <div className="modal-body">
 
                 <ul>
-                  <li><b>Guest Relations:</b> Conducted NBC studio tours; facilitated tickets and audience coordination for live tapings of Late Night with Conan O’Brien, Late Night With Jimmy Fallon, and Saturday Night Live</li>
-
-                  <li><b> NBC News Media Relations Assistant:</b> Acted as a primary liaison between the NBC News publicity team (Dateline, Meet the Press, Nightly News & TODAY Show) and other media outlets during the 2008 presidential election. Facilitated press requests including creating copy, screen grabs, news clips, and tape dubs</li>
-
-                  <li><b> SYFY Marketing Assistant:</b> Conceived, prepared and compiled PowerPoint decks for SYFY clients and the marketing team. Maintained, updated, and managed the SYFY mobile website and its assets. Researched marketing and technology news and wrote copy for the bi-weekly SYFY Signal newsletter</li>
-
+                  <li>Graduate of software engineering intensive (bootcamp) focusing on full-stack development. </li>
+                  <li>Created dynamic web applications using a variety of platforms, frameworks, and languages including: Ruby, Ruby on Rails, Javascript, jQuery, AJAX, HTML5, CSS3, sass, Postgresql, Bootstrap, SQL, Git, and Heroku.</li>
                 </ul>
               </div>
             </div>
           </Modal>
 
           <div className="edu two" onClick={() => setOpenSixth(true)}>
-           
-          <div className="job-info">
+
+            <div className="job-info">
               <div className="edu-logo sju">
               </div>
               <div>
-              <p className="school">ST JOHN'S UNIVERSITY</p>
-              <p>B.S. Communications</p>
+                <p className="school">ST JOHN'S UNIVERSITY</p>
+                <p>B.S. Communications</p>
               </div>
             </div>
             <div>
@@ -268,21 +274,19 @@ const Resume = () => {
           </div>
 
 
-          <Modal open={openSixth} onClose={() => setOpenSixth(false)} styles={customModal} center >
+          <Modal open={openSixth} onClose={() => setOpenSixth(false)} styles={customModal} center classNames={customanimation}animationDuration={1500}>
             <div className="modal-content">
               <div className="modal-top">
-                <h2>NBC Page</h2>
-                <p>NBC Universal</p>
+                <h2>St. John's University</h2>
+                <p>BS Comminications | Minor in Business</p>
               </div>
               <div className="modal-body">
 
                 <ul>
-                  <li><b>Guest Relations:</b> Conducted NBC studio tours; facilitated tickets and audience coordination for live tapings of Late Night with Conan O’Brien, Late Night With Jimmy Fallon, and Saturday Night Live</li>
-
-                  <li><b> NBC News Media Relations Assistant:</b> Acted as a primary liaison between the NBC News publicity team (Dateline, Meet the Press, Nightly News & TODAY Show) and other media outlets during the 2008 presidential election. Facilitated press requests including creating copy, screen grabs, news clips, and tape dubs</li>
-
-                  <li><b> SYFY Marketing Assistant:</b> Conceived, prepared and compiled PowerPoint decks for SYFY clients and the marketing team. Maintained, updated, and managed the SYFY mobile website and its assets. Researched marketing and technology news and wrote copy for the bi-weekly SYFY Signal newsletter</li>
-
+                  <li>Receipient of a free/full four-year scholarship (St. John's Presidential Scholar)</li>
+                  <li>3.98 GPA</li>
+                  <li>Graduated Summa Cum Laude</li>
+                  <li>Graduated Silver Key Recipient (Salutatorian)</li>
                 </ul>
               </div>
             </div>
