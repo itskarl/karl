@@ -61,7 +61,7 @@ const Resume = () => {
           skill={
            <> <i style={{color: '#87c2f7'}} className="devicon-javascript-plain"></i><br />Javascript </>
           }>
-           <p><b>React JS</b><br/> ES6<br/> Coffeescript<br/> Angular JS<br/>Node</p>
+           <p><b>React JS</b><br/> ES6<br/> Angular JS<br/>Node</p>
           </Donut>
 
           <Donut stroke='#ff5572' ratios='55 45' 
@@ -606,6 +606,7 @@ const Resume = () => {
           
           .skills-section ul {
             list-style-type: none; 
+            padding-left: 1.75rem;
           }
           .skills-section li {
             background: #87c2f7;
@@ -614,8 +615,18 @@ const Resume = () => {
             width: 70%;
             color: #252a35;
             border-radius: 1rem  0 0 1rem;
-            margin-left: -1rem;
-          
+        
+          }
+
+          @media screen and (max-width: 921px) {
+            .skills-section li {
+              display: inline-block;
+              margin: .2rem;
+              width: auto !important;
+              border-radius: 1rem;
+              padding-right: 1rem;
+              
+            }
           }
           .skills-section li:nth-child(odd)  {
             background: #b1e6e1;
@@ -625,20 +636,20 @@ const Resume = () => {
             color:  #283041;
             display: inline !important
           }
+
           .section-title {
             font-family: Telex;
             color: white;
-            font-size: 1.7rem;
+            font-size: 1.3rem;
             background: none;
-            margin-left: -1rem;
-            padding-left: 2.5rem;
+            padding-left: 1.75rem;
             font-weight: bold;
-            text-align: center;
             margin-bottom:.5rem
           }
           .section-title.other {
-            margin-top: 2rem;
+            margin-top: 1.5rem;
           }
+
           .donuts-list {
             display:grid;
             grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
