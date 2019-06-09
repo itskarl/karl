@@ -43,30 +43,30 @@ const Resume = () => {
       <div className=" skills-section">
         <div className="section-title languages">Programming</div>
         <div className="donuts-list">
-          <Donut stroke='#87c2f7' ratios='85 15' 
+          <Donut stroke='#ffc457' ratios='85 15' 
           skill={
-           <> <i className="devicon-html5-plain"></i><br />HTML</>
+           <> <i style={{color: '#ffc457'}} className="devicon-html5-plain"></i><br />HTML</>
           }>
-            <p>HTML5, ARIA-Accessibility, SEO</p>
+            <p>HTML5<br/> Accessibility<br/> SEO</p>
           </Donut>
 
           <Donut stroke='#4effee' ratios='85 15' 
           skill={
-           <> <i className="devicon-css3-plain"></i><br />CSS</>
+           <> <i style={{color: '#4effee'}} className="devicon-css3-plain"></i><br />CSS</>
           }>
-          <p>CSS3, SASS, Bootstrap, Materialize</p>
+          <p>CSS3<br/> SASS<br/> Bootstrap<br/> Materialize</p>
           </Donut>
 
           <Donut stroke='#87c2f7' ratios='75 25' 
           skill={
-           <> <i className="devicon-javascript-plain"></i><br />Javascript </>
+           <> <i style={{color: '#87c2f7'}} className="devicon-javascript-plain"></i><br />Javascript </>
           }>
-           <p>ES6, Coffeescript, Node</p>
+           <p><b>React JS</b><br/> ES6<br/> Coffeescript<br/> Angular JS<br/>Node</p>
           </Donut>
 
-          <Donut stroke='#4effee' ratios='55 45' 
+          <Donut stroke='#ff5572' ratios='55 45' 
           skill={
-           <> <i className="devicon-ruby-plain"></i><br />Ruby</>
+           <> <i style={{color: '#ff5572'}} className="devicon-ruby-plain"></i><br />Ruby</>
           }>
             <p>Ruby on Rails</p>
           </Donut>
@@ -90,8 +90,8 @@ const Resume = () => {
             <h2>Work Experience</h2>
           </div>
 
-          <div class="year" style={{position: 'absolute',top: '1.5rem', left: '.25rem'}}> 2019</div>
-          <div class="year" style={{position: 'absolute',top: 'calc(135% + 3.5rem)', left: '.25rem'}}> 2007</div>
+          <div className="year" style={{position: 'absolute',top: '1.5rem', left: '.25rem'}}> 2019</div>
+          <div className="year" style={{position: 'absolute',top: 'calc(135% + 3.5rem)', left: '.25rem'}}> 2007</div>
           <div className="timeline"></div>
           <div className="time-bar unpakt"></div>
           <div className="connector-bar unpakt"></div>
@@ -165,9 +165,8 @@ const Resume = () => {
                 <ul>
                   <li>Worked closely with vendors and production companies to keep deliverables on time, on budget, and meeting all editorial requirements. </li>
                   <li>Co-produced and project managed seven highly rated specials and nonfiction series across multiple cable networks. </li>
-                  <li>Found, contacted, and signed over a dozen singularly unique talent to exclusive holding deals for high-level projects in development with Discovery. </li>
                   <li>Responsible for providing background research, finding and managing original on-screen talent, and developing show pitches for senior network executives.  </li>
-                  <li>Conceives, writes, and designs all paper treatments and presentation decks for all development projects.</li>
+                  <li>Conceived, wrote, and designed all paper treatments and presentation decks for all development projects.</li>
                 </ul>
               </div>
             </div>
@@ -313,7 +312,7 @@ const Resume = () => {
         </div>
       </div>
 
-      <style> {`
+      <style jsx> {`
          .section-three {
             background: #2f2b4a;
           
@@ -447,13 +446,13 @@ const Resume = () => {
             height: 79.1%;
           }
           .connector-bar.discovery {
-            border-color: #80CBC4;
+            border-color: #26a69a;
             top: 42%;
             height: calc(20.7% + 3rem);
             border-width: 3px 0 0px 3px;
           }
           .time-bar.discovery:after {
-            border-color: #80CBC4;
+            border-color: #26a69a;
           }
         
           .time-bar.nbcnews {
@@ -478,13 +477,13 @@ const Resume = () => {
             height: 11.3%;
           }
           .connector-bar.nbcu {
-            border-color: #9FA8DA;
+            border-color: #475fe6;
             top: 86%;
             border-width: 3px 0 0 3px;
             height: calc(33.1% + 3rem);
           }
           .time-bar.nbcu:after {
-            border-color: #9FA8DA;
+            border-color: #475fe6;
           }
         
           .time-bar.sju{
@@ -609,7 +608,7 @@ const Resume = () => {
             list-style-type: none; 
           }
           .skills-section li {
-            background: linear-gradient(.25turn, #87c2f7  90%, transparent 91%);
+            background: #87c2f7;
             margin-bottom: .2rem;
             padding: .25rem .5rem;
             width: 70%;
@@ -619,7 +618,7 @@ const Resume = () => {
           
           }
           .skills-section li:nth-child(odd)  {
-            background: linear-gradient(.25turn, #b1e6e1 90%, transparent 91%);
+            background: #b1e6e1;
           }
           .skills-section li i {
             margin-right: .5rem;
@@ -634,15 +633,23 @@ const Resume = () => {
             margin-left: -1rem;
             padding-left: 2.5rem;
             font-weight: bold;
+            text-align: center;
+            margin-bottom:.5rem
+          }
+          .section-title.other {
+            margin-top: 2rem;
           }
           .donuts-list {
             display:grid;
-            grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
           }
           .donuts-list p {
-            color: #dddaef;
+            color: #e9e9ef;
             padding: 0 1rem;
             text-align: center;
+          }
+          .donuts-list i {
+            font-size: 1.2rem
           }
           .more-info {
             padding: 1rem; 

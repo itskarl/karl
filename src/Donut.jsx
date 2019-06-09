@@ -16,14 +16,15 @@ const Donut = (props) => {
             {props.children}
         </div>
 
-            <style> {
+            <style jsx> {
                 `
                 .donut-container {
 
                 }
                 .donut-data {
                     width: 10rem;
-                    position: relative
+                    position: relative;
+                    margin: auto
                 }
                 .donut {
                     width:100%
@@ -32,7 +33,8 @@ const Donut = (props) => {
                     position: absolute;
                     top: 50%;
                     left: 50%;
-                    transform: translate(-50%, -50%)
+                    transform: translate(-50%, -50%);
+                    text-align: center;
                 }
             `}
             </style>

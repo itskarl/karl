@@ -2,7 +2,8 @@ import React from 'react';
 import { SectionsContainer, Section, Header } from 'react-fullpage';
 import Slider from "react-slick";
 import './App.css';
-import Resume from './Resume'
+import Resume from './Resume';
+import Navigation from './Navigation';
 
 const Karl = () => {
   let options = {
@@ -27,9 +28,9 @@ const Karl = () => {
 
     customPaging: function (i) {
       return (
-        <a>
-          <img src={`images/proj${i + 1}.png`} />
-        </a>
+        <div>
+          <img alt="thumbnail" src={`images/proj${i + 1}.png`} />
+        </div>
       );
     },
   };
@@ -40,15 +41,7 @@ const Karl = () => {
   return (
     <>
       <Header>
-        <div className="main-header">
-          <div className="links">
-            <a href="#home" className="about"><button  >ABOUT</button></a>
-            <a href="#my-work" className="work" ><button >WORK</button></a>
-            <a href="#resume" className="resume" ><button >RÉSUMÉ</button></a>
-            <a href="#sectionFour" className="contact"><button  >CONTACT</button></a>
-            <div className="underline-bar"></div>
-          </div>
-        </div>
+        <Navigation />
       </Header>
       <SectionsContainer {...options} >
         <Section>
@@ -61,23 +54,23 @@ const Karl = () => {
           </div>
           <div className="cover-lower">
             <div className="subtitle">
-              Front End Developer with a passion for design, function, and technology.
+              Software Developer with a passion for design, function, and technology.
          </div>
             <div className="menu-container">
               <div className="icon-container">
-                <img className="icon" src="1_me.svg" />
+                <img className="icon" alt="icon" src="1_me.svg" />
                 <p>ABOUT ME</p>
               </div>
               <div className="icon-container">
-                <img className="icon" src="2_work.svg" />
+                <img className="icon" alt="icon" src="2_work.svg" />
                 <p>MY WORK</p>
               </div>
               <div className="icon-container">
-                <img className="icon" src="3_resume.svg" />
+                <img className="icon" alt="icon" src="3_resume.svg" />
                 <p>RESUME</p>
               </div>
               <div className="icon-container">
-                <img className="icon" src="4_contact.svg" />
+                <img className="icon" alt="icon" src="4_contact.svg" />
                 <p>CONTACT ME</p>
               </div>
             </div>
@@ -90,9 +83,9 @@ const Karl = () => {
             <Slider {...navsettings}>
               <div>
                 <div className="project-square">
-                  <div className="project-content" ><img src="/images/musings.png" /></div>
+                  <div className="project-content" ><img alt="site screenshot" src="/images/musings.png" /></div>
                   <div className="project-content">
-                    <a href="https://musings1.herokuapp.com/" target="_blank">
+                    <a href="https://musings1.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                       <h4>MUSINGS: A SOCIAL MEDIA SITE</h4>
                       VISIT SITE
                      </a>
@@ -108,15 +101,15 @@ const Karl = () => {
                         <li>Utilizes SQLite, ActiveRecord</li>
                       </ul>
                     </p>
-                    <a href="https://github.com/itskarl/MUSINGS-social-media-site" target="_blank"><i className="fab fa-github"></i>&nbsp; GITHUB</a>
+                    <a href="https://github.com/itskarl/MUSINGS-social-media-site" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i>&nbsp; GITHUB</a>
                   </div>
                 </div>
               </div>
               <div>
                 <div className="project-square">
-                  <div className="project-content"><img src="/images/pokedex.png" /></div>
+                  <div className="project-content"><img alt="site screenshot" src="/images/pokedex.png" /></div>
                   <div className="project-content">
-                    <a href="https://itskarl.github.io/pokemon-pokedex/" target="_blank">
+                    <a href="https://itskarl.github.io/pokemon-pokedex/" target="_blank" rel="noopener noreferrer">
                       <h4>KARL'S POKEMON POKEDEX</h4>
                       VISIT SITE
                      </a>
@@ -132,15 +125,15 @@ const Karl = () => {
                         <li>Built fully on vanilla Javascript, HTML, and CSS</li>
                       </ul>
                     </p>
-                    <a href="https://github.com/itskarl/pokemon-pokedex" target="_blank"><i className="fab fa-github"></i>&nbsp; GITHUB</a>
+                    <a href="https://github.com/itskarl/pokemon-pokedex" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i>&nbsp; GITHUB</a>
                   </div>
                 </div>
               </div>
               <div>
                 <div className="project-square">
-                  <div className="project-content"><img src="/images/afriendinknead.png" /></div>
+                  <div className="project-content"><img alt="site screenshot" src="/images/afriendinknead.png" /></div>
                   <div className="project-content">
-                    <a href="https://afriendinknead.herokuapp.com/" target="_blank">
+                    <a href="https://afriendinknead.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                       <h4>A FRIEND IN KNEAD</h4>
                       VISIT SITE
                      </a>
@@ -155,15 +148,15 @@ const Karl = () => {
                         <li>Website is fully responsive for desktop and mobile! Please enjoy on different platforms!</li>
                       </ul>
                     </p>
-                    <a href="https://github.com/itskarl/Bakery-website-fullstack" target="_blank"><i className="fab fa-github"></i>&nbsp; GITHUB</a>
+                    <a href="https://github.com/itskarl/Bakery-website-fullstack" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i>&nbsp; GITHUB</a>
                   </div>
                 </div>
               </div>
               <div>
                 <div className="project-square">
-                  <div className="project-content"><img src="/images/proj4.png" /></div>
+                  <div className="project-content"><img alt="site screenshot" src="/images/proj4.png" /></div>
                   <div className="project-content">
-                    <a href="https://afacademy.herokuapp.com/" target="_blank">
+                    <a href="https://afacademy.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                       <h4>AF ACADEMY ADMIN PANEL</h4>
                       VISIT SITE
                      </a>
@@ -177,15 +170,15 @@ const Karl = () => {
                         <li>Designed with very user-friendly interface and visually appealing graphics</li>
                       </ul>
                     </p>
-                    <a href="https://github.com/itskarl/academy-panel" target="_blank"><i className="fab fa-github"></i>&nbsp; GITHUB</a>
+                    <a href="https://github.com/itskarl/academy-panel" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i>&nbsp; GITHUB</a>
                   </div>
                 </div>
               </div>
               <div>
                 <div className="project-square">
-                  <div className="project-content"><img src="/images/proj5.png" /></div>
+                  <div className="project-content"><img alt="site screenshot" src="/images/proj5.png" /></div>
                   <div className="project-content">
-                    <a href="https://conciergely.herokuapp.com/" target="_blank">
+                    <a href="https://conciergely.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                       <h4>PLAN MY NIGHT</h4>
                       VISIT SITE
                      </a>
@@ -200,15 +193,15 @@ const Karl = () => {
                         <li>Site allows users to save plans easily to quickly share and keep track of plans</li>
                       </ul>
                     </p>
-                    <a href="https://github.com/itskarl/happymedium" target="_blank"><i className="fab fa-github"></i>&nbsp; GITHUB</a>
+                    <a href="https://github.com/itskarl/happymedium" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i>&nbsp; GITHUB</a>
                   </div>
                 </div>
               </div>
               <div>
                 <div className="project-square">
-                  <div className="project-content"><img src="/images/proj6.png" /></div>
+                  <div className="project-content"><img alt="site screenshot" src="/images/proj6.png" /></div>
                   <div className="project-content">
-                    <a href="https://buyinformed.herokuapp.com/" target="_blank">
+                    <a href="https://buyinformed.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                       <h4>CONCON: THE CONSCIENTIOUS CONSUMER TOOL</h4>
                       VISIT SITE
                      </a>
@@ -223,7 +216,7 @@ const Karl = () => {
                         <li>Features News API to provide additional information on companies</li>
                       </ul>
                     </p>
-                    <a href="https://github.com/itskarl/buyethically" target="_blank"><i className="fab fa-github"></i>&nbsp; GITHUB</a>
+                    <a href="https://github.com/itskarl/buyethically" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i>&nbsp; GITHUB</a>
                   </div>
                 </div>
               </div>
@@ -237,7 +230,7 @@ const Karl = () => {
 
         <Section className="section-four"> blarp</Section>
       </SectionsContainer>
-      <style>
+      <style jsx>
         {`
    *:focus {
    outline: none
@@ -302,32 +295,11 @@ const Karl = () => {
    height: 120px;
    width: 120px;
    background: none;
+   border: 4px dashed #ffc467;
+   border-radius: 50%;
    }
-   .main-header {
-   display: flex;
-   align-items: center;
-   justify-content: flex-end;
-   padding: 1rem;
-   height: 3rem;
-   }
-   .links button {
-   width: 6rem;
-   font-size: 1rem;
-   line-height: 1rem;
-   padding: .6rem .6rem;
-   margin: 0px .4rem;
-   border-style: solid;
-   border-width: 1px 0;
-   border-color: transparent;
-   transition-duration: .2s;
-   cursor: pointer;
-   }
-   .links button:hover {
-   padding: .2rem .6rem;
-   margin: .4rem .4rem;
-   transition-duration: .2s;
-   border-color: rgba(255,255,255,.8);
-   }
+  
+
    .square {
    position: absolute;
    width: 18rem;
