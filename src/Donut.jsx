@@ -22,9 +22,10 @@ const Donut = (props) => {
 
                 }
                 .donut-data {
-                    width: 10rem;
+                    width: 10vw;
                     position: relative;
-                    margin: auto
+                    margin: auto;
+                    min-width: 8rem;
                 }
                 .donut {
                     width:100%
