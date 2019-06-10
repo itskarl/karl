@@ -28,7 +28,10 @@ button {
   overflow-x: hidden !important
 }
 
-
+a {
+  text-decoration: none;
+  color: inherit
+}
 
 .background-none {
   background: none;

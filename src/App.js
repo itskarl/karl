@@ -3,6 +3,7 @@ import { SectionsContainer, Section, Header } from 'react-fullpage';
 import Slider from "react-slick";
 import './App.css';
 import Resume from './Resume';
+import ContactPage from './ContactPage';
 import Navigation from './Navigation';
 
 const Karl = () => {
@@ -228,7 +229,11 @@ const Karl = () => {
           <Resume />         
         </Section>
 
-        <Section className="section-four"> blarp</Section>
+        <Section className="section-four"> 
+          <ContactPage />
+        
+        </Section>
+
       </SectionsContainer>
       <style jsx>
         {`
@@ -398,7 +403,9 @@ const Karl = () => {
    background-size: cover;
    }
 
-  
+  .section-four {
+    background: linear-gradient(#2f2b4a, #271d3a)
+  }
   
    `}
       </style>

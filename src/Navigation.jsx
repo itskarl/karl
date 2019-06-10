@@ -16,16 +16,16 @@ const Navigation = () => {
             </div>
         </div>
         {openMenu && <div onClick={() => setOpenMenu(!openMenu)} className="hide-menu"></div>}
-        <div className={`mobile-header ${openMenu && 'add-shadow'}`}>
+        <div className={`animated slideInDown mobile-header ${openMenu && 'add-shadow'}`}>
 
             
 
-            <div className="hamburger" onClick={() => setOpenMenu(!openMenu)}>
-            <i class="fas fa-bars"></i>
+            <div className="hamburger " onClick={() => setOpenMenu(!openMenu)}>
+            <i className="fas fa-bars"></i>
             </div>
 
             {openMenu &&
-            <ul>
+            <ul className="animated bounceInRight">
             <a href="#home" className="about">  <li> <button  >ABOUT</button>  </li></a>
             <a href="#my-work" className="work" >   <li><button >WORK</button>  </li></a>
             <a href="#resume" className="resume" >  <li><button >RÉSUMÉ</button>  </li></a>
