@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { SectionsContainer, Section, Header } from 'react-fullpage';
 import Slider from "react-slick";
 import './App.css';
@@ -17,6 +17,7 @@ const Karl = () => {
     sectionPaddingBottom: '0px',
   };
 
+  const [menuOption, setmenuOption] = useState('')
   const navsettings = {
     dots: true,
     infinite: true,
@@ -58,28 +59,27 @@ const Karl = () => {
               Software Developer with a passion for design, function, and technology.
          </div>
             <div className="menu-container">
-              <div className="icon-container">
+              <div onMouseOver={() => setmenuOption('About')} onMouseOut={() => setmenuOption('')} className="icon-container">
                 <img className="icon" alt="icon" src="1_me.svg" />
-                <p>ABOUT ME</p>
               </div>
-              <div className="icon-container">
+              <div onMouseOver={() => setmenuOption('My Work')} onMouseOut={() => setmenuOption('')} className="icon-container">
                 <img className="icon" alt="icon" src="2_work.svg" />
-                <p>MY WORK</p>
               </div>
-              <div className="icon-container">
+              <div onMouseOver={() => setmenuOption('Résumé')} onMouseOut={() => setmenuOption('')} className="icon-container">
                 <img className="icon" alt="icon" src="3_resume.svg" />
-                <p>RESUME</p>
               </div>
-              <div className="icon-container">
+              <div onMouseOver={() => setmenuOption('Contact')} onMouseOut={() => setmenuOption('')} className="icon-container">
                 <img className="icon" alt="icon" src="4_contact.svg" />
-                <p>CONTACT ME</p>
               </div>
             </div>
+            {menuOption && <div className={`menu-option animated fadeIn`}>
+              <p>{menuOption}</p>
+            </div>}
           </div>
         </Section>
         <Section className="section-two">
           <div className="section-two-square"></div>
-          <div className="work-title name">Work</div>
+
           <div className="slider-container">
             <Slider {...navsettings}>
               <div>
@@ -226,12 +226,12 @@ const Karl = () => {
         </Section>
 
         <Section className="section-three">
-          <Resume />         
+          <Resume />
         </Section>
 
-        <Section className="section-four"> 
+        <Section className="section-four">
           <ContactPage />
-        
+
         </Section>
 
       </SectionsContainer>
@@ -282,14 +282,21 @@ const Karl = () => {
    padding: 2rem 0;
    margin: 0 auto;
    position: absolute;
-   top: 50%;
+   top: 45%;
    left: 50%;
    transform: translate(-50%, -50%);
    }
-   .icon-container {
-   align-items: center;
-   display: flex;
-   flex-direction: column;
+   .menu-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 45rem;
+    position: absolute;
+    top: calc(45% + 6rem);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Megrim', script;
+    font-size: 2rem;
    }
    .icon-container p {
    color: ${fontMain};
@@ -297,13 +304,54 @@ const Karl = () => {
    margin: .5rem 0;
    }
    img.icon {
-   height: 120px;
-   width: 120px;
-   background: none;
-   border: 3px solid #005f6c;
-   border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    background: none;
    }
+
+   .icon-container {
+    height: 120px;
+    width: 120px;
+    border: 3px solid #005f6c;
+    border-radius: 50%;
+    position:relative;
+    overflow: hidden
+   }
+
+
+   .icon-container:after {
+    content: "";
+    position: absolute;
+    top: -110%;
+    left: -210%;
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+    transform: rotate(30deg);
+    
+    background: rgba(255, 255, 255, 0.13);
+    background: linear-gradient(
+      to right, 
+      rgba(255, 255, 255, 0.0) 0%,
+      rgba(255, 255, 255, 0.0) 77%,
+      rgba(255, 255, 255, 0.5) 92%,
+      rgba(255, 255, 255, 0.0) 100%
+    );
+  }
   
+  .icon-container:hover:after {
+    opacity: .8;
+    top: -30%;
+    left: -30%;
+    transition-property: left, top, opacity;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-timing-function: ease;
+  }
+  
+  .icon-container:active:after {
+    opacity: 0;
+  }
+
 
    .square {
    position: absolute;
@@ -335,13 +383,6 @@ const Karl = () => {
    .section-two {
     background: linear-gradient(#212121,#2f2b4a);
    position: relative;
-   }
-   .work-title {
-   position: absolute;
-   top: 60%;
-   margin-left: -11vw;
-   transform: rotate(-90deg);
-   font-size: 10vw;
    }
    .slider-container {
    position: absolute;
