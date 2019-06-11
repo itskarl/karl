@@ -300,7 +300,7 @@ const Karl = () => {
    height: 120px;
    width: 120px;
    background: none;
-   border: 4px dashed #ffc467;
+   border: 3px solid #005f6c;
    border-radius: 50%;
    }
   
@@ -333,7 +333,7 @@ const Karl = () => {
    }
 
    .section-two {
-   background: #37474F;
+    background: linear-gradient(#212121,#2f2b4a);
    position: relative;
    }
    .work-title {
@@ -357,7 +357,12 @@ const Karl = () => {
    grid-template-columns: 1fr 1fr
    }
    .project-square img {
-   width:100%
+   width: 100%;
+   border: 1rem solid #ebebeb;
+   border-width: 1.5rem .25rem .25rem;
+   border-radius: .4rem;
+   box-shadow: 0 15px 20px 10px #00000057;
+   color: black;
    }
    .project-square a {
    text-decoration: none; 
@@ -371,12 +376,13 @@ const Karl = () => {
    .project-content {
    padding:  0rem 1.5rem 2rem;
    }
+   .project-content ul {
+     margin-left: -1rem
+   }
    .section-two-square {
    position: absolute;
-   width: 40%;
+   width: 50%;
    height: 100%;
-   background: linear-gradient(#37474f, #0a2837);
-   left: 10%;
    }
    .project-square.one {
    background: url("/images/proj1.png"), #37474f;
@@ -404,7 +410,7 @@ const Karl = () => {
    }
 
   .section-four {
-    background: linear-gradient(#2f2b4a, #271d3a)
+    background: linear-gradient(#2f2b4a 70%, #271d3a)
   }
   
    `}

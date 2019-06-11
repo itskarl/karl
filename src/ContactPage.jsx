@@ -49,6 +49,7 @@ const ContactPage = () => {
                 height: 100%;
                 margin-top: 3rem;
                 position: relative;
+                background: url(lines.svg) no-repeat center center /cover
             }
             .contact-container p, .contact-container i {
                 text-decoration: none;
@@ -64,12 +65,13 @@ const ContactPage = () => {
               }
             .large-icon {
                 position: absolute;
-                font-size: 20rem;
+                font-size: 18rem;
                 left: 60%;
-                bottom: 40%;
+                bottom: 45%;
                 transform: rotate(5deg);
+                background: #2f2b4a;
                 color: #b3a9d8;
-                text-shadow: 0 5px 5px black
+                text-shadow: 0 5px 5px black;
             }
             @media screen and (max-width: 940px ) {
                 .large-icon {
@@ -77,6 +79,13 @@ const ContactPage = () => {
                     left: calc(50% - 3.5rem);
                     bottom: calc(50% + 11rem);
                 }
+                .contact-container {
+                    background: none;
+                }
+                .contact-button {
+                    max-width: 18rem;
+                }
+        
             }
             .contact-button i {
                 padding: 1rem;

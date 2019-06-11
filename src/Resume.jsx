@@ -64,7 +64,7 @@ const Resume = () => {
            <p><b>React JS</b><br/> ES6<br/> Angular JS<br/>Node</p>
           </Donut>
 
-          <Donut stroke='#ff5572' ratios='55 45' 
+          <Donut stroke='#ff5572' ratios='60 40' 
           skill={
            <> <i style={{color: '#ff5572'}} className="devicon-ruby-plain"></i><br />Ruby</>
           }>
@@ -75,12 +75,12 @@ const Resume = () => {
 
         <div className="section-title other">Other Skills</div>
         <ul>
-          <li style={{ width: '100%' }}><i className="far fa-calendar-check"></i>Project Management</li>
-          <li style={{ width: '70%' }}><i className="fas fa-search-plus"></i>SEO Implementation</li>
-          <li style={{ width: '75%' }}><i className="fas fa-marker"></i>Copywriting</li>
-          <li style={{ width: '80%' }}><i className="devicon-photoshop-plain"></i>Adobe Photoshop</li>
-          <li style={{ width: '60%' }}><i className="devicon-illustrator-plain"></i>Adobe Illustrator</li>
-          <li style={{ width: '100%' }}><i className="fas fa-sticky-note"></i>Simpsons Trivia</li>
+          <li style={{ width: '90%' }}><i className="far fa-calendar-check"></i>Project Management</li>
+          <li style={{ width: '60%' }}><i className="fas fa-search-plus"></i>SEO Implementation</li>
+          <li style={{ width: '65%' }}><i className="fas fa-marker"></i>Copywriting</li>
+          <li style={{ width: '70%' }}><i className="devicon-photoshop-plain"></i>Adobe Photoshop</li>
+          <li style={{ width: '50%' }}><i className="devicon-illustrator-plain"></i>Adobe Illustrator</li>
+          <li style={{ width: '90%' }}><i className="fas fa-sticky-note"></i>Simpsons Trivia</li>
         </ul>
       </div>
 
@@ -128,7 +128,7 @@ const Resume = () => {
               </div>
               <div className="modal-body">
                 <ul>
-                  <li>Facilitated migration of high traffic e-commerce web application from old frameworks (Ruby on Rails, Angular) framework to React JS</li>
+                  <li>Facilitated migration of high traffic e-commerce web application from old frameworks (Ruby on Rails, Angular) to React JS</li>
                   <li>Oversees front-end development and creation of multiple apps and features across the growing Unpakt product line.</li>
                   <li>Manages product interfaces and makes sure all web apps are optimized for SEO, accessibility, and UI/UX. </li>
                   <li> Maintained product quality through regular QA tests and managing bug reports and fixes.</li>
@@ -639,12 +639,15 @@ const Resume = () => {
 
           .section-title {
             font-family: Telex;
-            color: white;
+            color: #59ccff;
             font-size: 1.3rem;
             background: none;
-            padding-left: 1.75rem;
             font-weight: bold;
-            margin-bottom:.5rem
+            padding-bottom: .5rem;
+            margin-bottom: .5rem;
+            border-bottom: 1px solid #59ccff;
+            margin-left: 2rem;
+            width: 85%;
           }
           .section-title.other {
             margin-top: 1.5rem;
