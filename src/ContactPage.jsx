@@ -9,7 +9,7 @@ const ContactPage = () => {
             <div className="large-icon">
                 {iconStyle}
             </div>
-            <a href="mailto:karlrodulfo@gmail.com" target="_blank"  rel="noopener noreferrer" className="contact-button" onMouseOver={() => setIconStyle(<i className="far animated bounceIn fa-envelope-open"></i>)}>
+            <a href="mailto:karlrodulfo@gmail.com"s rel="noopener noreferrer" className="contact-button" onMouseOver={() => setIconStyle(<i className="far animated bounceIn fa-envelope-open"></i>)}>
             <i className="far fa-envelope"></i> 
                 <div>
                     <p>Email</p>
@@ -47,9 +47,9 @@ const ContactPage = () => {
                 justify-content: center;
                 flex-direction:column;
                 height: 100%;
-                margin-top: 3rem;
+               
                 position: relative;
-                background: url(lines.svg) no-repeat center center /cover
+                background: url(lines-bg.svg) no-repeat center center /cover;
             }
             .contact-container p, .contact-container i {
                 text-decoration: none;
@@ -78,9 +78,13 @@ const ContactPage = () => {
                     font-size: 7rem;
                     left: calc(50% - 3.5rem);
                     bottom: calc(50% + 11rem);
+                    background: none;
                 }
                 .contact-container {
-                    background: none;
+                    background: url(lines-bg.svg) no-repeat;
+                    padding-top: 5rem;
+                    background-position: top -200px right 70%;
+                    background-size: cover;
                 }
                 .contact-button {
                     max-width: 18rem;

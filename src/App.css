@@ -79,3 +79,9 @@ button:active {
 .links button:active {
   transform: scale(1)
 }
+
+@media screen and (max-width: 750px ) {
+  .Navigation {
+    display: none;
+  }
+}

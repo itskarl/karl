@@ -11,11 +11,11 @@ const Resume = () => {
   const [openFifth, setOpenFifth] = useState(false);
   const [openSixth, setOpenSixth] = useState(false);
   const customanimation = {
-      overlay: 'background-none',
-      transitionEnter: 'animated bounceInUp',
-      transitionExit: 'animated fadeOutUpBig',
-    }
-  
+    overlay: 'background-none',
+    transitionEnter: 'animated bounceInUp',
+    transitionExit: 'animated fadeOutUpBig',
+  }
+
   const customModal = {
     closeButton: {
       background: 'red',
@@ -33,7 +33,7 @@ const Resume = () => {
     modal: {
       borderRadius: '.5rem',
       padding: '0',
-      boxShadow: '0 10px 40px 30px #00000085'
+      boxShadow: '0 10px 60px 40px #00000075'
     }
 
   }
@@ -41,38 +41,41 @@ const Resume = () => {
 
     <div className="section-three-content">
       <div className=" skills-section">
+
+        <div>
         <div className="section-title languages">Programming</div>
         <div className="donuts-list">
-          <Donut stroke='#ffc457' ratios='85 15' 
-          skill={
-           <> <i style={{color: '#ffc457'}} className="devicon-html5-plain"></i><br />HTML</>
-          }>
-            <p>HTML5<br/> Accessibility<br/> SEO</p>
+          <Donut stroke='#ffc457' ratios='85 15'
+            skill={
+              <> <i style={{ color: '#ffc457' }} className="devicon-html5-plain"></i><br />HTML</>
+            }>
+            <p>HTML5<br /> Accessibility<br /> SEO</p>
           </Donut>
 
-          <Donut stroke='#4effee' ratios='85 15' 
-          skill={
-           <> <i style={{color: '#4effee'}} className="devicon-css3-plain"></i><br />CSS</>
-          }>
-          <p>CSS3<br/> SASS<br/> Bootstrap<br/> Materialize</p>
+          <Donut stroke='#4effee' ratios='85 15'
+            skill={
+              <> <i style={{ color: '#4effee' }} className="devicon-css3-plain"></i><br />CSS</>
+            }>
+            <p>CSS3<br /> SASS<br /> Bootstrap<br /> Materialize</p>
           </Donut>
 
-          <Donut stroke='#87c2f7' ratios='75 25' 
-          skill={
-           <> <i style={{color: '#87c2f7'}} className="devicon-javascript-plain"></i><br />Javascript </>
-          }>
-           <p><b>React JS</b><br/> ES6<br/> Angular JS<br/>Node</p>
+          <Donut stroke='#87c2f7' ratios='75 25'
+            skill={
+              <> <i style={{ color: '#87c2f7' }} className="devicon-javascript-plain"></i><br />Javascript </>
+            }>
+            <p><b>React JS</b><br /> ES6<br /> Angular JS<br />Node</p>
           </Donut>
 
-          <Donut stroke='#ff5572' ratios='60 40' 
-          skill={
-           <> <i style={{color: '#ff5572'}} className="devicon-ruby-plain"></i><br />Ruby</>
-          }>
+          <Donut stroke='#ff5572' ratios='60 40'
+            skill={
+              <> <i style={{ color: '#ff5572' }} className="devicon-ruby-plain"></i><br />Ruby</>
+            }>
             <p>Ruby on Rails</p>
           </Donut>
         </div>
-          
+        </div>
 
+        <div>
         <div className="section-title other">Other Skills</div>
         <ul>
           <li style={{ width: '90%' }}><i className="far fa-calendar-check"></i>Project Management</li>
@@ -82,6 +85,8 @@ const Resume = () => {
           <li style={{ width: '50%' }}><i className="devicon-illustrator-plain"></i>Adobe Illustrator</li>
           <li style={{ width: '90%' }}><i className="fas fa-sticky-note"></i>Simpsons Trivia</li>
         </ul>
+        </div>
+     
       </div>
 
       <div className="other-section">
@@ -90,8 +95,8 @@ const Resume = () => {
             <h2>Work Experience</h2>
           </div>
 
-          <div className="year" style={{position: 'absolute',top: '1.5rem', left: '.25rem'}}> 2019</div>
-          <div className="year" style={{position: 'absolute',top: 'calc(135% + 3.5rem)', left: '.25rem'}}> 2007</div>
+          <div className="year" style={{ position: 'absolute', top: '1.5rem', left: '.25rem' }}> 2019</div>
+          <div className="year" style={{ position: 'absolute', top: 'calc(135% + 3.5rem)', left: '.25rem' }}> 2007</div>
           <div className="timeline"></div>
           <div className="time-bar unpakt"></div>
           <div className="connector-bar unpakt"></div>
@@ -120,7 +125,7 @@ const Resume = () => {
               <button className="more-info" ><i class="fas fa-plus-circle"></i></button>
             </div>
           </div>
-          <Modal open={openFirst} onClose={() => setOpenFirst(false)} styles={customModal} center classNames={customanimation}animationDuration={1500}>
+          <Modal open={openFirst} onClose={() => setOpenFirst(false)} styles={customModal} center classNames={customanimation} animationDuration={1500}>
             <div className="modal-content">
               <div className="modal-top">
                 <h2>Front End Developer</h2>
@@ -132,7 +137,7 @@ const Resume = () => {
                   <li>Oversees front-end development and creation of multiple apps and features across the growing Unpakt product line.</li>
                   <li>Manages product interfaces and makes sure all web apps are optimized for SEO, accessibility, and UI/UX. </li>
                   <li> Maintained product quality through regular QA tests and managing bug reports and fixes.</li>
-                
+
                 </ul>
               </div>
             </div>
@@ -153,7 +158,7 @@ const Resume = () => {
 
             </div>
           </div>
-          <Modal open={openSecond} onClose={() => setOpenSecond(false)} styles={customModal} center  classNames={customanimation}animationDuration={1500}
+          <Modal open={openSecond} onClose={() => setOpenSecond(false)} styles={customModal} center classNames={customanimation} animationDuration={1500}
           >
             <div className="modal-content">
               <div className="modal-top">
@@ -188,7 +193,7 @@ const Resume = () => {
 
             </div>
           </div>
-          <Modal open={openThird} onClose={() => setOpenThird(false)} styles={customModal} center classNames={customanimation}animationDuration={1500}>
+          <Modal open={openThird} onClose={() => setOpenThird(false)} styles={customModal} center classNames={customanimation} animationDuration={1500}>
             <div className="modal-content">
               <div className="modal-top">
                 <h2>News Researcher</h2>
@@ -219,7 +224,7 @@ const Resume = () => {
             </div>
           </div>
         </div>
-        <Modal open={openFourth} onClose={() => setOpenFourth(false)} styles={customModal} center classNames={customanimation}animationDuration={1500}>
+        <Modal open={openFourth} onClose={() => setOpenFourth(false)} styles={customModal} center classNames={customanimation} animationDuration={1500}>
           <div className="modal-content">
             <div className="modal-top">
               <h2>NBC Page</h2>
@@ -259,7 +264,7 @@ const Resume = () => {
             </div>
           </div>
 
-          <Modal open={openFifth} onClose={() => setOpenFifth(false)} styles={customModal} center classNames={customanimation}animationDuration={1500}>
+          <Modal open={openFifth} onClose={() => setOpenFifth(false)} styles={customModal} center classNames={customanimation} animationDuration={1500}>
             <div className="modal-content">
               <div className="modal-top">
                 <h2>New York Code & Design</h2>
@@ -291,7 +296,7 @@ const Resume = () => {
           </div>
 
 
-          <Modal open={openSixth} onClose={() => setOpenSixth(false)} styles={customModal} center classNames={customanimation}animationDuration={1500}>
+          <Modal open={openSixth} onClose={() => setOpenSixth(false)} styles={customModal} center classNames={customanimation} animationDuration={1500}>
             <div className="modal-content">
               <div className="modal-top">
                 <h2>St. John's University</h2>
@@ -332,7 +337,7 @@ const Resume = () => {
           .skills-section {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-evenly;
           }
           .skills-section p {
             margin: 0;
@@ -639,13 +644,12 @@ const Resume = () => {
 
           .section-title {
             font-family: Telex;
-            color: #59ccff;
+            color: #fff;
             font-size: 1.3rem;
             background: none;
             font-weight: bold;
             padding-bottom: .5rem;
             margin-bottom: .5rem;
-            border-bottom: 1px solid #59ccff;
             margin-left: 2rem;
             width: 85%;
           }
@@ -699,6 +703,13 @@ const Resume = () => {
             margin: 0;
             font-weight: bold;
             color: #4493c1;
+          }
+          @media screen and (max-width: 996px) {
+            .section-three-content {
+              grid-template-columns: 100% 100%;
+              margin-top: 4rem; 
+              font-size: .8rem
+            }
           }
         `}  </style>
 

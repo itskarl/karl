@@ -8,10 +8,11 @@ const Navigation = () => {
     <>
         <div className="main-header">
             <div className="links">
-                <a href="#home" className="about"><button  >ABOUT</button></a>
+                <a href="#home" className="about"><button>HOME</button></a>
                 <a href="#my-work" className="work" ><button >WORK</button></a>
                 <a href="#resume" className="resume" ><button >RÉSUMÉ</button></a>
-                <a href="#sectionFour" className="contact"><button  >CONTACT</button></a>
+                <a href="#contact" className="contact"><button  >CONTACT</button></a>
+                <a href="#about" className="about"><button  >ABOUT</button></a>
       
             </div>
         </div>
@@ -26,10 +27,11 @@ const Navigation = () => {
 
             {openMenu &&
             <ul className="animated bounceInRight">
-            <a href="#home" className="about">  <li> <button  >ABOUT</button>  </li></a>
+            <a href="#home" className="about">  <li> <button  >HOME</button>  </li></a>
             <a href="#my-work" className="work" >   <li><button >WORK</button>  </li></a>
             <a href="#resume" className="resume" >  <li><button >RÉSUMÉ</button>  </li></a>
-            <a href="#sectionFour" className="contact">   <li><button  >CONTACT</button>  </li></a>
+            <a href="#contact" className="contact">   <li><button  >CONTACT</button>  </li></a>
+            <a href="#about" className="contact">   <li><button  >ABOUT</button>  </li></a>
             </ul>
             }
 

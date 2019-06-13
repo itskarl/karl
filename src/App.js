@@ -9,7 +9,7 @@ import Navigation from './Navigation';
 const Karl = () => {
   let options = {
     sectionClassName: 'section',
-    anchors: ['home', 'my-work', 'resume', 'sectionFour'],
+    anchors: ['home', 'my-work', 'resume', 'contact', 'about'],
     scrollBar: false,
     navigation: true,
     verticalAlign: false,
@@ -21,7 +21,7 @@ const Karl = () => {
   const navsettings = {
     dots: true,
     infinite: true,
-    arrows: false,
+    arrows: true,
     speed: 500,
     fade: true,
     slidesToShow: 1,
@@ -59,18 +59,21 @@ const Karl = () => {
               Software Developer with a passion for design, function, and technology.
          </div>
             <div className="menu-container">
-              <div onMouseOver={() => setmenuOption('About')} onMouseOut={() => setmenuOption('')} className="icon-container">
-                <img className="icon" alt="icon" src="1_me.svg" />
-              </div>
-              <div onMouseOver={() => setmenuOption('My Work')} onMouseOut={() => setmenuOption('')} className="icon-container">
+
+              <a href="#my-work" onMouseOver={() => setmenuOption('My Work')} onMouseOut={() => setmenuOption('')} className="icon-container">
                 <img className="icon" alt="icon" src="2_work.svg" />
-              </div>
-              <div onMouseOver={() => setmenuOption('Résumé')} onMouseOut={() => setmenuOption('')} className="icon-container">
+              </a>
+              <a href="#resume" onMouseOver={() => setmenuOption('Résumé')} onMouseOut={() => setmenuOption('')} className="icon-container">
                 <img className="icon" alt="icon" src="3_resume.svg" />
-              </div>
-              <div onMouseOver={() => setmenuOption('Contact')} onMouseOut={() => setmenuOption('')} className="icon-container">
+              </a>
+
+              <a href="#about" onMouseOver={() => setmenuOption('About')} onMouseOut={() => setmenuOption('')} className="icon-container">
+                <img className="icon" alt="icon" src="1_me.svg" />
+              </a>
+              <a href="#contact" onMouseOver={() => setmenuOption('Contact')} onMouseOut={() => setmenuOption('')} className="icon-container">
                 <img className="icon" alt="icon" src="4_contact.svg" />
-              </div>
+              </a>
+
             </div>
             {menuOption && <div className={`menu-option animated fadeIn`}>
               <p>{menuOption}</p>
@@ -231,7 +234,10 @@ const Karl = () => {
 
         <Section className="section-four">
           <ContactPage />
+        </Section>
 
+        <Section className="section-five">
+          
         </Section>
 
       </SectionsContainer>
@@ -315,11 +321,15 @@ const Karl = () => {
     border: 3px solid #005f6c;
     border-radius: 50%;
     position:relative;
-    overflow: hidden
+    overflow: hidden;
+    transition: .3s ease-in-out
+   }
+   .icon-container:hover {
+      transform: scale(1.2, 1.2)
    }
 
-
    .icon-container:after {
+    z-index: -1;
     content: "";
     position: absolute;
     top: -110%;
@@ -395,15 +405,17 @@ const Karl = () => {
    .project-square {
    width: 100%;
    display: grid;
-   grid-template-columns: 1fr 1fr
+   grid-template-columns: 50% 50%
    }
    .project-square img {
-   width: 100%;
+   max-width: 100%;
    border: 1rem solid #ebebeb;
    border-width: 1.5rem .25rem .25rem;
    border-radius: .4rem;
    box-shadow: 0 15px 20px 10px #00000057;
    color: black;
+   max-height: 320px; 
+   margin: auto;
    }
    .project-square a {
    text-decoration: none; 
@@ -451,7 +463,58 @@ const Karl = () => {
    }
 
   .section-four {
-    background: linear-gradient(#2f2b4a 70%, #271d3a)
+    background: linear-gradient(#2f2b4a 70%, #271d3a);
+    overflow: hidden;
+  }
+
+  .section-five {
+    background: linear-gradient(#271d3a 20%, #023e4d)
+  }
+
+  @media screen and (max-width: 778px) {
+    .menu-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        top: 55%
+    }
+    .icon-container {
+      margin: 1rem 0
+    }
+    .name-holder {
+      height: 35%
+    }
+    .cover-lower {
+      height: 65%
+    }
+    .name {
+      font-size: 3rem; 
+      line-height: 3rem;
+    }
+    .subtitle {
+      font-size: 1rem;
+    }
+    
+  }
+
+  @media screen and (max-width: 750px) { 
+    .slick-thumb {
+      display: none !important;
+    }
+    .project-square {
+      grid-template-columns: 1fr;
+      margin-top: 6rem;
+      font-size: .8rem;
+    }
+    .project-square img {
+      max-width: 80%
+    }
+  }
+
+  @media screen and (min-width: 750px) {
+    .slick-next:before, .slick-prev:before {
+      display: none !important
+    }
   }
   
    `}
