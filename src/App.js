@@ -1,5 +1,5 @@
 import React, {  useState, useEffect } from 'react';
-import ReactFullPage from 'react-fullpage';
+import { ScrollToTopOnMount, SectionsContainer, Section, Header } from 'react-fullpage';
 import Slider from "react-slick";
 import './App.css';
 import Resume from './Resume';
@@ -10,9 +10,6 @@ import {useMedia} from './Hooks'
 
 
 const Karl = () => {
-
-
-  
   const viewModel = useMedia(
     ['(min-width: 1440px)', '(min-width: 992px)', '(min-width: 768px)', '(min-width: 1px)'],
     ['wide', 'desktop', 'tablet', 'mobile'],
@@ -51,7 +48,7 @@ const Karl = () => {
 
   let fontMain = 'rgba(255,255,255,.8)'
 
-
+  
   return (
     <>
       <ScrollToTopOnMount />
