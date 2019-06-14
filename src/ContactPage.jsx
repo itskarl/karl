@@ -9,7 +9,7 @@ const ContactPage = () => {
             <div className="large-icon">
                 {iconStyle}
             </div>
-            <a href="mailto:karlrodulfo@gmail.com"s rel="noopener noreferrer" className="contact-button" onMouseOver={() => setIconStyle(<i className="far animated bounceIn fa-envelope-open"></i>)}>
+            <a href="mailto:karlrodulfo@gmail.com" rel="noopener noreferrer" className="contact-button" onMouseOver={() => setIconStyle(<i className="far animated bounceIn fa-envelope-open"></i>)}>
             <i className="far fa-envelope"></i> 
                 <div>
                     <p>Email</p>

@@ -17,7 +17,7 @@ const Navigation = () => {
             </div>
         </div>
         {openMenu && <div onClick={() => setOpenMenu(!openMenu)} className="hide-menu"></div>}
-        <div className={`animated slideInDown mobile-header ${openMenu && 'add-shadow'}`}>
+        <div className={`mobile-header ${openMenu && 'open-menu-container'}`}>
 
             
 
@@ -26,12 +26,12 @@ const Navigation = () => {
             </div>
 
             {openMenu &&
-            <ul className="animated bounceInRight">
-            <a href="#home" className="about">  <li> <button  >HOME</button>  </li></a>
-            <a href="#my-work" className="work" >   <li><button >WORK</button>  </li></a>
-            <a href="#resume" className="resume" >  <li><button >RÉSUMÉ</button>  </li></a>
-            <a href="#contact" className="contact">   <li><button  >CONTACT</button>  </li></a>
-            <a href="#about" className="contact">   <li><button  >ABOUT</button>  </li></a>
+            <ul className="animated bounceInUp">
+            <a onClick={() => setOpenMenu(false)} href="#home" className="about">  <li> <button  >HOME</button>  </li></a>
+            <a onClick={() => setOpenMenu(false)} href="#my-work" className="work" >   <li><button >WORK</button>  </li></a>
+            <a onClick={() => setOpenMenu(false)} href="#resume" className="resume" >  <li><button >RÉSUMÉ</button>  </li></a>
+            <a onClick={() => setOpenMenu(false)} href="#contact" className="contact">   <li><button  >CONTACT</button>  </li></a>
+            <a onClick={() => setOpenMenu(false)} href="#about" className="contact">   <li><button  >ABOUT</button>  </li></a>
             </ul>
             }
 
@@ -68,13 +68,17 @@ const Navigation = () => {
 
             .mobile-header {
                 text-align: center;
-                background: linear-gradient(.33turn, #265498f2, #5579abf2);
+                background: transparent;
                 transition-duration: .3s;
                 font-size: 3rem;
                 z-index: 5;
                 position: relative;
-                cursor: pointer
+                cursor: pointer;
+                height: 3rem;
+                transition-duration: .5s;
+                transition-property: height;
             }
+
             .hide-menu {
                 background: #00000040;
                 position:fixed;
@@ -82,11 +86,13 @@ const Navigation = () => {
                 width: 100vw;
                 z-index: 2;
             }
-            .add-shadow {
-                box-shadow: 0 10px 40px 30px black;
+            .open-menu-container {
+                background: #055766e8;
+                height: 100vh;
             }
+
             .mobile-header li, .mobile-header .hamburger {
-                height: 4rem;
+                height: 3rem;
                 margin: auto;
                 width:100%;
                 display: flex;
@@ -94,13 +100,19 @@ const Navigation = () => {
                 justify-content: center;
                 transition-duration: .3s;
             }
+            .mobile-header li {
+                height: calc(20vh - .6rem);
+            }
+            .mobile-header li button {
+                font-size: 8vh;
+            }
             .mobile-header .hamburger {
                 justify-content: flex-end;
                 padding: 1.5rem;
                 font-size: 1.5rem;
             }
             .mobile-header li:hover, .mobile-header .hamburger:hover {
-                background: #6c9de0
+                background: #159ab6
             }
             .mobile-header a {
                 text-decoration: none;

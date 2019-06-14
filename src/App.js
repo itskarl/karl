@@ -1,12 +1,24 @@
-import React, { useState } from 'react';
-import { SectionsContainer, Section, Header } from 'react-fullpage';
+import React, {  useState, useEffect } from 'react';
+import ReactFullPage from 'react-fullpage';
 import Slider from "react-slick";
 import './App.css';
 import Resume from './Resume';
 import ContactPage from './ContactPage';
 import Navigation from './Navigation';
+import {useMedia} from './Hooks'
+
+
 
 const Karl = () => {
+
+
+  
+  const viewModel = useMedia(
+    ['(min-width: 1440px)', '(min-width: 992px)', '(min-width: 768px)', '(min-width: 1px)'],
+    ['wide', 'desktop', 'tablet', 'mobile'],
+    'desktop'
+  );
+  
   let options = {
     sectionClassName: 'section',
     anchors: ['home', 'my-work', 'resume', 'contact', 'about'],
@@ -18,6 +30,7 @@ const Karl = () => {
   };
 
   const [menuOption, setmenuOption] = useState('')
+
   const navsettings = {
     dots: true,
     infinite: true,
@@ -27,7 +40,6 @@ const Karl = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     dotsClass: "slick-dots slick-thumb",
-
     customPaging: function (i) {
       return (
         <div>
@@ -42,13 +54,14 @@ const Karl = () => {
 
   return (
     <>
+      <ScrollToTopOnMount />
       <Header>
         <Navigation />
       </Header>
       <SectionsContainer {...options} >
         <Section>
           <div className="name-holder">
-            <div className="name slide-in-bottom">Karl Rodulfo</div>
+            <div className="name slide-in-bottom">Karl Rodulfo </div>
             <div className="square s_1"></div>
             <div className="square s_2"></div>
             <div className="square s_3"></div>
@@ -56,8 +69,8 @@ const Karl = () => {
           </div>
           <div className="cover-lower">
             <div className="subtitle">
-              Software Developer with a passion for design, function, and technology.
-         </div>
+             Software Developer with a passion for design, function, and technology.
+            </div>
             <div className="menu-container">
 
               <a href="#my-work" onMouseOver={() => setmenuOption('My Work')} onMouseOut={() => setmenuOption('')} className="icon-container">
@@ -97,14 +110,14 @@ const Karl = () => {
                      </p>
                     <p>Built on Ruby on Sinatra</p>
                     <hr />
-                    <p>FEATURES: <br />
+                    <div>FEATURES: <br />
                       <ul>
                         <li>Simple, lightweight, easy-to-use interface </li>
                         <li>Website is fully responsive for desktop, tablet, and mobile! Please enjoy on different platforms!</li>
                         <li>Utilizes a speech bubble motif for a fun, dynamic, but cohesive style</li>
                         <li>Utilizes SQLite, ActiveRecord</li>
                       </ul>
-                    </p>
+                    </div>
                     <a href="https://github.com/itskarl/MUSINGS-social-media-site" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i>&nbsp; GITHUB</a>
                   </div>
                 </div>
@@ -121,14 +134,14 @@ const Karl = () => {
                      </p>
                     <p>Built with Vanilla Javascript</p>
                     <hr />
-                    <p>FEATURES: <br />
+                    <div>FEATURES: <br />
                       <ul>
                         <li>Simple, lightweight, easy-to-use single-page-application interface. </li>
                         <li>Stats, such as percentage bars are dynamically generated via AJAX.</li>
                         <li>Website is fully responsive for desktop, tablet, and mobile!</li>
                         <li>Built fully on vanilla Javascript, HTML, and CSS</li>
                       </ul>
-                    </p>
+                    </div>
                     <a href="https://github.com/itskarl/pokemon-pokedex" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i>&nbsp; GITHUB</a>
                   </div>
                 </div>
@@ -145,13 +158,13 @@ const Karl = () => {
                     </p>
                     <p>Built with Ruby on Sinatra</p>
                     <hr />
-                    <p>FEATURES: <br />
+                    <div>FEATURES: <br />
                       <ul>
                         <li>Utilizes Eventbrite API to dynamically generate local events </li>
                         <li>Features a festive aesthetic with bakery motifs to highlight the bakery and its products</li>
                         <li>Website is fully responsive for desktop and mobile! Please enjoy on different platforms!</li>
                       </ul>
-                    </p>
+                    </div>
                     <a href="https://github.com/itskarl/Bakery-website-fullstack" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i>&nbsp; GITHUB</a>
                   </div>
                 </div>
@@ -168,12 +181,12 @@ const Karl = () => {
                      </p>
                     <p>Built on Ruby on Rails</p>
                     <hr />
-                    <p>FEATURES: <br />
+                    <div>FEATURES: <br />
                       <ul>
                         <li>Showcases dynamic animation on landing page as a point of interest. Animation built on vanilla Javascript and CSS </li>
                         <li>Designed with very user-friendly interface and visually appealing graphics</li>
                       </ul>
-                    </p>
+                    </div>
                     <a href="https://github.com/itskarl/academy-panel" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i>&nbsp; GITHUB</a>
                   </div>
                 </div>
@@ -190,13 +203,13 @@ const Karl = () => {
                      </p>
                     <p>Built on Ruby on Rails</p>
                     <hr />
-                    <p>FEATURES: <br />
+                    <div>FEATURES: <br />
                       <ul>
                         <li>Utilizes Weather API, Google Maps, Eventbrite, Geocoder, Stripe, and Yelp APIs.</li>
                         <li>Designed with very user-friendly interface and visually appealing graphics</li>
                         <li>Site allows users to save plans easily to quickly share and keep track of plans</li>
                       </ul>
-                    </p>
+                    </div>
                     <a href="https://github.com/itskarl/happymedium" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i>&nbsp; GITHUB</a>
                   </div>
                 </div>
@@ -213,13 +226,13 @@ const Karl = () => {
                      </p>
                     <p>Built on Ruby on Rails</p>
                     <hr />
-                    <p>FEATURES: <br />
+                    <div>FEATURES: <br />
                       <ul>
                         <li>Created and sourced data to create my own API and RESTful interface for company ratings</li>
                         <li>Utilizes quagga js barcode reader for quick light-weight front-end information processing</li>
                         <li>Features News API to provide additional information on companies</li>
                       </ul>
-                    </p>
+                    </div>
                     <a href="https://github.com/itskarl/buyethically" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i>&nbsp; GITHUB</a>
                   </div>
                 </div>

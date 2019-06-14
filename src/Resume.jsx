@@ -122,7 +122,7 @@ const Resume = () => {
               </div>
             </div>
             <div>
-              <button className="more-info" ><i class="fas fa-plus-circle"></i></button>
+              <button className="more-info" ><i className="fas fa-plus-circle"></i></button>
             </div>
           </div>
           <Modal open={openFirst} onClose={() => setOpenFirst(false)} styles={customModal} center classNames={customanimation} animationDuration={1500}>
@@ -154,7 +154,7 @@ const Resume = () => {
             </div>
 
             <div>
-              <button className="more-info" ><i class="fas fa-plus-circle"></i></button>
+              <button className="more-info" ><i className="fas fa-plus-circle"></i></button>
 
             </div>
           </div>
@@ -189,7 +189,7 @@ const Resume = () => {
               </div>
             </div>
             <div>
-              <button className="more-info" ><i class="fas fa-plus-circle"></i></button>
+              <button className="more-info" ><i className="fas fa-plus-circle"></i></button>
 
             </div>
           </div>
@@ -220,7 +220,7 @@ const Resume = () => {
               </div>
             </div>
             <div>
-              <button className="more-info" ><i class="fas fa-plus-circle"></i></button>
+              <button className="more-info" ><i className="fas fa-plus-circle"></i></button>
             </div>
           </div>
         </div>
@@ -260,7 +260,7 @@ const Resume = () => {
               </div>
             </div>
             <div>
-              <button className="more-info" ><i class="fas fa-plus-circle"></i></button>
+              <button className="more-info" ><i className="fas fa-plus-circle"></i></button>
             </div>
           </div>
 
@@ -291,7 +291,7 @@ const Resume = () => {
               </div>
             </div>
             <div>
-              <button className="more-info" ><i class="fas fa-plus-circle"></i></button>
+              <button className="more-info" ><i className="fas fa-plus-circle"></i></button>
             </div>
           </div>
 
