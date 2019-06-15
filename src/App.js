@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import Resume from './Resume';
 import ContactPage from './ContactPage';
@@ -7,24 +7,29 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import CoverPage from './CoverPage';
 import MyWork from './MyWork';
 
+const Karl = (props) => {
 
-const Karl = (viewModel) => (
+const [headerName, setHeaderName] = useState('Karl Rodulfo')
+
+return (
   <>
             
-  <Navigation />
+  <Navigation headerName={headerName} viewModel={props.viewModel} />
           
   <ReactFullpage
     anchors={['home', 'my-work', 'resume', 'contact', 'about']}
     onLeave={(origin, destination, direction) => {
-      console.log("onLeave event", { origin, destination, direction });
+      // console.log("onLeave event", { origin, destination, direction });
+      // console.log(destination.anchor);
+      setHeaderName(destination.anchor.replace("-", " "))
     }}
 
     render={({ state, fullpageApi }) => {
       console.log("render prop change", state); // eslint-disable-line no-console
-      console.log('viewmodel', viewModel)
+      console.log('viewmodel', props.viewModel)
       return (
         <>
-          <div>askldjaslkd</div>
+          
           <section  className="section section-one">
             
             <CoverPage fullpageApi={fullpageApi} />
@@ -38,7 +43,7 @@ const Karl = (viewModel) => (
           </section>
 
           <section className="section section-three">
-            <Resume />
+            <Resume viewModel={props.viewModel}/>
           </section>
 
           <section className="section section-four">
@@ -339,6 +344,7 @@ const Karl = (viewModel) => (
   </>
 
 );
+  }
 
 
 

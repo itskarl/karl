@@ -1,19 +1,19 @@
 import React, {useState} from 'react';
 
-const Navigation = () => {
+const Navigation = (props) => {
 
     const [openMenu, setOpenMenu] = useState(false);
 
     return (
     <div className="navigation">
         <div className="main-header">
+            <div className={`section-current ${props.viewModel}`}>{props.headerName}</div>
             <div className="links">
                 <a href="#home" className="about"><button>HOME</button></a>
                 <a href="#my-work" className="work" ><button >WORK</button></a>
                 <a href="#resume" className="resume" ><button >RÉSUMÉ</button></a>
                 <a href="#contact" className="contact"><button  >CONTACT</button></a>
                 <a href="#about" className="about"><button  >ABOUT</button></a>
-      
             </div>
         </div>
         {openMenu && <div onClick={() => setOpenMenu(!openMenu)} className="hide-menu"></div>}
@@ -22,6 +22,7 @@ const Navigation = () => {
             
 
             <div className="hamburger " onClick={() => setOpenMenu(!openMenu)}>
+            <div className="section-current">{props.headerName}</div>
             <i className="fas fa-bars"></i>
             </div>
 
@@ -47,7 +48,7 @@ const Navigation = () => {
             .main-header {
             display: flex;
             align-items: center;
-            justify-content: flex-end;
+            justify-content: space-between;
             padding: 1rem;
             height: 3rem;
             position: fixed;
@@ -85,6 +86,20 @@ const Navigation = () => {
                 transition-property: height;
                 width: 100vw
             }
+            .section-current {
+                text-transform: uppercase
+            }
+            .section-current.desktop, section-current.wide {
+                text-transform: uppercase;
+                color: #d4e7e9;
+                width: auto;
+                background: #008c9f;
+                padding: .25rem 1.5rem;
+                margin-left: -1rem;
+                border-radius: 0 1rem 1rem 0;
+                transition-duration: .3s;
+                font-weight: bold;
+            }
 
             .hide-menu {
                 background: #00000040;
@@ -98,25 +113,25 @@ const Navigation = () => {
                 height: 100vh;
             }
 
-            .mobile-header li, .mobile-header .hamburger {
-                height: 3rem;
+            .mobile-header li {
                 margin: auto;
                 width:100%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 transition-duration: .3s;
-            }
-            .mobile-header li {
                 height: calc(20vh - .6rem);
             }
             .mobile-header li button {
                 font-size: 8vh;
             }
-            .mobile-header .hamburger {
-                justify-content: flex-end;
-                padding: 1.5rem;
+            .hamburger {
+                justify-content: space-between;
                 font-size: 1.5rem;
+                height: 3rem;
+                display: flex;
+                align-items: center;
+                padding: 0 1rem
             }
             .mobile-header li:hover, .mobile-header .hamburger:hover {
                 background: #159ab6
