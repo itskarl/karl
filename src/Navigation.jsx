@@ -5,7 +5,7 @@ const Navigation = () => {
     const [openMenu, setOpenMenu] = useState(false);
 
     return (
-    <>
+    <div className="navigation">
         <div className="main-header">
             <div className="links">
                 <a href="#home" className="about"><button>HOME</button></a>
@@ -39,13 +39,19 @@ const Navigation = () => {
 
         <style> 
         {`
-
-        .main-header {
+            .navigation {
+                position: fixed;
+                z-index: 5;
+                top:0
+            }
+            .main-header {
             display: flex;
             align-items: center;
             justify-content: flex-end;
             padding: 1rem;
             height: 3rem;
+            position: fixed;
+            width: 100%;
             }
             .links button {
             width: 6rem;
@@ -77,6 +83,7 @@ const Navigation = () => {
                 height: 3rem;
                 transition-duration: .5s;
                 transition-property: height;
+                width: 100vw
             }
 
             .hide-menu {
@@ -139,7 +146,7 @@ const Navigation = () => {
         `}
         </style>
 
-        </>
+        </div>
 
     )
 }
