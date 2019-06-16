@@ -392,7 +392,7 @@ const Resume = (props) => {
 
             <div >
               <div className="jobs-slide">
-              <div className="job one" onClick={() => setOpenFirst(true)}>
+              <div className="job" onClick={() => setOpenFirst(true)}>
                 <div className="job-info">
                   <div className="job-logo unpakt"> </div>
 
@@ -407,7 +407,7 @@ const Resume = (props) => {
               </div>
 
 
-              <div className="job two" onClick={() => setOpenSecond(true)}>
+              <div className="job" onClick={() => setOpenSecond(true)}>
                 <div className="job-info">
                   <div className="job-logo discovery">  </div>
 
@@ -441,7 +441,7 @@ const Resume = (props) => {
                 </div>
               </Modal>
 
-              <div className="job three" onClick={() => setOpenThird(true)}>
+              <div className="job" onClick={() => setOpenThird(true)}>
                 <div className="job-info">
                   <div className="job-logo news">
 
@@ -474,7 +474,7 @@ const Resume = (props) => {
                 </div>
               </Modal>
 
-              <div className="job four" onClick={() => setOpenFourth(true)}>
+              <div className="job" onClick={() => setOpenFourth(true)}>
                 <div className="job-info">
                   <div className="job-logo nbc">
                   </div>
@@ -494,7 +494,7 @@ const Resume = (props) => {
             <div>
 
               <div className="education">
-                <div className="edu one" onClick={() => setOpenFifth(true)}>
+                <div className="edu" onClick={() => setOpenFifth(true)}>
 
                   <div className="job-info">
                     <div className="edu-logo nycda">
@@ -525,7 +525,7 @@ const Resume = (props) => {
                   </div>
                 </Modal>
 
-                <div className="edu two" onClick={() => setOpenSixth(true)}>
+                <div className="edu" onClick={() => setOpenSixth(true)}>
 
                   <div className="job-info">
                     <div className="edu-logo sju">
