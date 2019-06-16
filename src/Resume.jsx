@@ -14,7 +14,6 @@ const Resume = (props) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     dotsClass: "slick-dots",
-    autoplay: true
   };
 
   const [openFirst, setOpenFirst] = useState(false);
@@ -391,152 +390,110 @@ const Resume = (props) => {
             </div>
 
 
-            <div>
-
-              <div className="recent-exp">
-                <div className="workexp banner">
-                  <h2>Work Experience</h2>
-                </div>
-
-                <div className="year" style={{ position: 'absolute', top: '1.5rem', left: '.25rem' }}> 2019</div>
-                <div className="year" style={{ position: 'absolute', top: 'calc(135% + 3.5rem)', left: '.25rem' }}> 2007</div>
-                <div className="timeline"></div>
-                <div className="time-bar unpakt"></div>
-                <div className="connector-bar unpakt"></div>
-                <div className="time-bar discovery"></div>
-                <div className="connector-bar discovery"></div>
-                <div className="time-bar nbcnews"></div>
-                <div className="connector-bar nbcnews"></div>
-                <div className="time-bar nbcu"></div>
-                <div className="connector-bar nbcu"></div>
-                <div className="time-bar sju"></div>
-                <div className="connector-bar sju"></div>
-                <div className="time-bar nycda"></div>
-                <div className="connector-bar nycda"></div>
-
-
-                <div className="job one" onClick={() => setOpenFirst(true)}>
-                  <div className="job-info">
-                    <div className="job-logo unpakt"> </div>
-
-                    <div>
-                      <p className="job-title">FRONT END DEVELOPER</p>
-                      <p>Unpakt / '18 - Present</p>
-                    </div>
-                  </div>
-                  <div>
-                    <button className="more-info" ><i className="fas fa-plus-circle"></i></button>
-                  </div>
-                </div>
-                <Modal open={openFirst} onClose={() => setOpenFirst(false)} styles={customModal} center classNames={customanimation} animationDuration={1500}>
-                  <div className="modal-content">
-                    <div className="modal-top">
-                      <h2>Front End Developer</h2>
-                      <p>Unpakt · Nov 2018 - Present</p>
-                    </div>
-                    <div className="modal-body">
-                      <ul>
-                        <li>Facilitated migration of high traffic e-commerce web application from old frameworks (Ruby on Rails, Angular) to React JS</li>
-                        <li>Oversees front-end development and creation of multiple apps and features across the growing Unpakt product line.</li>
-                        <li>Manages product interfaces and makes sure all web apps are optimized for SEO, accessibility, and UI/UX. </li>
-                        <li> Maintained product quality through regular QA tests and managing bug reports and fixes.</li>
-
-                      </ul>
-                    </div>
-                  </div>
-                </Modal>
-
-                <div className="job two" onClick={() => setOpenSecond(true)}>
-                  <div className="job-info">
-                    <div className="job-logo discovery">  </div>
-
-                    <div>
-                      <p className="job-title">TELEVISION PRODUCER</p>
-                      <p>Discovery Channel / '10-'18</p>
-                    </div>
-                  </div>
+            <div >
+              <div className="jobs-slide">
+              <div className="job one" onClick={() => setOpenFirst(true)}>
+                <div className="job-info">
+                  <div className="job-logo unpakt"> </div>
 
                   <div>
-                    <button className="more-info" ><i className="fas fa-plus-circle"></i></button>
-
+                    <p className="job-title">FRONT END DEVELOPER</p>
+                    <p>Unpakt / '18 - Present</p>
                   </div>
                 </div>
-                <Modal open={openSecond} onClose={() => setOpenSecond(false)} styles={customModal} center classNames={customanimation} animationDuration={1500}
-                >
-                  <div className="modal-content">
-                    <div className="modal-top">
-                      <h2>Television Producer</h2>
-                      <p>Discovery Communications · 2010-2018</p>
-                    </div>
-                    <div className="modal-body">
-                      <span>Development producer with several years experience helping develop and produce original series and specials for Discovery Channel and sister networks (Science, Animal Planet, TLC, Destination America).</span>
-                      <ul>
-                        <li>Worked closely with vendors and production companies to keep deliverables on time, on budget, and meeting all editorial requirements. </li>
-                        <li>Co-produced and project managed seven highly rated specials and nonfiction series across multiple cable networks. </li>
-                        <li>Responsible for providing background research, finding and managing original on-screen talent, and developing show pitches for senior network executives.  </li>
-                        <li>Conceived, wrote, and designed all paper treatments and presentation decks for all development projects.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </Modal>
-
-                <div className="job three" onClick={() => setOpenThird(true)}>
-                  <div className="job-info">
-                    <div className="job-logo news">
-
-                    </div>
-
-                    <div>
-                      <p className="job-title">NEWS RESEARCHER</p>
-                      <p>NBC News / '09-'10</p>
-                    </div>
-                  </div>
-                  <div>
-                    <button className="more-info" ><i className="fas fa-plus-circle"></i></button>
-
-                  </div>
-                </div>
-                <Modal open={openThird} onClose={() => setOpenThird(false)} styles={customModal} center classNames={customanimation} animationDuration={1500}>
-                  <div className="modal-content">
-                    <div className="modal-top">
-                      <h2>News Researcher</h2>
-                      <p>NBC News · 2009-2010</p>
-                    </div>
-                    <div className="modal-body">
-
-                      <ul>
-                        <li> Provided breaking news updates to producers. Functioned as researcher and primary fact checker for all health-related stories for NBC News TODAY, Dateline, and Nightly News. </li>
-                        <li>Initiated outreach to interview subjects and conducted pre-interviews for news segments.  </li>
-                        <li> Managed the schedule, travel, and logistics for NBC Chief Medical Editor, Dr. Nancy Snyderman.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </Modal>
-
-                <div className="job four" onClick={() => setOpenFourth(true)}>
-                  <div className="job-info">
-                    <div className="job-logo nbc">
-                    </div>
-                    <div>
-                      <p className="job-title">NBC PAGE</p>
-                      <p>NBC Studios / '08-'09</p>
-                    </div>
-                  </div>
-                  <div>
-                    <button className="more-info" ><i className="fas fa-plus-circle"></i></button>
-                  </div>
+                <div>
+                  <button className="more-info" ><i className="fas fa-plus-circle"></i></button>
                 </div>
               </div>
 
+
+              <div className="job two" onClick={() => setOpenSecond(true)}>
+                <div className="job-info">
+                  <div className="job-logo discovery">  </div>
+
+                  <div>
+                    <p className="job-title">TELEVISION PRODUCER</p>
+                    <p>Discovery Channel / '10-'18</p>
+                  </div>
+                </div>
+
+                <div>
+                  <button className="more-info" ><i className="fas fa-plus-circle"></i></button>
+
+                </div>
+              </div>
+              <Modal open={openSecond} onClose={() => setOpenSecond(false)} styles={customModal} center classNames={customanimation} animationDuration={1500}
+              >
+                <div className="modal-content">
+                  <div className="modal-top">
+                    <h2>Television Producer</h2>
+                    <p>Discovery Communications · 2010-2018</p>
+                  </div>
+                  <div className="modal-body">
+                    <span>Development producer with several years experience helping develop and produce original series and specials for Discovery Channel and sister networks (Science, Animal Planet, TLC, Destination America).</span>
+                    <ul>
+                      <li>Worked closely with vendors and production companies to keep deliverables on time, on budget, and meeting all editorial requirements. </li>
+                      <li>Co-produced and project managed seven highly rated specials and nonfiction series across multiple cable networks. </li>
+                      <li>Responsible for providing background research, finding and managing original on-screen talent, and developing show pitches for senior network executives.  </li>
+                      <li>Conceived, wrote, and designed all paper treatments and presentation decks for all development projects.</li>
+                    </ul>
+                  </div>
+                </div>
+              </Modal>
+
+              <div className="job three" onClick={() => setOpenThird(true)}>
+                <div className="job-info">
+                  <div className="job-logo news">
+
+                  </div>
+
+                  <div>
+                    <p className="job-title">NEWS RESEARCHER</p>
+                    <p>NBC News / '09-'10</p>
+                  </div>
+                </div>
+                <div>
+                  <button className="more-info" ><i className="fas fa-plus-circle"></i></button>
+
+                </div>
+              </div>
+              <Modal open={openThird} onClose={() => setOpenThird(false)} styles={customModal} center classNames={customanimation} animationDuration={1500}>
+                <div className="modal-content">
+                  <div className="modal-top">
+                    <h2>News Researcher</h2>
+                    <p>NBC News · 2009-2010</p>
+                  </div>
+                  <div className="modal-body">
+
+                    <ul>
+                      <li> Provided breaking news updates to producers. Functioned as researcher and primary fact checker for all health-related stories for NBC News TODAY, Dateline, and Nightly News. </li>
+                      <li>Initiated outreach to interview subjects and conducted pre-interviews for news segments.  </li>
+                      <li> Managed the schedule, travel, and logistics for NBC Chief Medical Editor, Dr. Nancy Snyderman.</li>
+                    </ul>
+                  </div>
+                </div>
+              </Modal>
+
+              <div className="job four" onClick={() => setOpenFourth(true)}>
+                <div className="job-info">
+                  <div className="job-logo nbc">
+                  </div>
+                  <div>
+                    <p className="job-title">NBC PAGE</p>
+                    <p>NBC Studios / '08-'09</p>
+                  </div>
+                </div>
+                <div>
+                  <button className="more-info" ><i className="fas fa-plus-circle"></i></button>
+                </div>
+              </div>
+              </div>
             </div>
 
 
             <div>
 
               <div className="education">
-                <div className="schools banner">
-                  <h2>Education</h2>
-                </div>
                 <div className="edu one" onClick={() => setOpenFifth(true)}>
 
                   <div className="job-info">
@@ -606,8 +563,6 @@ const Resume = (props) => {
 
             </div>
 
-
-
           </Slider>
         </div>
       }
@@ -628,7 +583,7 @@ const Resume = (props) => {
             display: inline;
           }
           .slider-mobile {
-            padding: 0 5rem;
+            padding: 0 2rem;
           }
           .slider-mobile .slick-dots li.slick-active button:before{
             color: #fff
@@ -1011,6 +966,25 @@ const Resume = (props) => {
             margin: 0;
             font-weight: bold;
             color: #4493c1;
+          }
+
+
+        
+          .slider-mobile .job, .slider-mobile .edu {
+            width: 18rem;
+            background: rgb(53, 72, 112);
+            border-radius: 3px;
+            display: flex;
+            min-width: 10rem;
+            margin: 1rem auto;
+            align-items: center;
+            color: #4FC3F7;
+            z-index: 1;
+            overflow: hidden;
+            justify-content: space-between;
+            transition-duration: .3s;
+            position:relative;
+
           }
 
         `}  </style>
