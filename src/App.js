@@ -23,7 +23,8 @@ return (
       // console.log(destination.anchor);
       setHeaderName(destination.anchor.replace("-", " "))
     }}
-
+    navigation={true}
+    navigationPosition={'left'}
     render={({ state, fullpageApi }) => {
       console.log("render prop change", state); // eslint-disable-line no-console
       console.log('viewmodel', props.viewModel)
@@ -32,7 +33,7 @@ return (
           
           <section  className="section section-one">
             
-            <CoverPage fullpageApi={fullpageApi} />
+            <CoverPage viewModel={props.viewModel} fullpageApi={fullpageApi} />
           </section>
 
 
@@ -105,6 +106,10 @@ return (
    top: 45%;
    left: 50%;
    transform: translate(-50%, -50%);
+   text-align: center;
+   }
+   .menu-container p {
+     margin: 0
    }
    .menu-option {
     display: flex;
@@ -123,21 +128,22 @@ return (
    font-size: 1.2rem;
    margin: .5rem 0;
    }
-   img.icon {
-    height: 120px;
-    width: 120px;
-    background: none;
-   }
 
+    img.icon {
+      height: ${props.viewModel === 'mobile' ? '100px' : '120px'};
+      width: ${props.viewModel === 'mobile' ? '100px' : '120px'};
+      background: none;
+    }
    .icon-container {
-    height: 120px;
-    width: 120px;
+    height: ${props.viewModel === 'mobile' ? '100px' : '120px'};
+    width: ${props.viewModel === 'mobile' ? '100px' : '120px'};
     border: 3px solid #005f6c;
     border-radius: 50%;
     position:relative;
     overflow: hidden;
     transition: .3s ease-in-out
    }
+
    .icon-container:hover {
       transform: scale(1.2, 1.2)
    }
@@ -293,7 +299,7 @@ return (
         top: 55%
     }
     .icon-container {
-      margin: 1rem 0
+      margin: .75rem 0 .25rem
     }
     .name-holder {
       height: 35%
@@ -329,6 +335,14 @@ return (
     .section-two .slick-next:before, .section-two .slick-prev:before {
       display: none !important
     }
+  }
+
+  #fp-nav {
+    display: ${(props.viewModel === 'mobile' || props.viewModel === 'tablet') ? 'none' : ''}
+  }
+
+  #fp-nav ul li a span {
+    background: #fff
   }
   
    `}
