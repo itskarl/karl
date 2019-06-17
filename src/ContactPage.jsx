@@ -77,13 +77,13 @@ const ContactPage = () => {
                 .large-icon {
                     font-size: 7rem;
                     left: calc(50% - 3.5rem);
-                    bottom: calc(50% + 11rem);
+                    bottom: calc(50% + 8rem);
                     background: none;
                 }
                 .contact-container {
                     background: url(lines-bg.svg) no-repeat;
                     padding-top: 5rem;
-                    background-position: top -200px right 70%;
+                    background-position: top -100px right 70%;
                     background-size: cover;
                 }
                 .contact-button {

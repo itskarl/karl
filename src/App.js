@@ -312,7 +312,7 @@ return (
   }
 
   @media screen and (max-width: 750px) { 
-    .slick-thumb {
+    .section-two .slick-thumb {
       display: none !important;
     }
     .project-square {
@@ -326,7 +326,7 @@ return (
   }
 
   @media screen and (min-width: 750px) {
-    .slick-next:before, .slick-prev:before {
+    .section-two .slick-next:before, .section-two .slick-prev:before {
       display: none !important
     }
   }

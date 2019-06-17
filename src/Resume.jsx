@@ -391,14 +391,16 @@ const Resume = (props) => {
 
 
             <div >
+              
               <div className="jobs-slide">
-              <div className="job" onClick={() => setOpenFirst(true)}>
+              <div className="section-title languages">Work Experience</div>
+              <div className="job-mobile" onClick={() => setOpenFirst(true)}>
                 <div className="job-info">
                   <div className="job-logo unpakt"> </div>
 
                   <div>
                     <p className="job-title">FRONT END DEVELOPER</p>
-                    <p>Unpakt / '18 - Present</p>
+                    <p>Unpakt</p>
                   </div>
                 </div>
                 <div>
@@ -407,13 +409,13 @@ const Resume = (props) => {
               </div>
 
 
-              <div className="job" onClick={() => setOpenSecond(true)}>
+              <div className="job-mobile" onClick={() => setOpenSecond(true)}>
                 <div className="job-info">
                   <div className="job-logo discovery">  </div>
 
                   <div>
                     <p className="job-title">TELEVISION PRODUCER</p>
-                    <p>Discovery Channel / '10-'18</p>
+                    <p>Discovery Channel</p>
                   </div>
                 </div>
 
@@ -441,7 +443,7 @@ const Resume = (props) => {
                 </div>
               </Modal>
 
-              <div className="job" onClick={() => setOpenThird(true)}>
+              <div className="job-mobile" onClick={() => setOpenThird(true)}>
                 <div className="job-info">
                   <div className="job-logo news">
 
@@ -449,7 +451,7 @@ const Resume = (props) => {
 
                   <div>
                     <p className="job-title">NEWS RESEARCHER</p>
-                    <p>NBC News / '09-'10</p>
+                    <p>NBC News</p>
                   </div>
                 </div>
                 <div>
@@ -474,13 +476,13 @@ const Resume = (props) => {
                 </div>
               </Modal>
 
-              <div className="job" onClick={() => setOpenFourth(true)}>
+              <div className="job-mobile" onClick={() => setOpenFourth(true)}>
                 <div className="job-info">
                   <div className="job-logo nbc">
                   </div>
                   <div>
                     <p className="job-title">NBC PAGE</p>
-                    <p>NBC Studios / '08-'09</p>
+                    <p>NBC Studios</p>
                   </div>
                 </div>
                 <div>
@@ -494,7 +496,8 @@ const Resume = (props) => {
             <div>
 
               <div className="education">
-                <div className="edu" onClick={() => setOpenFifth(true)}>
+              <div className="section-title languages">Education</div>
+                <div className="edu-mobile" onClick={() => setOpenFifth(true)}>
 
                   <div className="job-info">
                     <div className="edu-logo nycda">
@@ -525,7 +528,7 @@ const Resume = (props) => {
                   </div>
                 </Modal>
 
-                <div className="edu" onClick={() => setOpenSixth(true)}>
+                <div className="edu-mobile" onClick={() => setOpenSixth(true)}>
 
                   <div className="job-info">
                     <div className="edu-logo sju">
@@ -886,7 +889,7 @@ const Resume = (props) => {
         
           }
 
-          @media screen and (max-width: 921px) {
+          @media screen and (max-width: 500px) {
             .skills-section li {
               display: inline-block;
               margin: .2rem;
@@ -928,6 +931,8 @@ const Resume = (props) => {
             color: #e9e9ef;
             padding: 0 1rem;
             text-align: center;
+            margin-top: -.5rem;
+            margin-bottom: 1rem;
           }
           .donuts-list i {
             font-size: 1.2rem
@@ -970,12 +975,13 @@ const Resume = (props) => {
 
 
         
-          .slider-mobile .job, .slider-mobile .edu {
-            width: 18rem;
+          .slider-mobile .job-mobile, .slider-mobile .edu-mobile {
+            width: 90%;
+            max-width: 25rem;
             background: rgb(53, 72, 112);
             border-radius: 3px;
             display: flex;
-            min-width: 10rem;
+            box-shadow: 0 3px 10px 5px #0000006b;
             margin: 1rem auto;
             align-items: center;
             color: #4FC3F7;
@@ -984,8 +990,32 @@ const Resume = (props) => {
             justify-content: space-between;
             transition-duration: .3s;
             position:relative;
-
+            transform: none;
+            left: auto;
+            height: 4rem;
+            cursor: pointer;
+            font-size: 14px;
           }
+          .job-mobile:hover, .edu-mobile:hover {
+            transform: translateY(-2px)
+          }
+          .job-mobile p, .edu-mobile p {
+            margin: 0
+          }
+          .slider-mobile .slick-track {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          } 
+          .slider-mobile .section-title {
+            text-align: center;
+            margin: 1rem 0;
+            width:100%
+          }
+          .slider-mobile .donuts-list {
+            grid-template-columns: 1fr 1fr
+          }
+
 
         `}  </style>
 
