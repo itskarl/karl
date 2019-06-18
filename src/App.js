@@ -296,10 +296,10 @@ return (
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
-        top: 55%
+        top: calc(6rem + 25%);
     }
     .icon-container {
-      margin: .75rem 0 .25rem
+      margin: 5vh 0 .25rem
     }
     .name-holder {
       height: 35%
