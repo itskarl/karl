@@ -71,14 +71,14 @@ const Resume = (props) => {
                   skill={
                     <> <i style={{ color: '#4effee' }} className="devicon-css3-plain"></i><br />CSS</>
                   }>
-                  <p>CSS3<br /> SASS<br /> Bootstrap<br /> Materialize</p>
+                  <p>CSS3<br /> SASS<br /> Bootstrap<br /> Responsive Design</p>
                 </Donut>
 
                 <Donut stroke='#87c2f7' ratios='75 25'
                   skill={
                     <> <i style={{ color: '#87c2f7' }} className="devicon-javascript-plain"></i><br />Javascript </>
                   }>
-                  <p><b>React JS</b><br /> ES6<br /> Angular JS<br />Node</p>
+                  <p><b>React JS</b><br /> ES6<br /> Angular JS<br />Node.js</p>
                 </Donut>
 
                 <Donut stroke='#ff5572' ratios='60 40'
@@ -253,14 +253,14 @@ const Resume = (props) => {
                     skill={
                       <> <i style={{ color: '#4effee' }} className="devicon-css3-plain"></i><br />CSS</>
                     }>
-                    <p>CSS3<br /> SASS<br /> Bootstrap<br /> Materialize</p>
+                    <p> SASS<br /> Bootstrap<br /> Responsive Design</p>
                   </Donut>
 
                   <Donut stroke='#87c2f7' ratios='75 25'
                     skill={
                       <> <i style={{ color: '#87c2f7' }} className="devicon-javascript-plain"></i><br />Javascript </>
                     }>
-                    <p><b>React JS</b><br /> ES6<br /> Angular JS<br />Node</p>
+                    <p><b>React JS</b><br /> ES6<br /> Node.js</p>
                   </Donut>
 
                   <Donut stroke='#ff5572' ratios='60 40'

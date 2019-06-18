@@ -52,7 +52,7 @@ return (
           </section>
 
           <section className="section section-five">
-
+            <div style={{textAlign: 'center'}}>this page coming ASAP</div>
           </section>
 
 
@@ -354,6 +354,10 @@ return (
 
   #fp-nav ul li a span {
     background: #fff
+  }
+
+  .hide-in-mobile {
+    ${props.viewModel === 'mobile' ? 'display: none' : ''}
   }
   
    `}
