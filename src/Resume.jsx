@@ -140,23 +140,6 @@ const Resume = (props) => {
                   <button className="more-info" ><i className="fas fa-plus-circle"></i></button>
                 </div>
               </div>
-              <Modal open={openFirst} onClose={() => setOpenFirst(false)} styles={customModal} center classNames={customanimation} animationDuration={1500}>
-                <div className="modal-content">
-                  <div className="modal-top">
-                    <h2>Front End Developer</h2>
-                    <p>Unpakt · Nov 2018 - Present</p>
-                  </div>
-                  <div className="modal-body">
-                    <ul>
-                      <li>Facilitated migration of high traffic e-commerce web application from old frameworks (Ruby on Rails, Angular) to React JS</li>
-                      <li>Oversees front-end development and creation of multiple apps and features across the growing Unpakt product line.</li>
-                      <li>Manages product interfaces and makes sure all web apps are optimized for SEO, accessibility, and UI/UX. </li>
-                      <li> Maintained product quality through regular QA tests and managing bug reports and fixes.</li>
-
-                    </ul>
-                  </div>
-                </div>
-              </Modal>
 
               <div className="job two" onClick={() => setOpenSecond(true)}>
                 <div className="job-info">
@@ -173,24 +156,7 @@ const Resume = (props) => {
 
                 </div>
               </div>
-              <Modal open={openSecond} onClose={() => setOpenSecond(false)} styles={customModal} center classNames={customanimation} animationDuration={1500}
-              >
-                <div className="modal-content">
-                  <div className="modal-top">
-                    <h2>Television Producer</h2>
-                    <p>Discovery Communications · 2010-2018</p>
-                  </div>
-                  <div className="modal-body">
-                    <span>Development producer with several years experience helping develop and produce original series and specials for Discovery Channel and sister networks (Science, Animal Planet, TLC, Destination America).</span>
-                    <ul>
-                      <li>Worked closely with vendors and production companies to keep deliverables on time, on budget, and meeting all editorial requirements. </li>
-                      <li>Co-produced and project managed seven highly rated specials and nonfiction series across multiple cable networks. </li>
-                      <li>Responsible for providing background research, finding and managing original on-screen talent, and developing show pitches for senior network executives.  </li>
-                      <li>Conceived, wrote, and designed all paper treatments and presentation decks for all development projects.</li>
-                    </ul>
-                  </div>
-                </div>
-              </Modal>
+
 
               <div className="job three" onClick={() => setOpenThird(true)}>
                 <div className="job-info">
@@ -208,22 +174,6 @@ const Resume = (props) => {
 
                 </div>
               </div>
-              <Modal open={openThird} onClose={() => setOpenThird(false)} styles={customModal} center classNames={customanimation} animationDuration={1500}>
-                <div className="modal-content">
-                  <div className="modal-top">
-                    <h2>News Researcher</h2>
-                    <p>NBC News · 2009-2010</p>
-                  </div>
-                  <div className="modal-body">
-
-                    <ul>
-                      <li> Provided breaking news updates to producers. Functioned as researcher and primary fact checker for all health-related stories for NBC News TODAY, Dateline, and Nightly News. </li>
-                      <li>Initiated outreach to interview subjects and conducted pre-interviews for news segments.  </li>
-                      <li> Managed the schedule, travel, and logistics for NBC Chief Medical Editor, Dr. Nancy Snyderman.</li>
-                    </ul>
-                  </div>
-                </div>
-              </Modal>
 
               <div className="job four" onClick={() => setOpenFourth(true)}>
                 <div className="job-info">
@@ -239,25 +189,7 @@ const Resume = (props) => {
                 </div>
               </div>
             </div>
-            <Modal open={openFourth} onClose={() => setOpenFourth(false)} styles={customModal} center classNames={customanimation} animationDuration={1500}>
-              <div className="modal-content">
-                <div className="modal-top">
-                  <h2>NBC Page</h2>
-                  <p>NBC Universal · 2008-2009</p>
-                </div>
-                <div className="modal-body">
 
-                  <ul>
-                    <li><b>Guest Relations:</b> Conducted NBC studio tours; facilitated tickets and audience coordination for live tapings of Late Night with Conan O’Brien, Late Night With Jimmy Fallon, and Saturday Night Live</li>
-
-                    <li><b> NBC News Media Relations Assistant:</b> Acted as a primary liaison between the NBC News publicity team (Dateline, Meet the Press, Nightly News & TODAY Show) and other media outlets during the 2008 presidential election. Facilitated press requests including creating copy, screen grabs, news clips, and tape dubs</li>
-
-                    <li><b> SYFY Marketing Assistant:</b> Conceived, prepared and compiled PowerPoint decks for SYFY clients and the marketing team. Maintained, updated, and managed the SYFY mobile website and its assets. Researched marketing and technology news and wrote copy for the bi-weekly SYFY Signal newsletter</li>
-
-                  </ul>
-                </div>
-              </div>
-            </Modal>
 
 
             <div className="education">
@@ -279,21 +211,6 @@ const Resume = (props) => {
                 </div>
               </div>
 
-              <Modal open={openFifth} onClose={() => setOpenFifth(false)} styles={customModal} center classNames={customanimation} animationDuration={1500}>
-                <div className="modal-content">
-                  <div className="modal-top">
-                    <h2>New York Code & Design</h2>
-                    <p>Software Engineering Instensive · 2018</p>
-                  </div>
-                  <div className="modal-body">
-
-                    <ul>
-                      <li>Graduate of software engineering intensive (bootcamp) focusing on full-stack development. </li>
-                      <li>Created dynamic web applications using a variety of platforms, frameworks, and languages including: Ruby, Ruby on Rails, Javascript, jQuery, AJAX, HTML5, CSS3, sass, Postgresql, Bootstrap, SQL, Git, and Heroku.</li>
-                    </ul>
-                  </div>
-                </div>
-              </Modal>
 
               <div className="edu two" onClick={() => setOpenSixth(true)}>
 
@@ -311,23 +228,6 @@ const Resume = (props) => {
               </div>
 
 
-              <Modal open={openSixth} onClose={() => setOpenSixth(false)} styles={customModal} center classNames={customanimation} animationDuration={1500}>
-                <div className="modal-content">
-                  <div className="modal-top">
-                    <h2>St. John's University</h2>
-                    <p>BS Comminications / Minor in Business</p>
-                  </div>
-                  <div className="modal-body">
-
-                    <ul>
-                      <li>Receipient of a free/full four-year scholarship (St. John's Presidential Scholar)</li>
-                      <li>3.98 GPA</li>
-                      <li>Graduated Summa Cum Laude</li>
-                      <li>Graduated Silver Key Recipient (Salutatorian)</li>
-                    </ul>
-                  </div>
-                </div>
-              </Modal>
 
             </div>
           </div>
@@ -391,104 +291,70 @@ const Resume = (props) => {
 
 
             <div >
-              
+
               <div className="jobs-slide">
-              <div className="section-title languages">Work Experience</div>
-              <div className="job-mobile" onClick={() => setOpenFirst(true)}>
-                <div className="job-info">
-                  <div className="job-logo unpakt"> </div>
+                <div className="section-title languages">Work Experience</div>
+                <div className="job-mobile" onClick={() => setOpenFirst(true)}>
+                  <div className="job-info">
+                    <div className="job-logo unpakt"> </div>
 
+                    <div>
+                      <p className="job-title">FRONT END DEVELOPER</p>
+                      <p>Unpakt</p>
+                    </div>
+                  </div>
                   <div>
-                    <p className="job-title">FRONT END DEVELOPER</p>
-                    <p>Unpakt</p>
-                  </div>
-                </div>
-                <div>
-                  <button className="more-info" ><i className="fas fa-plus-circle"></i></button>
-                </div>
-              </div>
-
-
-              <div className="job-mobile" onClick={() => setOpenSecond(true)}>
-                <div className="job-info">
-                  <div className="job-logo discovery">  </div>
-
-                  <div>
-                    <p className="job-title">TELEVISION PRODUCER</p>
-                    <p>Discovery Channel</p>
+                    <button className="more-info" ><i className="fas fa-plus-circle"></i></button>
                   </div>
                 </div>
 
-                <div>
-                  <button className="more-info" ><i className="fas fa-plus-circle"></i></button>
 
-                </div>
-              </div>
-              <Modal open={openSecond} onClose={() => setOpenSecond(false)} styles={customModal} center classNames={customanimation} animationDuration={1500}
-              >
-                <div className="modal-content">
-                  <div className="modal-top">
-                    <h2>Television Producer</h2>
-                    <p>Discovery Communications · 2010-2018</p>
-                  </div>
-                  <div className="modal-body">
-                    <span>Development producer with several years experience helping develop and produce original series and specials for Discovery Channel and sister networks (Science, Animal Planet, TLC, Destination America).</span>
-                    <ul>
-                      <li>Worked closely with vendors and production companies to keep deliverables on time, on budget, and meeting all editorial requirements. </li>
-                      <li>Co-produced and project managed seven highly rated specials and nonfiction series across multiple cable networks. </li>
-                      <li>Responsible for providing background research, finding and managing original on-screen talent, and developing show pitches for senior network executives.  </li>
-                      <li>Conceived, wrote, and designed all paper treatments and presentation decks for all development projects.</li>
-                    </ul>
-                  </div>
-                </div>
-              </Modal>
+                <div className="job-mobile" onClick={() => setOpenSecond(true)}>
+                  <div className="job-info">
+                    <div className="job-logo discovery">  </div>
 
-              <div className="job-mobile" onClick={() => setOpenThird(true)}>
-                <div className="job-info">
-                  <div className="job-logo news">
-
+                    <div>
+                      <p className="job-title">TELEVISION PRODUCER</p>
+                      <p>Discovery Channel</p>
+                    </div>
                   </div>
 
                   <div>
-                    <p className="job-title">NEWS RESEARCHER</p>
-                    <p>NBC News</p>
+                    <button className="more-info" ><i className="fas fa-plus-circle"></i></button>
+
                   </div>
                 </div>
-                <div>
-                  <button className="more-info" ><i className="fas fa-plus-circle"></i></button>
 
-                </div>
-              </div>
-              <Modal open={openThird} onClose={() => setOpenThird(false)} styles={customModal} center classNames={customanimation} animationDuration={1500}>
-                <div className="modal-content">
-                  <div className="modal-top">
-                    <h2>News Researcher</h2>
-                    <p>NBC News · 2009-2010</p>
-                  </div>
-                  <div className="modal-body">
+                <div className="job-mobile" onClick={() => setOpenThird(true)}>
+                  <div className="job-info">
+                    <div className="job-logo news">
 
-                    <ul>
-                      <li> Provided breaking news updates to producers. Functioned as researcher and primary fact checker for all health-related stories for NBC News TODAY, Dateline, and Nightly News. </li>
-                      <li>Initiated outreach to interview subjects and conducted pre-interviews for news segments.  </li>
-                      <li> Managed the schedule, travel, and logistics for NBC Chief Medical Editor, Dr. Nancy Snyderman.</li>
-                    </ul>
-                  </div>
-                </div>
-              </Modal>
+                    </div>
 
-              <div className="job-mobile" onClick={() => setOpenFourth(true)}>
-                <div className="job-info">
-                  <div className="job-logo nbc">
+                    <div>
+                      <p className="job-title">NEWS RESEARCHER</p>
+                      <p>NBC News</p>
+                    </div>
                   </div>
                   <div>
-                    <p className="job-title">NBC PAGE</p>
-                    <p>NBC Studios</p>
+                    <button className="more-info" ><i className="fas fa-plus-circle"></i></button>
+
                   </div>
                 </div>
-                <div>
-                  <button className="more-info" ><i className="fas fa-plus-circle"></i></button>
+
+                <div className="job-mobile" onClick={() => setOpenFourth(true)}>
+                  <div className="job-info">
+                    <div className="job-logo nbc">
+                    </div>
+                    <div>
+                      <p className="job-title">NBC PAGE</p>
+                      <p>NBC Studios</p>
+                    </div>
+                  </div>
+                  <div>
+                    <button className="more-info" ><i className="fas fa-plus-circle"></i></button>
+                  </div>
                 </div>
-              </div>
               </div>
             </div>
 
@@ -496,7 +362,7 @@ const Resume = (props) => {
             <div>
 
               <div className="education">
-              <div className="section-title languages">Education</div>
+                <div className="section-title languages">Education</div>
                 <div className="edu-mobile" onClick={() => setOpenFifth(true)}>
 
                   <div className="job-info">
@@ -511,22 +377,6 @@ const Resume = (props) => {
                     <button className="more-info" ><i className="fas fa-plus-circle"></i></button>
                   </div>
                 </div>
-
-                <Modal open={openFifth} onClose={() => setOpenFifth(false)} styles={customModal} center classNames={customanimation} animationDuration={1500}>
-                  <div className="modal-content">
-                    <div className="modal-top">
-                      <h2>New York Code & Design</h2>
-                      <p>Software Engineering Instensive · 2018</p>
-                    </div>
-                    <div className="modal-body">
-
-                      <ul>
-                        <li>Graduate of software engineering intensive (bootcamp) focusing on full-stack development. </li>
-                        <li>Created dynamic web applications using a variety of platforms, frameworks, and languages including: Ruby, Ruby on Rails, Javascript, jQuery, AJAX, HTML5, CSS3, sass, Postgresql, Bootstrap, SQL, Git, and Heroku.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </Modal>
 
                 <div className="edu-mobile" onClick={() => setOpenSixth(true)}>
 
@@ -543,25 +393,6 @@ const Resume = (props) => {
                   </div>
                 </div>
 
-
-                <Modal open={openSixth} onClose={() => setOpenSixth(false)} styles={customModal} center classNames={customanimation} animationDuration={1500}>
-                  <div className="modal-content">
-                    <div className="modal-top">
-                      <h2>St. John's University</h2>
-                      <p>BS Comminications / Minor in Business</p>
-                    </div>
-                    <div className="modal-body">
-
-                      <ul>
-                        <li>Receipient of a free/full four-year scholarship (St. John's Presidential Scholar)</li>
-                        <li>3.98 GPA</li>
-                        <li>Graduated Summa Cum Laude</li>
-                        <li>Graduated Silver Key Recipient (Salutatorian)</li>
-                      </ul>
-                    </div>
-                  </div>
-                </Modal>
-
               </div>
 
             </div>
@@ -569,6 +400,117 @@ const Resume = (props) => {
           </Slider>
         </div>
       }
+
+      <Modal open={openFirst} onClose={() => setOpenFirst(false)} styles={customModal} center classNames={customanimation} animationDuration={1500}>
+        <div className="modal-content">
+          <div className="modal-top">
+            <h2>Front End Developer</h2>
+            <p>Unpakt · Nov 2018 - Present</p>
+          </div>
+          <div className="modal-body">
+            <ul>
+              <li>Facilitated migration of high traffic e-commerce web application from old frameworks (Ruby on Rails, Angular) to React JS</li>
+              <li>Oversees front-end development and creation of multiple apps and features across the growing Unpakt product line.</li>
+              <li>Manages product interfaces and makes sure all web apps are optimized for SEO, accessibility, and UI/UX. </li>
+              <li> Maintained product quality through regular QA tests and managing bug reports and fixes.</li>
+
+            </ul>
+          </div>
+        </div>
+      </Modal>
+
+      <Modal open={openFourth} onClose={() => setOpenFourth(false)} styles={customModal} center classNames={customanimation} animationDuration={1500}>
+        <div className="modal-content">
+          <div className="modal-top">
+            <h2>NBC Page</h2>
+            <p>NBC Universal · 2008-2009</p>
+          </div>
+          <div className="modal-body">
+
+            <ul>
+              <li><b>Guest Relations:</b> Conducted NBC studio tours; facilitated tickets and audience coordination for live tapings of Late Night with Conan O’Brien, Late Night With Jimmy Fallon, and Saturday Night Live</li>
+
+              <li><b> NBC News Media Relations Assistant:</b> Acted as a primary liaison between the NBC News publicity team (Dateline, Meet the Press, Nightly News & TODAY Show) and other media outlets during the 2008 presidential election. Facilitated press requests including creating copy, screen grabs, news clips, and tape dubs</li>
+
+              <li><b> SYFY Marketing Assistant:</b> Conceived, prepared and compiled PowerPoint decks for SYFY clients and the marketing team. Maintained, updated, and managed the SYFY mobile website and its assets. Researched marketing and technology news and wrote copy for the bi-weekly SYFY Signal newsletter</li>
+
+            </ul>
+          </div>
+        </div>
+      </Modal>
+
+
+      <Modal open={openThird} onClose={() => setOpenThird(false)} styles={customModal} center classNames={customanimation} animationDuration={1500}>
+        <div className="modal-content">
+          <div className="modal-top">
+            <h2>News Researcher</h2>
+            <p>NBC News · 2009-2010</p>
+          </div>
+          <div className="modal-body">
+
+            <ul>
+              <li> Provided breaking news updates to producers. Functioned as researcher and primary fact checker for all health-related stories for NBC News TODAY, Dateline, and Nightly News. </li>
+              <li>Initiated outreach to interview subjects and conducted pre-interviews for news segments.  </li>
+              <li> Managed the schedule, travel, and logistics for NBC Chief Medical Editor, Dr. Nancy Snyderman.</li>
+            </ul>
+          </div>
+        </div>
+      </Modal>
+
+      <Modal open={openSecond} onClose={() => setOpenSecond(false)} styles={customModal} center classNames={customanimation} animationDuration={1500}
+      >
+        <div className="modal-content">
+          <div className="modal-top">
+            <h2>Television Producer</h2>
+            <p>Discovery Communications · 2010-2018</p>
+          </div>
+          <div className="modal-body">
+            <span>Development producer with several years experience helping develop and produce original series and specials for Discovery Channel and sister networks (Science, Animal Planet, TLC, Destination America).</span>
+            <ul>
+              <li>Worked closely with vendors and production companies to keep deliverables on time, on budget, and meeting all editorial requirements. </li>
+              <li>Co-produced and project managed seven highly rated specials and nonfiction series across multiple cable networks. </li>
+              <li>Responsible for providing background research, finding and managing original on-screen talent, and developing show pitches for senior network executives.  </li>
+              <li>Conceived, wrote, and designed all paper treatments and presentation decks for all development projects.</li>
+            </ul>
+          </div>
+        </div>
+      </Modal>
+
+
+      <Modal open={openSixth} onClose={() => setOpenSixth(false)} styles={customModal} center classNames={customanimation} animationDuration={1500}>
+        <div className="modal-content">
+          <div className="modal-top">
+            <h2>St. John's University</h2>
+            <p>BS Comminications / Minor in Business</p>
+          </div>
+          <div className="modal-body">
+
+            <ul>
+              <li>Receipient of a free/full four-year scholarship (St. John's Presidential Scholar)</li>
+              <li>3.98 GPA</li>
+              <li>Graduated Summa Cum Laude</li>
+              <li>Graduated Silver Key Recipient (Salutatorian)</li>
+            </ul>
+          </div>
+        </div>
+      </Modal>
+
+
+      <Modal open={openFifth} onClose={() => setOpenFifth(false)} styles={customModal} center classNames={customanimation} animationDuration={1500}>
+        <div className="modal-content">
+          <div className="modal-top">
+            <h2>New York Code & Design</h2>
+            <p>Software Engineering Instensive · 2018</p>
+          </div>
+          <div className="modal-body">
+
+            <ul>
+              <li>Graduate of software engineering intensive (bootcamp) focusing on full-stack development. </li>
+              <li>Created dynamic web applications using a variety of platforms, frameworks, and languages including: Ruby, Ruby on Rails, Javascript, jQuery, AJAX, HTML5, CSS3, sass, Postgresql, Bootstrap, SQL, Git, and Heroku.</li>
+            </ul>
+          </div>
+        </div>
+      </Modal>
 
 
       <style jsx> {`
