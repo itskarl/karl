@@ -814,11 +814,12 @@ const Resume = (props) => {
             background: rgb(56, 76, 119);
             box-shadow: 0 5px 20px 16px #00000021
           }
-          .job-logo {
+          .job-logo, .edu-logo {
             width: 4rem;
             height: 4rem;
             margin-right: 1rem;
-            background: #26C6DA
+            background: #26C6DA;
+            ${props.viewModel === 'mobile' && 'width:0'}
           }
           .job-logo.unpakt {
             background: url(/images/res-unpakt.png) no-repeat center center/cover;
@@ -854,12 +855,6 @@ const Resume = (props) => {
           }
           .job-title, .school {
             color: white;
-          }
-          .edu-logo {
-            width: 4rem;
-            height: 4rem;
-            margin-right: 1rem;
-            background: #26C6DA
           }
           .edu-logo.sju {
             background: url(/images/res-sju.png) no-repeat center center/cover;
@@ -1010,10 +1005,18 @@ const Resume = (props) => {
           .slider-mobile .section-title {
             text-align: center;
             margin: 1rem 0;
-            width:100%
+            width:100%;
+            border-bottom: 1px solid #e75ce7;
+            padding: 0 0 1rem;
           }
           .slider-mobile .donuts-list {
             grid-template-columns: 1fr 1fr
+          }
+          .slider-mobile .skills-section {
+            padding: 0
+          }
+          .slider-mobile .slick-track {
+            align-items: flex-start;
           }
 
 

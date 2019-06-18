@@ -331,6 +331,17 @@ return (
     }
   }
 
+
+  .slick-next:before {
+    content: url(right-arrow.svg);
+    width: 24px; 
+    height: 30px;
+  }
+  .slick-prev:before {
+    content: url(left-arrow.svg);
+    width: 24px; 
+    height: 30px;
+  }
   @media screen and (min-width: 750px) {
     .section-two .slick-next:before, .section-two .slick-prev:before {
       display: none !important

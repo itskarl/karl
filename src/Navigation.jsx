@@ -27,7 +27,7 @@ const Navigation = (props) => {
             </div>
 
             {openMenu &&
-            <ul className="animated bounceInUp">
+            <ul className="animated bounceInDown">
             <a onClick={() => setOpenMenu(false)} href="#home" className="about">  <li> <button  >HOME</button>  </li></a>
             <a onClick={() => setOpenMenu(false)} href="#my-work" className="work" >   <li><button >WORK</button>  </li></a>
             <a onClick={() => setOpenMenu(false)} href="#resume" className="resume" >  <li><button >RÉSUMÉ</button>  </li></a>
@@ -89,7 +89,7 @@ const Navigation = (props) => {
             .section-current {
                 text-transform: uppercase
             }
-            .section-current.desktop, section-current.wide {
+            .section-current.desktop, .section-current.wide, .section-current.tablet {
                 text-transform: uppercase;
                 color: #d4e7e9;
                 width: auto;
@@ -134,7 +134,7 @@ const Navigation = (props) => {
                 padding: 0 1rem
             }
             .mobile-header li:hover, .mobile-header .hamburger:hover {
-                background: #159ab6
+                background: #159ab6c4;
             }
             .mobile-header a {
                 text-decoration: none;
