@@ -300,7 +300,7 @@ const Resume = (props) => {
 
                     <div>
                       <p className="job-title">FRONT END DEVELOPER</p>
-                      <p>Unpakt</p>
+                      <p>Unpakt | '08-Present</p>
                     </div>
                   </div>
                   <div>
@@ -315,7 +315,7 @@ const Resume = (props) => {
 
                     <div>
                       <p className="job-title">TELEVISION PRODUCER</p>
-                      <p>Discovery Channel</p>
+                      <p>Discovery | '10-'18</p>
                     </div>
                   </div>
 
@@ -333,7 +333,7 @@ const Resume = (props) => {
 
                     <div>
                       <p className="job-title">NEWS RESEARCHER</p>
-                      <p>NBC News</p>
+                      <p>NBC News | '09-'10</p>
                     </div>
                   </div>
                   <div>
@@ -348,7 +348,7 @@ const Resume = (props) => {
                     </div>
                     <div>
                       <p className="job-title">NBC PAGE</p>
-                      <p>NBC Studios</p>
+                      <p>NBC Studios | '09 - '10</p>
                     </div>
                   </div>
                   <div>
@@ -412,7 +412,7 @@ const Resume = (props) => {
               <li>Facilitated migration of high traffic e-commerce web application from old frameworks (Ruby on Rails, Angular) to React JS</li>
               <li>Oversees front-end development and creation of multiple apps and features across the growing Unpakt product line.</li>
               <li>Manages product interfaces and makes sure all web apps are optimized for SEO, accessibility, and UI/UX. </li>
-              <li> Maintained product quality through regular QA tests and managing bug reports and fixes.</li>
+              <li className="hide-in-mobile">Maintained product quality through regular QA tests and managing bug reports and fixes.</li>
 
             </ul>
           </div>
@@ -430,9 +430,9 @@ const Resume = (props) => {
             <ul>
               <li><b>Guest Relations:</b> Conducted NBC studio tours; facilitated tickets and audience coordination for live tapings of Late Night with Conan O’Brien, Late Night With Jimmy Fallon, and Saturday Night Live</li>
 
-              <li><b> NBC News Media Relations Assistant:</b> Acted as a primary liaison between the NBC News publicity team (Dateline, Meet the Press, Nightly News & TODAY Show) and other media outlets during the 2008 presidential election. Facilitated press requests including creating copy, screen grabs, news clips, and tape dubs</li>
+              <li><b> NBC News Media Relations Assistant:</b> Acted as a primary liaison between the NBC News publicity team (Dateline, Meet the Press, Nightly News & TODAY Show) and other media outlets during the 2008 presidential election.</li>
 
-              <li><b> SYFY Marketing Assistant:</b> Conceived, prepared and compiled PowerPoint decks for SYFY clients and the marketing team. Maintained, updated, and managed the SYFY mobile website and its assets. Researched marketing and technology news and wrote copy for the bi-weekly SYFY Signal newsletter</li>
+              <li className="hide-in-mobile"><b> SYFY Marketing Assistant:</b> Conceived, prepared and compiled PowerPoint decks for SYFY clients and the marketing team. Maintained, updated, and managed the SYFY mobile website and its assets. Researched marketing and technology news and wrote copy for the bi-weekly SYFY Signal newsletter</li>
 
             </ul>
           </div>
@@ -451,7 +451,7 @@ const Resume = (props) => {
             <ul>
               <li> Provided breaking news updates to producers. Functioned as researcher and primary fact checker for all health-related stories for NBC News TODAY, Dateline, and Nightly News. </li>
               <li>Initiated outreach to interview subjects and conducted pre-interviews for news segments.  </li>
-              <li> Managed the schedule, travel, and logistics for NBC Chief Medical Editor, Dr. Nancy Snyderman.</li>
+              <li className="hide-in-mobile"> Managed the schedule, travel, and logistics for NBC Chief Medical Editor, Dr. Nancy Snyderman.</li>
             </ul>
           </div>
         </div>
@@ -465,12 +465,12 @@ const Resume = (props) => {
             <p>Discovery Communications · 2010-2018</p>
           </div>
           <div className="modal-body">
-            <span>Development producer with several years experience helping develop and produce original series and specials for Discovery Channel and sister networks (Science, Animal Planet, TLC, Destination America).</span>
+            <span>Development producer with several years experience helping develop and produce original series and specials for Discovery Channel <span className="hide-in-mobile">and sister networks (Science, Animal Planet, TLC, Destination America)</span>.</span>
             <ul>
               <li>Worked closely with vendors and production companies to keep deliverables on time, on budget, and meeting all editorial requirements. </li>
               <li>Co-produced and project managed seven highly rated specials and nonfiction series across multiple cable networks. </li>
-              <li>Responsible for providing background research, finding and managing original on-screen talent, and developing show pitches for senior network executives.  </li>
-              <li>Conceived, wrote, and designed all paper treatments and presentation decks for all development projects.</li>
+              <li className="hide-in-mobile">Responsible for providing background research, finding and managing original on-screen talent, and developing show pitches for senior network executives.  </li>
+              <li className="hide-in-mobile">Conceived, wrote, and designed all paper treatments and presentation decks for all development projects.</li>
             </ul>
           </div>
         </div>
@@ -515,7 +515,7 @@ const Resume = (props) => {
 
       <style jsx> {`
          .section-three {
-            background: #2f2b4a;
+            background: linear-gradient(#00232e, #2f2b4a);
           }
           .section-three-content.desktop, .section-three-content.wide {
             display:  inline-grid;
@@ -948,7 +948,9 @@ const Resume = (props) => {
             text-align: center;
             margin: 1rem 0;
             width:100%;
-            border-bottom: 1px solid #e75ce7;
+            border-color: #e75ce7;
+            border-bottom: 1px solid;
+            border-image: linear-gradient(90deg, rgb(10, 37, 52), rgb(41, 121, 241), #092534) 1;
             padding: 0 0 1rem;
           }
           .slider-mobile .donuts-list {

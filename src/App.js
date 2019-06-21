@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Resume from './Resume';
 import ContactPage from './ContactPage';
@@ -6,58 +6,60 @@ import Navigation from './Navigation';
 import ReactFullpage from "@fullpage/react-fullpage";
 import CoverPage from './CoverPage';
 import MyWork from './MyWork';
+import AboutMe from './AboutMe';
 
 const Karl = (props) => {
 
-const [headerName, setHeaderName] = useState('Karl Rodulfo')
+  const [headerName, setHeaderName] = useState('Karl Rodulfo')
 
-return (
-  <>
-            
-  <Navigation headerName={headerName} viewModel={props.viewModel} />
-          
-  <ReactFullpage
-    anchors={['home', 'my-work', 'resume', 'contact', 'about']}
-    onLeave={(origin, destination, direction) => {
-      // console.log("onLeave event", { origin, destination, direction });
-      // console.log(destination.anchor);
-      setHeaderName(destination.anchor.replace("-", " "))
-    }}
-    navigation={true}
-    navigationPosition={'left'}
-    render={({ state, fullpageApi }) => {
-      console.log("render prop change", state); // eslint-disable-line no-console
-      console.log('viewmodel', props.viewModel)
-      return (
-        <>
-          
-          <section  className="section section-one">
-            
-            <CoverPage viewModel={props.viewModel} fullpageApi={fullpageApi} />
-          </section>
+  return (
+    <>
 
+      <Navigation headerName={headerName} viewModel={props.viewModel} />
 
-          <section className="section section-two">
-            <div className="section-two-square"></div>
+      <ReactFullpage
+        anchors={['home', 'my-work', 'resume', 'contact', 'about']}
+        onLeave={(origin, destination, direction) => {
+          // console.log("onLeave event", { origin, destination, direction });
+          // console.log(destination.anchor);
+          setHeaderName(destination.anchor.replace("-", " "))
+        }}
+        navigation={true}
+        navigationPosition={'left'}
+        render={({ state, fullpageApi }) => {
+          console.log("render prop change", state); // eslint-disable-line no-console
+          console.log('viewmodel', props.viewModel)
+          return (
+            <>
 
-            <MyWork />
-          </section>
+              <section className="section section-one">
 
-          <section className="section section-three">
-            <Resume viewModel={props.viewModel}/>
-          </section>
-
-          <section className="section section-four">
-            <ContactPage />
-          </section>
-
-          <section className="section section-five">
-            <div style={{textAlign: 'center'}}>this page coming ASAP</div>
-          </section>
+                <CoverPage viewModel={props.viewModel} fullpageApi={fullpageApi} />
+              </section>
 
 
-          <style jsx>
-            {`
+              <section className="section section-two">
+                <div className="section-two-square"></div>
+
+                <MyWork />
+              </section>
+
+              <section className="section section-three">
+                <Resume viewModel={props.viewModel} />
+              </section>
+
+              <section className="section section-four">
+                <ContactPage />
+              </section>
+
+              <section className="section section-five">
+                <AboutMe viewModel={props.viewModel} />
+                <img className="head-thought" src="1_me.svg" />
+              </section>
+
+
+              <style jsx>
+                {`
    *:focus {
    outline: none
    }
@@ -211,7 +213,7 @@ return (
    }
 
    .section-two {
-    background: linear-gradient(#212121,#2f2b4a);
+    background: linear-gradient(#212121,#00232e);
    position: relative;
    }
    .slider-container {
@@ -288,7 +290,20 @@ return (
   }
 
   .section-five {
-    background: linear-gradient(#271d3a 20%, #023e4d)
+    background: linear-gradient(#271d3a 20%, #023e4d);
+    position: relative;
+  }
+
+  .head-thought {
+    width: 20rem;
+    margin: auto;
+    position: absolute;
+    bottom: -12rem;
+    display: block;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 0;
+
   }
 
   @media screen and (max-width: 778px) {
@@ -361,19 +376,19 @@ return (
   }
   
    `}
-          </style>
-        </>
+  </style>
+            </>
 
 
 
 
-      );
-    }}
-  />
-  </>
+          );
+        }}
+      />
+    </>
 
-);
-  }
+  );
+}
 
 
 

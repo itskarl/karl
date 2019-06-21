@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import ScrollorSelect from './ScrollOrSelect';
 
 
 const CoverPage = ({ fullpageApi, viewModel }) => {
 
-    const [menuOption, setmenuOption] = useState('')
+    const [menuOption, setmenuOption] = useState(<p><ScrollorSelect /></p>)
 
     return (
         <>
@@ -52,10 +53,13 @@ const CoverPage = ({ fullpageApi, viewModel }) => {
 
                 </div>
                 {
-                    menuOption && (viewModel === 'desktop' || viewModel === 'wide') && <div className={`menu-option animated fadeIn`}>
+                    menuOption && (viewModel === 'desktop' || viewModel === 'wide') && 
+                    <div className={`menu-option animated fadeIn`}>
                         <p>{menuOption}</p>
                     </div>
                 }
+                
+                
             </div>
 
 
