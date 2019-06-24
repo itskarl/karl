@@ -7,40 +7,40 @@ const ScrollorSelect = () => {
                 <div className="mouse-container">
                     <div className="scroll-middle animated slideInDown infinite">.</div>
                 </div>
+                <p>Scroll or Select</p>
             </div>
-            <div className="or-connector">&nbsp;or&nbsp;</div>
-            <div className="hand-click infinite animated pulse">
-                <i class="far fa-hand-pointer"></i>
-            </div>
+            
+            
 
             <style> {`
             .mouse-container {
-                width: 1.5rem;
-                height: 2.5rem;
+                width: 1.4rem;
+                height: 2.2rem;
                 border-radius: 1rem;
-                border: 3px solid #005f6c;
+                border: 2px solid white;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 padding-bottom: 1.5rem;
-                overflow: hidden
+                overflow: hidden;
+                background: none;
+                margin: auto;
             }
             .scroll-middle {
-                font-size: 3rem;
+                font-size: 2.5rem;
+                color: white;
+                text-shadow: none; 
             }
             .scroll-select {
+                margin:auto;
                 display: flex;
                 align-items: center;
-                color: #005f6c;
-                margin-top: 10vh;
-                width: 8rem;
-                justify-content: space-between
+                color: white;
+                justify-content: center;
             }
-            .or-connector {
+            .scroll-select p {
                 font-size: 1rem;
-            }
-            .hand-click {
-                font-size: 2.2rem;
+                line-height: 1rem;
             }
 
             `}

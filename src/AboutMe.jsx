@@ -25,7 +25,7 @@ const AboutMe = (props) => {
                     width: 90%;
                     max-width: 800px;
                     background: #397b82;
-                    height: 65vh;
+                    height: 100%;
                     max-height: 600px;
                     margin: auto;
                     margin-top: -3rem;
@@ -33,16 +33,11 @@ const AboutMe = (props) => {
                     position: relative;
                     padding: 1rem 1.5rem;
                     box-shadow: 0 10px 20px 10px #00000065;
-                    z-index: 1
+                    z-index: 2
                 }
                 .about-me div {
-                    height: calc(100% - 2rem);
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    width: calc(100% - 2rem);
-                    ${(props.viewModel === 'tablet' || props.viewModel === 'mobile') ? 'overflow-y: scroll' : ''}
+                    ${(props.viewModel === 'tablet' || props.viewModel === 'mobile') ? 'overflow: scroll;' : ''}
+                    ${(props.viewModel === 'tablet' || props.viewModel === 'mobile') ? 'max-height: 65vh' : ''}
                 }
                 .about-me p {
                     margin: .5rem 0;

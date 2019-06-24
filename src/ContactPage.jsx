@@ -61,7 +61,7 @@ const ContactPage = () => {
                 padding-left: .5rem;
             }
             .contact-container p:nth-of-type(2) {
-                color: #aad690
+                color: #aad690;
               }
             .large-icon {
                 position: absolute;

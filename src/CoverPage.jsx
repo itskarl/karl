@@ -4,13 +4,17 @@ import ScrollorSelect from './ScrollOrSelect';
 
 const CoverPage = ({ fullpageApi, viewModel }) => {
 
-    const [menuOption, setmenuOption] = useState(<p><ScrollorSelect /></p>)
+    const [menuOption, setmenuOption] = useState(<ScrollorSelect />)
 
     return (
         <>
-
+            
             <div className="name-holder">
-                <div className="name slide-in-bottom">Karl Rodulfo  </div>
+
+                <div className="name slide-in-bottom">
+                
+                    Karl Rodulfo  
+                </div>
                 <div className="square s_1"></div>
                 <div className="square s_2"></div>
                 <div className="square s_3"></div>
