@@ -37,6 +37,7 @@ const ScrollorSelect = () => {
                 align-items: center;
                 color: white;
                 justify-content: center;
+                margin-top: 10vh
             }
             .scroll-select p {
                 font-size: 1rem;

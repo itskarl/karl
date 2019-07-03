@@ -25,6 +25,7 @@ const Karl = (props) => {
           setHeaderName(destination.anchor.replace("-", " "))
         }}
         navigation={true}
+        
         navigationPosition={'left'}
         render={({ state, fullpageApi }) => {
           console.log("render prop change", state); // eslint-disable-line no-console
@@ -292,6 +293,7 @@ const Karl = (props) => {
   .section-five {
     background: linear-gradient(#271d3a 20%, #023e4d);
     position: relative;
+    overflow: hidden
   }
 
   .head-thought {
