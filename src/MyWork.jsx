@@ -116,7 +116,7 @@ return (
                     </div>
                   </div>
                 </div>
-                {/* <div>
+                <div>
                   <div className="project-square">
                     <div className="project-content"><img alt="site screenshot" src="/images/proj5.png" /></div>
                     <div className="project-content">
@@ -138,10 +138,10 @@ return (
                       <a href="https://github.com/itskarl/happymedium" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i>&nbsp; GITHUB</a>
                     </div>
                   </div>
-                </div> */}
+                </div>
                 <div>
                   <div className="project-square">
-                    <div className="project-content"><img alt="site screenshot" src="/images/proj5.png" /></div>
+                    <div className="project-content"><img alt="site screenshot" src="/images/proj6.png" /></div>
                     <div className="project-content">
                       <a href="https://buyinformed.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                         <h4><span className="hide-in-mobile">CONCON: THE </span>CONSCIENTIOUS CONSUMER TOOL</h4>
