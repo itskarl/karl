@@ -524,6 +524,9 @@ const Resume = (props) => {
             height: calc(100% - 3rem);
             margin-top: 3rem;
           }
+          .section-three-content.wide {
+            grid-template-columns: 1.5fr 1fr;
+          }
           .section-three-content.tablet, .section-three-content.mobile {
             display: inline;
           }

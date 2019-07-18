@@ -10,7 +10,8 @@
     "react-fullpage": "^0.1.19",
     "react-responsive-modal": "^4.0.1",
     "react-scripts": "3.0.0",
-    "react-slick": "^0.24.0"
+    "react-slick": "^0.24.0",
+    "styled-jsx": "^3.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
