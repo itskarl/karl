@@ -25,6 +25,7 @@ const Karl = (props) => {
           setHeaderName(destination.anchor.replace("-", " "))
         }}
         navigation={true}
+        sectionsColor={[]}
         
         navigationPosition={'left'}
         render={({ state, fullpageApi }) => {
