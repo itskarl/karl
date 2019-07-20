@@ -527,6 +527,9 @@ const Resume = (props) => {
           .section-three-content.tablet, .section-three-content.mobile {
             display: inline;
           }
+          .section-three-content.wide {
+            grid-template-columns: 1.5fr 1fr;
+          }
           .slider-mobile {
             padding: 0 2rem;
           }

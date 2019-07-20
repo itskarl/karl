@@ -4,7 +4,7 @@ import ScrollorSelect from './ScrollOrSelect';
 
 const CoverPage = ({ fullpageApi, viewModel }) => {
 
-    const [menuOption, setmenuOption] = useState(<ScrollorSelect />)
+    const [menuOption, setmenuOption] = useState('')
 
     return (
         <>
@@ -27,28 +27,28 @@ const CoverPage = ({ fullpageApi, viewModel }) => {
                 <div className="menu-container">
 
                     <div>
-                        <div onClick={() => { fullpageApi.moveTo('my-work') }} onMouseOver={() => setmenuOption('My Work')} onMouseOut={() => setmenuOption('')} className="icon-container">
+                        <div onClick={() => { fullpageApi.moveTo('my-work') }} onMouseOver={() => setmenuOption('My Work')} onMouseOut={() => setmenuOption(' ')} className="icon-container">
                             <img className="icon" alt="icon" src="2_work.svg" />
                         </div>
                         {(viewModel === 'mobile' || viewModel === 'tablet') && <p>My Work</p>}
                     </div>
 
                     <div>
-                        <div onClick={() => { fullpageApi.moveTo('resume') }} onMouseOver={() => setmenuOption('Résumé')} onMouseOut={() => setmenuOption('')} className="icon-container">
+                        <div onClick={() => { fullpageApi.moveTo('resume') }} onMouseOver={() => setmenuOption('Résumé')} onMouseOut={() => setmenuOption(' ')} className="icon-container">
                             <img className="icon" alt="icon" src="3_resume.svg" />
                         </div>
                         {(viewModel === 'mobile' || viewModel === 'tablet') && <p>Résumé</p>}
                     </div>
 
                     <div>
-                        <div onClick={() => { fullpageApi.moveTo('about') }} onMouseOver={() => setmenuOption('About')} onMouseOut={() => setmenuOption('')} className="icon-container">
+                        <div onClick={() => { fullpageApi.moveTo('about') }} onMouseOver={() => setmenuOption('About')} onMouseOut={() => setmenuOption(' ')} className="icon-container">
                             <img className="icon" alt="icon" src="1_me.svg" />
                         </div>
                         {(viewModel === 'mobile' || viewModel === 'tablet') && <p>About</p>}
                     </div>
 
                     <div>
-                        <div onClick={() => { fullpageApi.moveTo('contact') }} onMouseOver={() => setmenuOption('Contact')} onMouseOut={() => setmenuOption('')} className="icon-container">
+                        <div onClick={() => { fullpageApi.moveTo('contact') }} onMouseOver={() => setmenuOption('Contact')} onMouseOut={() => setmenuOption(' ')} className="icon-container">
                             <img className="icon" alt="icon" src="4_contact.svg" />
                         </div>
                         {(viewModel === 'mobile' || viewModel === 'tablet') && <p>Contact</p>}
@@ -59,11 +59,13 @@ const CoverPage = ({ fullpageApi, viewModel }) => {
                 {
                     menuOption && (viewModel === 'desktop' || viewModel === 'wide') && 
                     <div className={`menu-option animated fadeIn`}>
-                        <p>{menuOption}</p>
+                        <span>{menuOption}</span>
                     </div>
                 }
                 
-                
+                {   menuOption === '' && 
+                    <ScrollorSelect />
+                }
             </div>
 
 

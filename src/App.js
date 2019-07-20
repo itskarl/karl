@@ -234,7 +234,7 @@ const Karl = (props) => {
    .project-square img {
    max-width: 100%;
    border: 1rem solid #ebebeb;
-   border-width: 1.5rem .25rem .25rem;
+   border-width: 1.25rem .2rem .2rem;
    border-radius: .4rem;
    box-shadow: 0 15px 20px 10px #00000057;
    color: black;
@@ -345,7 +345,7 @@ const Karl = (props) => {
       font-size: .8rem;
     }
     .project-square img {
-      max-width: 80%
+      border-width: 1rem .1rem .1rem;
     }
   }
 
