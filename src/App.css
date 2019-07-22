@@ -44,7 +44,8 @@ html {
   bottom: -7vw;
   display: flex !important;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 1.5rem;
 }
 .slick-thumb li {
   width: 12vw;

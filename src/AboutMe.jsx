@@ -26,8 +26,6 @@ const AboutMe = (props) => {
 
     <div>
         <p>I'm a full-stack developer with a passion for design looking to create elegant, intuitive, web products for companies eager to disrupt their industry. </p>
-    </div>
-    <div>
         <p>I have experience in HTML5, CSS3, Ruby on Rails, Javascript, and many other frameworks and languages. I love the creative challenge of bringing a vision to life, and thrive on creative problem-solving it involves. </p>
     </div>
     <div>                
@@ -36,14 +34,9 @@ const AboutMe = (props) => {
     <div>               
          <p>Television and web development aren't entirely unalike; they both involve using creative solutions to bring an idea to life. Moreover, my experience in content generation for television has given me the skills to work adeptly with tight deadlines, and high-stakes & big-budget projects.  And perhaps most importantly, I've learned how to quickly build deep and trusting relationships with partners, peers, and executive leaders. </p>
     </div>
-
-<p>Television and web development aren't entirely unalike; they both involve using creative solutions to bring an idea to life. Moreover, my experience in content generation for television has given me the skills to work adeptly with tight deadlines, and high-stakes & big-budget projects.  And perhaps most importantly, I've learned how to quickly build deep and trusting relationships with partners, peers, and executive leaders. </p>
     <div>
         <p>With these strong transferable skills, I believe I can be a huge asset to your team and help in delivering your company's mission and vision. I'm eager to bring my proven abilities in web development, project management, and creative editorial to companies looking to make a mark. </p>
     </div>
-
-<p>With these strong transferable skills, I believe I can be a huge asset to your team and help in delivering your company's mission and vision. I'm eager to bring my proven abilities in web development, project management, and creative editorial to companies looking to make a mark. </p>
-
 </Slider>
 </div>
 

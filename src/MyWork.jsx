@@ -33,7 +33,7 @@ return (
                       <p className="hide-in-mobile">A photo & microblogging site where users can create accounts, make posts, and edit their accounts.
                      </p>
                       <p>Built on Ruby on Sinatra</p>
-                      <hr />
+                      
                       <div>FEATURES: <br />
                         <ul>
                           <li>Simple, lightweight, easy-to-use interface </li>
@@ -57,7 +57,7 @@ return (
                       <p className="hide-in-mobile">A pokedex that displays pokemon data with vanilla JS and AJAX.
                      </p>
                       <p>Built with Vanilla Javascript</p>
-                      <hr />
+                      
                       <div>FEATURES: <br />
                         <ul>
                           <li>Simple, lightweight, easy-to-use single-page-application interface </li>
@@ -81,7 +81,7 @@ return (
                       <p className="hide-in-mobile">A full-stack website for fictional bakery A FRIEND IN KNEAD using APIs. <br />
                       </p>
                       <p>Built with Ruby on Sinatra</p>
-                      <hr />
+                      
                       <div>FEATURES: <br />
                         <ul>
                           <li>Utilizes Eventbrite API to dynamically generate local events </li>
@@ -104,7 +104,7 @@ return (
                       <p className="hide-in-mobile"> A fully functional adminstrative panel for fictional school, Animal Farm Academy.
                      </p>
                       <p>Built on Ruby on Rails</p>
-                      <hr />
+                      
                       <div>FEATURES: <br />
                         <ul>
                           <li> Users can manage students, teachers, classes and cohorts</li>
@@ -127,7 +127,7 @@ return (
                       <p className="hide-in-mobile"> Create an evening plan in just one click. Or use the meetup to tool to find the perfect meeting spot for you and a friend.
                      </p>
                       <p>Built on Ruby on Rails</p>
-                      <hr />
+                      
                       <div>FEATURES: <br />
                         <ul>
                           <li>Utilizes Weather API, Google Maps, Eventbrite, Geocoder, Stripe, and Yelp APIs</li>
@@ -150,7 +150,7 @@ return (
                       <p className="hide-in-mobile">Use your mobile device's camera to learn more about a product and get its consumer ethical rating.
                      </p>
                       <p>Built on Ruby on Rails</p>
-                      <hr />
+                      
                       <div>FEATURES: <br />
                         <ul>
                           <li>Created and sourced data to create my own API and RESTful interface for company ratings</li>

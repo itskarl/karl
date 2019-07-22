@@ -239,7 +239,7 @@ const Karl = (props) => {
    box-shadow: 0 15px 20px 10px #00000057;
    color: black;
    max-height: 320px; 
-   margin: auto;
+   margin: 0
    }
    .project-square a {
    text-decoration: none; 
