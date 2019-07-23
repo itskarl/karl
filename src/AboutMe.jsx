@@ -19,29 +19,37 @@ const AboutMe = (props) => {
     return (
         <div>
             <section className="about-me">
-               
-            <div className="slider-mobile">
+                <div className="slider-mobile">
+                    <Slider {...navsettings}>
 
-<Slider {...navsettings}>
+                        <div className="about-box">
+                            <p>I'm a developer, artist, nerd, and media maven. I want to create elegant, intuitive, web products for companies eager to disrupt their industry. </p>
+                            <p>In my past life, I was a television producer, so even in my previous career, I was bringing a vision to life. I thrive on creative problem-solving. </p>
+                        </div>
+                        <div className="about-box">
+                            <div className=" external-link-container">
+                            <a href="http://www.karlrodulfo.me" target="_blank"><img className="about-image" src="images/tv.jpg" /></a>
+                            <div>
+                                <h4><a href="http://www.karlrodulfo.me" target="_blank">TELEVISION</a></h4>
+                                <p> In my past life, I worked as a television producer. I created and developed original documentary and reality content for Discovery and Animal Planet for several years. See some of my past work here. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="about-box">
+                            <div className=" external-link-container">
+                            <a href="http://www.instagram.com/comicswithak" target="_blank"><img className="about-image" src="images/comic.png" /></a>
+                            <div>
+                                <h4><a href="http://www.instagram.com/comicswithak" target="_blank">WEBCOMIC</a></h4>
+                                <p> I'm a hobby cartoonist and I maintain, write, and draw my own comic series in my free time. I launched a webcomic in May 2018, and quickly garnered several thousand followers. Check them out!</p>
+                                </div>
 
-    <div>
-        <p>I'm a full-stack developer with a passion for design looking to create elegant, intuitive, web products for companies eager to disrupt their industry. </p>
-        <p>I have experience in HTML5, CSS3, Ruby on Rails, Javascript, and many other frameworks and languages. I love the creative challenge of bringing a vision to life, and thrive on creative problem-solving it involves. </p>
-    </div>
-    <div>                
-        <p>After working for the past decade in television production, I saw the media world transform and practically turned on its head. Media was changing, and I wanted to be a part of that, so I took the plunge, switched careers, and become a web developer. I've always had a love for tech and new media, and rather than watch the media world transform while I'm in the sidelines, I wanted to be one of the people shaping its future. </p>
-    </div>
-    <div>               
-         <p>Television and web development aren't entirely unalike; they both involve using creative solutions to bring an idea to life. Moreover, my experience in content generation for television has given me the skills to work adeptly with tight deadlines, and high-stakes & big-budget projects.  And perhaps most importantly, I've learned how to quickly build deep and trusting relationships with partners, peers, and executive leaders. </p>
-    </div>
-    <div>
-        <p>With these strong transferable skills, I believe I can be a huge asset to your team and help in delivering your company's mission and vision. I'm eager to bring my proven abilities in web development, project management, and creative editorial to companies looking to make a mark. </p>
-    </div>
-</Slider>
-</div>
+                            </div>
+                        </div>
+                    </Slider>
+                </div>
 
             </section>
-            
+
             <style> {`
 
                 .about-me {
@@ -50,18 +58,18 @@ const AboutMe = (props) => {
                     max-width: 800px;
                     background: #397b82;
                     height: 100%;
-                    max-height: 600vh;
+                    max-height: 60vh;
                     margin: auto;
                     margin-top: -3rem;
-                    border-radius: 1rem;
+                    border-radius: .5rem;
                     position: relative;
                     padding: 1rem 0rem 2rem;
                     box-shadow: 0 10px 20px 10px #00000065;
                     z-index: 2
                 }
-                .about-me div {
-                    // ${(props.viewModel === 'mobile') ? 'overflow: scroll;' : ''}
-                    // ${(props.viewModel === 'mobile') ? 'max-height: 50vh' : ''}
+                .about-box {
+                    padding: 1rem;
+                     ${(props.viewModel === 'mobile') ? 'max-height: 50vh' : ''}
                 }
                 .about-me p {
                     margin: .5rem 0;
@@ -79,6 +87,37 @@ const AboutMe = (props) => {
                     border-left: 0;
                     margin-left: -10px;
                     margin-bottom: -20px;
+                }
+                .about-me h4 {
+                    margin: 0 0 .5rem;
+                    color: #bde51a
+                }
+                img.about-image {
+                    width: 150px;
+                    margin: 0 1rem;
+                    border-radius: .5rem;
+                    box-shadow: 0 0 11px 1px #0000008f
+                }
+                .external-link-container {
+                    display: flex;
+                }
+                @media screen and (max-width: 675px) {
+                    .about-me {
+                        width: 95%
+                    }
+                    .external-link-container {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    img.about-image {
+                        width: 100%;
+                        margin: 0 0 1rem 0;
+                        height: 70px;
+                        object-fit: cover;
+                    }
+                    .about-me p {
+                        font-size: .9rem
+                    }
                 }
 
             `}

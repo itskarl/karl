@@ -216,7 +216,8 @@ const Karl = (props) => {
 
    .section-two {
     background: linear-gradient(#212121,#00232e);
-   position: relative;
+    position: relative;
+    margin-top: 6rem;
    }
    .slider-container {
    position: absolute;
@@ -233,10 +234,7 @@ const Karl = (props) => {
    }
    .project-square img {
    max-width: 100%;
-   border: 1rem solid #ebebeb;
-   border-width: 1.25rem .2rem .2rem;
    border-radius: .4rem;
-   box-shadow: 0 15px 20px 10px #00000057;
    color: black;
    max-height: 320px; 
    margin: 0
@@ -244,14 +242,15 @@ const Karl = (props) => {
    .project-square a {
    text-decoration: none; 
    line-height: 1; 
-   color: rgba(255, 177, 0, 0.9);
+   color: rgba(48, 26, 255, 0.9)
    }
    .project-square h4 {
    margin: 0 0 .4rem 0;
-   color: #49ffde
+   color: #008c9f
    }
    .project-content {
-   padding:  0rem 1.5rem 2rem;
+   padding:  1rem 2rem;
+   color: black
    }
    .project-content ul {
      margin-left: -1rem
@@ -260,6 +259,11 @@ const Karl = (props) => {
    position: absolute;
    width: 50%;
    height: 100%;
+   }
+   .section-two .slick-slide {
+     background: #ebece4;
+     border-radius: .5rem;
+     border-top: 1rem solid #008c9f;
    }
    .project-square.one {
    background: url("/images/proj1.png"), #37474f;
@@ -341,11 +345,13 @@ const Karl = (props) => {
     }
     .project-square {
       grid-template-columns: 1fr;
-      margin-top: 6rem;
       font-size: .8rem;
     }
-    .project-square img {
-      border-width: 1rem .1rem .1rem;
+    .project-content {
+      padding: 1rem;
+    }
+    .section-two .slick-slide {
+      border-top: .5rem solid #008c9f;
     }
   }
 

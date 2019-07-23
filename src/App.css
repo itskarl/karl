@@ -45,7 +45,7 @@ html {
   display: flex !important;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1.5rem;
+  padding: 0 
 }
 .slick-thumb li {
   width: 12vw;
@@ -58,6 +58,7 @@ html {
   transition-duration: .3s;
   border: 2px solid white;
   box-sizing: border-box;
+  border-radius: .25rem;
 }
 .slick-thumb li img:hover {
   filter: grayscale(0%) brightness(100%);
