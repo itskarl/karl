@@ -217,7 +217,7 @@ const Karl = (props) => {
    .section-two {
     background: linear-gradient(#212121,#00232e);
     position: relative;
-    margin-top: 6rem;
+    margin-top: ${props.viewModel === 'mobile' || props.viewModel === 'tablet' ? '6rem' : '3rem'}
    }
    .slider-container {
    position: absolute;

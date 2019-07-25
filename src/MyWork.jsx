@@ -36,8 +36,7 @@ return (
                       
                       <div>FEATURES: <br />
                         <ul>
-                          <li>Simple, lightweight, easy-to-use interface </li>
-                          <li>Website is fully responsive for desktop, tablet, and mobile.</li>
+                          <li>Simple, lightweight, and fully responsive for desktop, tablet, and mobile.</li>
                           <li>Utilizes a speech bubble motif for a fun, dynamic, but cohesive style</li>
                           <li>Utilizes SQLite, ActiveRecord</li>
                         </ul>
@@ -61,7 +60,6 @@ return (
                       <div>FEATURES: <br />
                         <ul>
                           <li>Simple, lightweight, easy-to-use single-page-application interface </li>
-                          <li>Stats are dynamically generated via AJAX</li>
                           <li>Website is fully responsive for desktop, tablet, and mobile!</li>
                           <li>Built fully on vanilla Javascript, HTML, and CSS</li>
                         </ul>
@@ -107,9 +105,8 @@ return (
                       
                       <div>FEATURES: <br />
                         <ul>
-                          <li> Users can manage students, teachers, classes and cohorts</li>
+                          <li>Comprehensive admin panel where users can manage students, teachers, classes and cohorts</li>
                           <li>Showcases dynamic animation on landing page as a point of interest. Animation built on vanilla Javascript and CSS </li>
-                          <li>Designed with very user-friendly interface and visually appealing graphics</li>
                         </ul>
                       </div>
                       <a href="https://github.com/itskarl/academy-panel" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i>&nbsp; GITHUB</a>
@@ -147,14 +144,13 @@ return (
                         <h4><span className="hide-in-mobile">CONCON: THE </span>CONSCIENTIOUS CONSUMER TOOL</h4>
                         VISIT SITE
                      </a>
-                      <p className="hide-in-mobile">Use your mobile device's camera to learn more about a product and get its consumer ethical rating.
+                      <p className="hide-in-mobile">Use your mobile device's camera as a barcode reader to get a product's "ethical-ness" rating.
                      </p>
                       <p>Built on Ruby on Rails</p>
                       
                       <div>FEATURES: <br />
                         <ul>
                           <li>Created and sourced data to create my own API and RESTful interface for company ratings</li>
-                          <li>Utilizes javascript barcode reader to provide product info and ratings</li>
                           <li>Features News API to provide additional information on companies</li>
                         </ul>
                       </div>

@@ -49,7 +49,7 @@ html {
 }
 .slick-thumb li {
   width: 20%;
-  height: 5vh;
+  height: 1vh;
   cursor: pointer;
 }
 .slick-thumb li img {
