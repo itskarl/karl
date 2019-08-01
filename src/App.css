@@ -51,20 +51,20 @@ html {
   width: 20%;
   height: 1vh;
   cursor: pointer;
+  margin: 0
 }
 .slick-thumb li img {
   filter: grayscale(100%) brightness(50%);
   width: 100%;
   transition-duration: .3s;
-  border: 2px solid white;
   box-sizing: border-box;
-  border-radius: .25rem;
+  border: 2px solid white;
   max-height: 120px; 
   object-fit: cover;
 }
 .slick-thumb li img:hover {
   filter: grayscale(0%) brightness(100%);
-  transform: translateY(-1px);
+  transform: translateY(-5px);
   box-shadow: 0 5px 10px 5px #0000006e;
   transition-duration: .3s;
 }

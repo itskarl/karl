@@ -28,11 +28,11 @@ return (
                     <div className="project-content">
                       <a href="https://musings1.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                         <h4>MUSINGS: A SOCIAL MEDIA SITE</h4>
-                        VISIT SITE
-                     </a>
+                        VISIT SITE </a>| Built on Ruby on Sinatra
+                     
                       <p className="hide-in-mobile">A photo & microblogging site where users can create accounts, make posts, and edit their accounts.
                      </p>
-                      <p>Built on Ruby on Sinatra</p>
+                      
                       
                       <div>FEATURES: <br />
                         <ul>
@@ -51,11 +51,11 @@ return (
                     <div className="project-content">
                       <a href="https://itskarl.github.io/pokemon-pokedex/" target="_blank" rel="noopener noreferrer">
                         <h4>KARL'S POKEMON POKEDEX</h4>
-                        VISIT SITE
-                     </a>
+                        VISIT SITE </a>| Built with Vanilla Javascript
+                     
                       <p className="hide-in-mobile">A pokedex that displays pokemon data with vanilla JS and AJAX.
                      </p>
-                      <p>Built with Vanilla Javascript</p>
+         
                       
                       <div>FEATURES: <br />
                         <ul>
@@ -74,11 +74,11 @@ return (
                     <div className="project-content">
                       <a href="https://afriendinknead.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                         <h4>A FRIEND IN KNEAD</h4>
-                        VISIT SITE
-                     </a>
+                        VISIT SITE </a>| Built with Ruby on Sinatra
+                     
                       <p className="hide-in-mobile">A full-stack website for fictional bakery A FRIEND IN KNEAD using APIs. <br />
                       </p>
-                      <p>Built with Ruby on Sinatra</p>
+                
                       
                       <div>FEATURES: <br />
                         <ul>
@@ -97,11 +97,11 @@ return (
                     <div className="project-content">
                       <a href="https://afacademy.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                         <h4>AF ACADEMY ADMIN PANEL</h4>
-                        VISIT SITE
-                     </a>
+                        VISIT SITE</a> | Built on Ruby on Rails
+                     
                       <p className="hide-in-mobile"> A fully functional adminstrative panel for fictional school, Animal Farm Academy.
                      </p>
-                      <p>Built on Ruby on Rails</p>
+
                       
                       <div>FEATURES: <br />
                         <ul>
@@ -142,11 +142,11 @@ return (
                     <div className="project-content">
                       <a href="https://buyinformed.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                         <h4><span className="hide-in-mobile">CONCON: THE </span>CONSCIENTIOUS CONSUMER TOOL</h4>
-                        VISIT SITE
-                     </a>
+                        VISIT SITE</a> | Built on Ruby on Rails
+                     
                       <p className="hide-in-mobile">Use your mobile device's camera as a barcode reader to get a product's "ethical-ness" rating.
                      </p>
-                      <p>Built on Ruby on Rails</p>
+                      
                       
                       <div>FEATURES: <br />
                         <ul>

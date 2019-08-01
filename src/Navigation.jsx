@@ -27,7 +27,7 @@ const Navigation = (props) => {
             </div>
 
             {openMenu &&
-            <ul className="animated bounceInDown">
+            <ul className="animated bounceInUp">
             <a onClick={() => setOpenMenu(false)} href="#home" className="about">  <li> <button  >HOME</button>  </li></a>
             <a onClick={() => setOpenMenu(false)} href="#my-work" className="work" >   <li><button >WORK</button>  </li></a>
             <a onClick={() => setOpenMenu(false)} href="#resume" className="resume" >  <li><button >RÉSUMÉ</button>  </li></a>

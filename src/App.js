@@ -141,7 +141,7 @@ const Karl = (props) => {
    .icon-container {
     height: ${props.viewModel === 'mobile' ? '100px' : '120px'};
     width: ${props.viewModel === 'mobile' ? '100px' : '120px'};
-    border: 3px solid #005f6c;
+    background: #023e4d;
     border-radius: 50%;
     position:relative;
     overflow: hidden;
@@ -262,7 +262,6 @@ const Karl = (props) => {
    }
    .section-two .slick-slide {
      background: #ebece4;
-     border-radius: .5rem;
      border-top: 1rem solid #008c9f;
    }
    .project-square.one {

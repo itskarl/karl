@@ -46,6 +46,7 @@ const ScrollorSelect = () => {
             .scroll-select p {
                 font-size: 1rem;
                 line-height: 1rem;
+                margin: .5rem;
             }
 
             `}
