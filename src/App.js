@@ -145,7 +145,10 @@ const Karl = (props) => {
     border-radius: 50%;
     position:relative;
     overflow: hidden;
-    transition: .3s ease-in-out
+    transition: .3s ease-in-out;
+    border: 5px solid #023e4d;
+    display: flex;
+    justify-content: center;
    }
 
    .icon-container:hover {
@@ -226,6 +229,7 @@ const Karl = (props) => {
    transform: translate(-50%, -50%);
    width: 80%;
    margin: auto;
+   box-shadow: 0 0 40px 10px #000000a3;
    }
    .project-square {
    width: 100%;

@@ -83,8 +83,8 @@ return (
                       <div>FEATURES: <br />
                         <ul>
                           <li>Utilizes Eventbrite API to dynamically generate local events </li>
-                          <li>Features a festive aesthetic with bakery motifs to highlight the bakery and its products</li>
-                          <li>Website is fully responsive for desktop and mobile! Please enjoy on different platforms!</li>
+                          <li>Features a festive aesthetic with bakery motifs</li>
+                          <li>Fully responsive for desktop and mobile! Please enjoy on different platforms!</li>
                         </ul>
                       </div>
                       <a href="https://github.com/itskarl/Bakery-website-fullstack" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i>&nbsp; GITHUB</a>
