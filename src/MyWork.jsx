@@ -22,6 +22,27 @@ const MyWork = () => {
 return (
 <div className="slider-container">
               <Slider {...navsettings}>
+              <div>
+                  <div className="project-square">
+                    <div className="project-content" ><img alt="site screenshot" src="/images/findinbetween.png" /></div>
+                    <div className="project-content">
+                      <a href="https://meetinbetween.netlify.com/" target="_blank" rel="noopener noreferrer">
+                        <h4>FIND IN BETWEEN</h4>
+                        VISIT SITE </a>| Built in React
+                      <p className="hide-in-mobile">Dinner? Coffee Meeting? Date? This single page app finds an ideal meeting spots between you and a friend. 
+                     </p>
+                      
+                      
+                      <div>FEATURES: <br />
+                        <ul>
+                          <li>Utilizes Yelp and Google Maps API to generate key map points and location info.</li>
+                          <li>Fully responsive and built and designed mobile-first.</li>
+                        </ul>
+                      </div>
+                      <a href="https://github.com/itskarl/plan-roulette" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i>&nbsp; GITHUB</a>
+                    </div>
+                  </div>
+                </div>
                 <div>
                   <div className="project-square">
                     <div className="project-content" ><img alt="site screenshot" src="/images/musings.png" /></div>
@@ -93,7 +114,7 @@ return (
                 </div>
                 <div>
                   <div className="project-square">
-                    <div className="project-content"><img alt="site screenshot" src="/images/proj4.png" /></div>
+                    <div className="project-content"><img alt="site screenshot" src="/images/proj5.png" /></div>
                     <div className="project-content">
                       <a href="https://afacademy.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                         <h4>AF ACADEMY ADMIN PANEL</h4>
@@ -138,7 +159,7 @@ return (
                 </div> */}
                 <div>
                   <div className="project-square">
-                    <div className="project-content"><img alt="site screenshot" src="/images/proj5.png" /></div>
+                    <div className="project-content"><img alt="site screenshot" src="/images/proj6.png" /></div>
                     <div className="project-content">
                       <a href="https://buyinformed.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                         <h4><span className="hide-in-mobile">CONCON: THE </span>CONSCIENTIOUS CONSUMER TOOL</h4>
