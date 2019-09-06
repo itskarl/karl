@@ -229,7 +229,11 @@ const Karl = (props) => {
    transform: translate(-50%, -50%);
    width: 80%;
    margin: auto;
-   box-shadow: 0 0 40px 10px #000000a3;
+   background: #47585b87;
+   border-radius: 10px;
+   background: linear-gradient(90deg, #00525d 50%, #ffffff00 50%);
+   border-radius: 1rem;
+   border: 2px solid #008c9f;
    }
    .project-square {
    width: 100%;
@@ -246,7 +250,7 @@ const Karl = (props) => {
    .project-square a {
    text-decoration: none; 
    line-height: 1; 
-   color: rgba(48, 26, 255, 0.9)
+   color: rgba(255, 229, 109, 0.9)
    }
    .project-square h4 {
    margin: 0 0 .4rem 0;
@@ -254,7 +258,7 @@ const Karl = (props) => {
    }
    .project-content {
    padding:  1rem 2rem;
-   color: black
+   color: white;
    }
    .project-content ul {
      margin-left: -1rem
@@ -265,8 +269,8 @@ const Karl = (props) => {
    height: 100%;
    }
    .section-two .slick-slide {
-     background: #ebece4;
      border-top: 1rem solid #008c9f;
+     border-radius: 10px;
    }
    .project-square.one {
    background: url("/images/proj1.png"), #37474f;
@@ -346,15 +350,15 @@ const Karl = (props) => {
     .section-two .slick-thumb {
       display: none !important;
     }
+    .slider-container {
+      background: #ffffff00
+    }
     .project-square {
       grid-template-columns: 1fr;
       font-size: .8rem;
     }
     .project-content {
       padding: 1rem;
-    }
-    .section-two .slick-slide {
-      border-top: .5rem solid #008c9f;
     }
   }
 

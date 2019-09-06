@@ -131,7 +131,8 @@ const Navigation = (props) => {
                 height: 3rem;
                 display: flex;
                 align-items: center;
-                padding: 0 1rem
+                padding: 0 1rem;
+                transition-duration: .3s
             }
             .mobile-header li:hover, .mobile-header .hamburger:hover {
                 background: #159ab6c4;

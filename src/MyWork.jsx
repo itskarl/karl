@@ -27,7 +27,7 @@ return (
                     <div className="project-content" ><img alt="site screenshot" src="/images/findinbetween.png" /></div>
                     <div className="project-content">
                       <a href="https://meetinbetween.netlify.com/" target="_blank" rel="noopener noreferrer">
-                        <h4>FIND IN BETWEEN</h4>
+                        <h4>MEET IN BETWEEN</h4>
                         VISIT SITE </a>| Built in React
                       <p className="hide-in-mobile">Dinner? Coffee Meeting? Date? This single page app finds an ideal meeting spots between you and a friend. 
                      </p>
