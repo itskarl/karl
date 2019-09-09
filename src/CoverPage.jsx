@@ -11,7 +11,7 @@ const CoverPage = ({ fullpageApi, viewModel }) => {
             
             <div className="name-holder">
 
-                <div className="name  animated fadeInUp">
+                <div className="name  animated fadeInDown">
                 
                     Karl Rodulfo  
                 </div>
@@ -21,7 +21,7 @@ const CoverPage = ({ fullpageApi, viewModel }) => {
                 <div className="square s_4"></div>
             </div>
             <div className="cover-lower">
-                <div className="subtitle animated fadeInDown">
+                <div className="subtitle animated fadeInUp">
                     Software Developer with a passion for design, function, and technology.
                 </div>
                 <div className="menu-container">
