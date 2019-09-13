@@ -2,6 +2,7 @@ import React from 'react';
 
 const ScrollorSelect = () => {
     return (
+        <>
         <div className="scroll-select">
             <div className="scrolling">
                 <div className="mouse-container">
@@ -12,7 +13,16 @@ const ScrollorSelect = () => {
             
             
 
-            <style> {`
+     
+        </div>
+
+        <div className="built-in-react">
+            <p><i style={{ color: '#87c2f7' }} className="devicon-react-original"></i> built in react</p>
+            
+        </div>
+        
+
+        <style> {`
             .mouse-container {
                 width: 1.4rem;
                 height: 2.2rem;
@@ -32,23 +42,32 @@ const ScrollorSelect = () => {
                 text-shadow: none; 
             }
             .scroll-select {
-                margin:auto;
-                display: flex;
-                align-items: center;
-                color: white;
-                justify-content: center;
-                margin-top: 10vh
+
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 0)
             }
-            .scroll-select p {
+            @media screen and (max-width: 465px) {
+                .scroll-select {
+                    display: none;
+                }
+
+            }
+            .scroll-select p, .built-in-react p {
                 font-size: 1rem;
                 line-height: 1rem;
+                margin: .5rem;
+            }
+            .built-in-react {
+                position: absolute;
+                bottom: 0px;
+                right: 0
             }
 
             `}
             </style>
-        </div>
-        
-
+        </>
     )
 }
 

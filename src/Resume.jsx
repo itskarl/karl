@@ -527,6 +527,9 @@ const Resume = (props) => {
           .section-three-content.tablet, .section-three-content.mobile {
             display: inline;
           }
+          .section-three-content.wide {
+            grid-template-columns: 1.5fr 1fr;
+          }
           .slider-mobile {
             padding: 0 2rem;
           }
@@ -546,6 +549,8 @@ const Resume = (props) => {
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
+            max-width: 980px; 
+            ${(props.viewModel === 'wide' || props.viewModel === 'desktop') && 'margin-left: 8%'}
           }
           .skills-section p {
             margin: 0;
@@ -949,9 +954,10 @@ const Resume = (props) => {
             margin: 1rem 0;
             width:100%;
             border-color: #e75ce7;
-            border-bottom: 1px solid;
+            border-style: solid;
             border-image: linear-gradient(90deg, rgb(10, 37, 52), rgb(41, 121, 241), #092534) 1;
             padding: 0 0 1rem;
+            border-width: 0 0 1px 0
           }
           .slider-mobile .donuts-list {
             grid-template-columns: 1fr 1fr

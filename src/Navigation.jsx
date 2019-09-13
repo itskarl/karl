@@ -27,7 +27,7 @@ const Navigation = (props) => {
             </div>
 
             {openMenu &&
-            <ul className="animated bounceInDown">
+            <ul className="animated bounceInUp">
             <a onClick={() => setOpenMenu(false)} href="#home" className="about">  <li> <button  >HOME</button>  </li></a>
             <a onClick={() => setOpenMenu(false)} href="#my-work" className="work" >   <li><button >WORK</button>  </li></a>
             <a onClick={() => setOpenMenu(false)} href="#resume" className="resume" >  <li><button >RÉSUMÉ</button>  </li></a>
@@ -131,7 +131,8 @@ const Navigation = (props) => {
                 height: 3rem;
                 display: flex;
                 align-items: center;
-                padding: 0 1rem
+                padding: 0 1rem;
+                transition-duration: .3s
             }
             .mobile-header li:hover, .mobile-header .hamburger:hover {
                 background: #159ab6c4;
