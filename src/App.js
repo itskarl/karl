@@ -26,11 +26,11 @@ const Karl = (props) => {
         }}
         navigation={true}
         sectionsColor={[]}
-        
+
         navigationPosition={'left'}
         render={({ state, fullpageApi }) => {
-          console.log("render prop change", state); // eslint-disable-line no-console
-          console.log('viewmodel', props.viewModel)
+          // console.log("render prop change", state); // eslint-disable-line no-console
+          // console.log('viewmodel', props.viewModel)
           return (
             <>
 
@@ -78,7 +78,7 @@ const Karl = (props) => {
    display: flex;
    justify-content: center;
    position: relative;
-   height: 50%;
+   height: 43%;
    align-items: flex-end;
    position: relative;
    background: #023e4d;
@@ -86,7 +86,7 @@ const Karl = (props) => {
    overflow: hidden
    }
    .cover-lower {
-   height: 50%;
+   height: 57%;
    position: relative;
    overflow: hidden;
    }
@@ -101,11 +101,9 @@ const Karl = (props) => {
    display: flex;
    align-items: center;
    justify-content: space-between;
-   max-width: 45rem;
-   flex-wrap: wrap;
+   
    width: 100%;
-   padding: 2rem 0;
-   margin: 0 auto;
+   margin: 1rem auto;
    position: absolute;
    top: 45%;
    left: 50%;
@@ -134,25 +132,27 @@ const Karl = (props) => {
    }
 
     img.icon {
-      height: ${props.viewModel === 'mobile' ? '100px' : '120px'};
-      width: ${props.viewModel === 'mobile' ? '100px' : '120px'};
+      height: ${props.viewModel === 'mobile' ? '70px' : '120px'};
+      width: ${props.viewModel === 'mobile' ? '70px' : '100px'};
       background: none;
+      
     }
    .icon-container {
-    height: ${props.viewModel === 'mobile' ? '100px' : '120px'};
-    width: ${props.viewModel === 'mobile' ? '100px' : '120px'};
-    background: #023e4d;
-    border-radius: 50%;
+    width: 25vw;
+    background: linear-gradient(#023e4d, #1d585f);
     position:relative;
     overflow: hidden;
     transition: .3s ease-in-out;
-    border: 5px solid #023e4d;
+    filter: hue-rotate(10deg) grayscale(60%);
     display: flex;
     justify-content: center;
+    border: 2px solid #212121;
    }
 
    .icon-container:hover {
-      transform: scale(1.2, 1.2)
+      transform: translate(0, -3px);
+      z-index: 100;
+      filter: hue-rotate(0deg) grayscale(0%);
    }
 
    .icon-container:after {
@@ -192,30 +192,35 @@ const Karl = (props) => {
 
    .square {
    position: absolute;
-   width: 18rem;
-   height: 12rem;
+   width: 36rem;
+   height: 24rem;
    transform: rotate(45deg)
    }
    .s_1 {
-   top: -4rem;
-   left: -4rem;
+   top: -8rem;
+   left: -8rem;
    background: linear-gradient(.25turn, #173e4d,#a4dcb92b);
    }
    .s_2 {
-   top: -8rem;
-   left:10rem;
+   top: -16rem;
+   left: 20rem;
    background: linear-gradient(.25turn, #173e4d,#a4dcb92b);
    }
    .s_3 {
-   top: 12rem;
-   left: -6rem;
+   top: 24rem;
+   left: -12rem;
    background: linear-gradient(.25turn, #173e4d,#a4dcb92b);
    }
    .s_4 {
-   left: 9.25rem;
-   top: 9.25rem;
+   left: 18.5rem;
+   top: 18.5rem;
    background: linear-gradient(.25turn,#a4dcb92b, #173e4d);
    }
+  .s_5 {
+    left: 14.5rem;
+    top: 50.25rem;
+    background: linear-gradient(.25turn,#a4dcb92b, #173e4d);
+  }
 
    .section-two {
     background: linear-gradient(#212121,#00232e);
@@ -320,13 +325,8 @@ const Karl = (props) => {
 
   }
 
-  @media screen and (max-width: 778px) {
-    .menu-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-        top: calc(6rem + 25%);
-    }
+  @media screen and (max-width: 500px) {
+
     .icon-container {
       margin: 5vh 0 .25rem
     }
@@ -392,7 +392,7 @@ const Karl = (props) => {
   }
   
    `}
-  </style>
+              </style>
             </>
 
 

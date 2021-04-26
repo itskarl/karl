@@ -19,6 +19,7 @@ const CoverPage = ({ fullpageApi, viewModel }) => {
                 <div className="square s_2"></div>
                 <div className="square s_3"></div>
                 <div className="square s_4"></div>
+                <div className="square s_5"></div>
             </div>
             <div className="cover-lower">
                 <div className="subtitle animated fadeInUp">
