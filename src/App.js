@@ -94,7 +94,7 @@ const Karl = (props) => {
    text-align: center; 
    font-family: 'Exo', sans-serif;
    color: #fff;
-   padding: 1rem;
+   padding: .25rem;
    font-size: 1.4rem;
    }
    .menu-container {
