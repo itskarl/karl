@@ -29,11 +29,8 @@ const Karl = (props) => {
 
         navigationPosition={'left'}
         render={({ state, fullpageApi }) => {
-          // console.log("render prop change", state); // eslint-disable-line no-console
-          // console.log('viewmodel', props.viewModel)
           return (
             <>
-
               <section className="section section-one">
 
                 <CoverPage viewModel={props.viewModel} fullpageApi={fullpageApi} />
@@ -56,7 +53,7 @@ const Karl = (props) => {
 
               <section className="section section-five">
                 <AboutMe viewModel={props.viewModel} />
-                <img className="head-thought" src="1_me.svg" />
+                <img alt="person head illustration" className="head-thought" src="1_me.svg" />
               </section>
 
 

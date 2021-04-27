@@ -1,7 +1,7 @@
 import React from 'react';
 import Slider from "react-slick";
 
-
+/* eslint-disable */
 const AboutMe = (props) => {
 
     const navsettings = {

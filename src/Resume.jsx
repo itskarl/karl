@@ -30,7 +30,6 @@ const Resume = (props) => {
 
   const customModal = {
     closeButton: {
-      background: 'red',
       top: '-.75rem',
       right: '-.75rem',
       background: 'rgb(53, 72, 112)',
